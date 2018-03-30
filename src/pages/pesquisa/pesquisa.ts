@@ -14,17 +14,17 @@ export class PesquisaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public toastCtrl: ToastController, public remedioApi: RemedioApi) { }
 
-  buscarRemedio(ev) {
+  async buscarRemedio(ev) {
     let remedio = ev.target.value;
     if (!remedio || !remedio.trim()) {
       this.remedios = [];
       return;
     }
-    this.remedioApi.getByNome(remedio).then((result: any) => {
+    await this.remedioApi.getByNome(remedio).then((result: Array<Remedio>) => {
       this.criarLoading();
       this.remedios = result;
     }).catch((error: any) => {
-      this.criarMensagem('Ooops! Erro ao listar o remédio.');
+      this.criarMensagem('Ooops! Erro ao listar remédio.');
     });
   }
 
