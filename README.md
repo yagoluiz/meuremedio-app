@@ -1,5 +1,7 @@
 # APP Meu Remédio
 
+* Site do projeto (deploy Heroku) => https://meuremedioweb.herokuapp.com
+
 * Informações disponibilizados no site da [ANVISA](http://portal.anvisa.gov.br/listas-de-precos);
 * Informações disponibilizados no site [dados.gov.br](http://dados.gov.br/dataset/anvisa-precos-de-medicamentos).
 
