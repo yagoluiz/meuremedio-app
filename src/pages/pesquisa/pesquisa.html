@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pesquisa</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Pesquise pelo nome do seu remédio"></ion-searchbar>
+  <ion-list>
+    <button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">
+      <h2>{{remedio.nome}}</h2>
+      <p>{{remedio.laboratorioNome}}</p>
+      <p>{{remedio.apresentacao}}</p>
+      <ion-note item-end *ngIf="remedio.tarja">{{remedio.tarja}}</ion-note>
+    </button>
+  </ion-list>
+</ion-content>

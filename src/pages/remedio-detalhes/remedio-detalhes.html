@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ remedio.nome }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="item-detail" padding>
+    <p>
+      <strong>Tarja: </strong>{{remedio.tarja}}</p>
+    <p>
+      <strong>Laboratório: </strong>{{remedio.laboratorioNome}}</p>
+    <p>
+      <strong>Princípio ativo: </strong>{{remedio.principioAtivo}}</p>
+    <p>
+      <strong>Descrição: </strong>{{remedio.apresentacao}}</p>
+    <p>
+      <strong>Classe terapêutica: </strong>{{remedio.classeTerapeutica}}</p>
+    <p>
+      <strong>Tipo: </strong>{{remedio.tipo}}</p>
+    <p>
+      <strong>Preço máximo farmácia: </strong>R$ {{remedio.precoFabrica}}</p>
+    <p>
+      <strong>Preço máximo consumidor: </strong>R$ {{remedio.precoMaximo}}</p>
+  </div>
+</ion-content>
