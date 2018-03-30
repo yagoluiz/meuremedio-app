@@ -6,7 +6,7 @@ import { RemedioApi } from '../../providers/api/remedio'
 
 @IonicPage()
 @Component({
-  selector: 'page-search',
+  selector: 'page-pesquisa',
   templateUrl: 'pesquisa.html'
 })
 export class PesquisaPage {

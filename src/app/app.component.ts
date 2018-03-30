@@ -22,7 +22,7 @@ import { FirstRunPage } from '../pages/pages';
     </ion-content>
 
   </ion-menu>
-  <ion-nav #content [root]="rootPage"></ion-nav>`
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>`
 })
 export class MyApp {
   rootPage = FirstRunPage;
@@ -30,8 +30,8 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Pesquisar', component: 'PesquisaPage' },
-    { title: 'Tutorial', component: 'TutorialPage' }
+    { title: 'Pesquisar', component: 'TabsPage' },
+    { title: 'Sobre', component: 'SobrePage' }
   ]
 
   constructor(platform: Platform, private statusBar: StatusBar, private splashScreen: SplashScreen) {

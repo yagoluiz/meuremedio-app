@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 282:
+/***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TutorialPageModule", function() { return TutorialPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tutorial__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tutorial__ = __webpack_require__(289);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,13 +41,14 @@ var TutorialPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 285:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TutorialPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages__ = __webpack_require__(198);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,6 +58,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 var TutorialPage = /** @class */ (function () {
@@ -86,7 +88,7 @@ var TutorialPage = /** @class */ (function () {
         ];
     }
     TutorialPage.prototype.iniciarApp = function () {
-        this.navCtrl.setRoot('PesquisaPage', {}, {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__pages__["b" /* MainPage */], {}, {
             animate: true,
             direction: 'forward'
         });
@@ -102,7 +104,7 @@ var TutorialPage = /** @class */ (function () {
     };
     TutorialPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tutorial',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app-full\src\pages\tutorial\tutorial.html"*/'<ion-header no-shadow>\n  <ion-navbar>\n    <ion-buttons end *ngIf="sair">\n      <button ion-button (click)="iniciarApp()" color="primary">Sair</button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-bounce>\n  <ion-slides pager="true" dir="{{dir}}" (ionSlideWillChange)="verificarSlide($event)">\n    <ion-slide *ngFor="let slide of slides">\n      <img [src]="slide.imagem" class="slide-image" />\n      <h2 class="slide-title" [innerHTML]="slide.titulo"></h2>\n      <p [innerHTML]="slide.descricao"></p>\n    </ion-slide>\n    <ion-slide>\n      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />\n      <h2 class="slide-title">Tudo pronto?</h2>\n      <button ion-button icon-end large clear (click)="iniciarApp()">\n        Use o app agora\n        <ion-icon name="arrow-forward"></ion-icon>\n      </button>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app-full\src\pages\tutorial\tutorial.html"*/
+            selector: 'page-tutorial',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\tutorial\tutorial.html"*/'<ion-header no-shadow>\n  <ion-navbar>\n    <ion-buttons end *ngIf="sair">\n      <button ion-button (click)="iniciarApp()" color="primary">Sair</button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-bounce>\n  <ion-slides pager="true" dir="{{dir}}" (ionSlideWillChange)="verificarSlide($event)">\n    <ion-slide *ngFor="let slide of slides">\n      <img [src]="slide.imagem" class="slide-image" />\n      <h2 class="slide-titulo" [innerHTML]="slide.titulo"></h2>\n      <p [innerHTML]="slide.descricao"></p>\n    </ion-slide>\n    <ion-slide>\n      <img src="assets/img/ica-slidebox-img-4.png" class="slide-imagem" />\n      <h2 class="slide-titulo">Tudo pronto?</h2>\n      <button ion-button icon-end large clear (click)="iniciarApp()">\n        Use o app agora\n        <ion-icon name="arrow-forward"></ion-icon>\n      </button>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\tutorial\tutorial.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]])
     ], TutorialPage);

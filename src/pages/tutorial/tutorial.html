@@ -10,12 +10,12 @@
   <ion-slides pager="true" dir="{{dir}}" (ionSlideWillChange)="verificarSlide($event)">
     <ion-slide *ngFor="let slide of slides">
       <img [src]="slide.imagem" class="slide-image" />
-      <h2 class="slide-title" [innerHTML]="slide.titulo"></h2>
+      <h2 class="slide-titulo" [innerHTML]="slide.titulo"></h2>
       <p [innerHTML]="slide.descricao"></p>
     </ion-slide>
     <ion-slide>
-      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
-      <h2 class="slide-title">Tudo pronto?</h2>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-imagem" />
+      <h2 class="slide-titulo">Tudo pronto?</h2>
       <button ion-button icon-end large clear (click)="iniciarApp()">
         Use o app agora
         <ion-icon name="arrow-forward"></ion-icon>

@@ -7,7 +7,7 @@ import { Remedio } from '../../models/remedio'
 
 @Injectable()
 export class RemedioApi {
-    API_URL: string = 'http://meuremedio.servebeer.com:8080/api/';
+    API_URL: string = 'http://ec2-18-188-196-175.us-east-2.compute.amazonaws.com:8080/api/';
     remedios: Array<Remedio> = [];
 
     constructor(public http: HttpClient) { }

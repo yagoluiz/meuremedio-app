@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 281:
+/***/ 283:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemedioDetalhesPageModule", function() { return RemedioDetalhesPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsPageModule", function() { return TabsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(288);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,36 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var RemedioDetalhesPageModule = /** @class */ (function () {
-    function RemedioDetalhesPageModule() {
+var TabsPageModule = /** @class */ (function () {
+    function TabsPageModule() {
     }
-    RemedioDetalhesPageModule = __decorate([
+    TabsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__["a" /* RemedioDetalhesPage */],
+                __WEBPACK_IMPORTED_MODULE_2__tabs__["a" /* TabsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__["a" /* RemedioDetalhesPage */])
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__tabs__["a" /* TabsPage */])
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__["a" /* RemedioDetalhesPage */]
+                __WEBPACK_IMPORTED_MODULE_2__tabs__["a" /* TabsPage */]
             ]
         })
-    ], RemedioDetalhesPageModule);
-    return RemedioDetalhesPageModule;
+    ], TabsPageModule);
+    return TabsPageModule;
 }());
 
-//# sourceMappingURL=remedio-detalhes.module.js.map
+//# sourceMappingURL=tabs.module.js.map
 
 /***/ }),
 
-/***/ 284:
+/***/ 288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemedioDetalhesPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages__ = __webpack_require__(198);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,21 +60,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var RemedioDetalhesPage = /** @class */ (function () {
-    function RemedioDetalhesPage(navCtrl, navParams) {
+
+
+var TabsPage = /** @class */ (function () {
+    function TabsPage(navCtrl) {
         this.navCtrl = navCtrl;
-        this.remedio = navParams.get('remedio');
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_2__pages__["c" /* Tab1Root */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__pages__["d" /* Tab2Root */];
+        this.tab1Titulo = " ";
+        this.tab2Titulo = " ";
+        this.tab1Titulo = "Pesquisa";
+        this.tab2Titulo = "Sobre";
     }
-    RemedioDetalhesPage = __decorate([
+    TabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-item-detail',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app-full\src\pages\remedio-detalhes\remedio-detalhes.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>{{ remedio.nome }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div class="item-detail" padding>\n    <p>\n      <strong>Tarja: </strong>{{remedio.tarja}}</p>\n    <p>\n      <strong>Laboratório: </strong>{{remedio.laboratorioNome}}</p>\n    <p>\n      <strong>Princípio ativo: </strong>{{remedio.principioAtivo}}</p>\n    <p>\n      <strong>Descrição: </strong>{{remedio.apresentacao}}</p>\n    <p>\n      <strong>Classe terapêutica: </strong>{{remedio.classeTerapeutica}}</p>\n    <p>\n      <strong>Tipo: </strong>{{remedio.tipo}}</p>\n    <p>\n      <strong>Preço máximo farmácia: </strong>R$ {{remedio.precoFabrica}}</p>\n    <p>\n      <strong>Preço máximo consumidor: </strong>R$ {{remedio.precoMaximo}}</p>\n  </div>\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app-full\src\pages\remedio-detalhes\remedio-detalhes.html"*/
+            selector: 'page-tabs',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\tabs\tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" [tabTitle]="tab1Titulo" tabIcon="search"></ion-tab>\n  <ion-tab [root]="tab2Root" [tabTitle]="tab2Titulo" tabIcon="information-circle"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\tabs\tabs.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], RemedioDetalhesPage);
-    return RemedioDetalhesPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+    ], TabsPage);
+    return TabsPage;
 }());
 
-//# sourceMappingURL=remedio-detalhes.js.map
+//# sourceMappingURL=tabs.js.map
 
 /***/ })
 

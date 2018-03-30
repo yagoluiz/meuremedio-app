@@ -25678,14 +25678,7 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-page-item-detail .item-profile {
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  height: 250px;
-}
-
-page-item-detail .item-detail {
+page-remedio-detalhes .item-detalhes {
   width: 100%;
   background: white;
   position: absolute;
@@ -25700,11 +25693,11 @@ page-tutorial .slide-zoom {
   height: 100%;
 }
 
-page-tutorial .slide-title {
+page-tutorial .slide-titulo {
   margin-top: 2.8rem;
 }
 
-page-tutorial .slide-image {
+page-tutorial .slide-imagem {
   max-height: 40%;
   max-width: 60%;
   margin: 36px 0;

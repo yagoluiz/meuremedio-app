@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-item-detail',
+  selector: 'page-remedio-detalhes',
   templateUrl: 'remedio-detalhes.html'
 })
 export class RemedioDetalhesPage {

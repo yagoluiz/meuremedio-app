@@ -1,14 +1,14 @@
 webpackJsonp([2],{
 
-/***/ 280:
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PesquisaPageModule", function() { return PesquisaPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SobrePageModule", function() { return SobrePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pesquisa__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sobre__ = __webpack_require__(287);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,37 +18,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PesquisaPageModule = /** @class */ (function () {
-    function PesquisaPageModule() {
+var SobrePageModule = /** @class */ (function () {
+    function SobrePageModule() {
     }
-    PesquisaPageModule = __decorate([
+    SobrePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__pesquisa__["a" /* PesquisaPage */],
+                __WEBPACK_IMPORTED_MODULE_2__sobre__["a" /* SobrePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__pesquisa__["a" /* PesquisaPage */])
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sobre__["a" /* SobrePage */])
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__pesquisa__["a" /* PesquisaPage */]
+                __WEBPACK_IMPORTED_MODULE_2__sobre__["a" /* SobrePage */]
             ]
         })
-    ], PesquisaPageModule);
-    return PesquisaPageModule;
+    ], SobrePageModule);
+    return SobrePageModule;
 }());
 
-//# sourceMappingURL=pesquisa.module.js.map
+//# sourceMappingURL=sobre.module.js.map
 
 /***/ }),
 
-/***/ 283:
+/***/ 287:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PesquisaPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SobrePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__ = __webpack_require__(198);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,58 +59,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-var PesquisaPage = /** @class */ (function () {
-    function PesquisaPage(navCtrl, navParams, loadingCtrl, toastCtrl, remedioApi) {
+var SobrePage = /** @class */ (function () {
+    function SobrePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.loadingCtrl = loadingCtrl;
-        this.toastCtrl = toastCtrl;
-        this.remedioApi = remedioApi;
-        this.remedios = [];
+        this.descricao = 'Este app utiliza dados disponibilizados pela ANVISA :)';
     }
-    PesquisaPage.prototype.buscarRemedio = function (ev) {
-        var _this = this;
-        var remedio = ev.target.value;
-        if (!remedio || !remedio.trim()) {
-            this.remedios = [];
-            return;
-        }
-        this.remedioApi.getByNome(remedio).then(function (result) {
-            _this.criarLoading();
-            _this.remedios = result;
-        }).catch(function (error) {
-            _this.criarMensagem('Ooops! Erro ao listar o remédio.');
-        });
-    };
-    PesquisaPage.prototype.abrirRemedio = function (remedio) {
-        this.navCtrl.push('RemedioDetalhesPage', {
-            remedio: remedio
-        });
-    };
-    PesquisaPage.prototype.criarLoading = function () {
-        return this.loadingCtrl.create({
-            content: "Carregando...",
-            duration: 3000
-        }).present();
-    };
-    PesquisaPage.prototype.criarMensagem = function (mensagem) {
-        return this.toastCtrl.create({
-            message: mensagem,
-            position: 'top',
-            duration: 3000
-        }).present();
-    };
-    PesquisaPage = __decorate([
+    SobrePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app-full\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Pesquisa</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Pesquise pelo nome do seu remédio"></ion-searchbar>\n  <ion-list>\n    <button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">\n      <h2>{{remedio.nome}}</h2>\n      <p>{{remedio.laboratorioNome}}</p>\n      <p>{{remedio.apresentacao}}</p>\n      <ion-note item-end *ngIf="remedio.tarja">{{remedio.tarja}}</ion-note>\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app-full\src\pages\pesquisa\pesquisa.html"*/
+            selector: 'page-sobre',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\sobre\sobre.html"*/'<ion-header>\n\n    <ion-navbar>\n\n      <ion-title>Sobre</ion-title>\n\n    </ion-navbar>\n\n  </ion-header>\n\n\n\n<ion-content>\n\n    <p>{{descricao}}</p>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\sobre\sobre.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__["a" /* RemedioApi */]])
-    ], PesquisaPage);
-    return PesquisaPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], SobrePage);
+    return SobrePage;
 }());
 
-//# sourceMappingURL=pesquisa.js.map
+//# sourceMappingURL=sobre.js.map
 
 /***/ })
 

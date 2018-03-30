@@ -5,8 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
-import { RemediosMock } from '../mocks/providers/remedios-mock';
 import { RemedioApi } from '../providers/providers';
+import { RemediosMock } from '../mocks/providers/remedios-mock';
 import { MyApp } from './app.component';
 
 @NgModule({

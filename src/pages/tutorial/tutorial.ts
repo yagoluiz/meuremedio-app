@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, MenuController, NavController, Platform } from 'ionic-angular';
 
+import { MainPage } from '../pages';
+
 export interface Slide {
   titulo: string;
   descricao: string;
@@ -39,7 +41,7 @@ export class TutorialPage {
   }
 
   iniciarApp() {
-    this.navCtrl.setRoot('PesquisaPage', {}, {
+    this.navCtrl.setRoot(MainPage, {}, {
       animate: true,
       direction: 'forward'
     });
