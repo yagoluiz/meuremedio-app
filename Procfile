@@ -1,0 +1,1 @@
+web: npm rum build && npm start
