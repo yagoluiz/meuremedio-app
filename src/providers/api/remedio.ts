@@ -12,7 +12,7 @@ export class RemedioApi {
     constructor(public http: HttpClient) { }
 
     async getByNome(remedio: string) {
-        const response = <Array<Remedio>>await this.http.get(this.API_URL + 'consulta' + '/' + remedio).toPromise();
+        const response = <Array<Remedio>>await this.http.get(`${this.API_URL}consulta/${remedio}`).toPromise();
         return response;
     }
 }

@@ -25,6 +25,7 @@
     "@ionic-native/core": "4.5.3",
     "@ionic-native/splash-screen": "4.5.3",
     "@ionic-native/status-bar": "4.5.3",
+    "@ionic/app-scripts": "3.1.8",
     "@ngx-translate/http-loader": "^2.0.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
@@ -34,9 +35,8 @@
     "morgan": "^1.9.0",
     "rxjs": "5.5.7",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.20",
-    "@ionic/app-scripts": "3.1.8",
-    "typescript": "~2.6.2"
+    "typescript": "~2.6.2",
+    "zone.js": "0.8.20"
   },
   "devDependencies": {},
   "description": "An Ionic project"
