@@ -3,6 +3,8 @@ import { IonicPage, MenuController, NavController, Platform } from 'ionic-angula
 
 import { MainPage } from '../pages';
 
+import { GoogleAnalytics } from "../../app/google-analytics";
+
 export interface Slide {
   titulo: string;
   descricao: string;
@@ -20,6 +22,7 @@ export class TutorialPage {
   dir: string = 'ltr';
 
   constructor(public navCtrl: NavController, public menuCtrl: MenuController, public platform: Platform) {
+    GoogleAnalytics.sendPageViewForPage('/tutorial');
     this.dir = platform.dir();
     this.slides = [
       {
@@ -41,6 +44,7 @@ export class TutorialPage {
   }
 
   iniciarApp() {
+    GoogleAnalytics.sendEvent('click', "Tutorial:Iniciar:App");
     this.navCtrl.setRoot(MainPage, {}, {
       animate: true,
       direction: 'forward'

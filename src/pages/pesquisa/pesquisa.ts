@@ -4,6 +4,8 @@ import { IonicPage, NavController, NavParams, LoadingController, ToastController
 import { Remedio } from '../../models/remedio'
 import { RemedioApi } from '../../providers/api/remedio'
 
+import { GoogleAnalytics } from "../../app/google-analytics";
+
 @IonicPage()
 @Component({
   selector: 'page-pesquisa',
@@ -12,9 +14,12 @@ import { RemedioApi } from '../../providers/api/remedio'
 export class PesquisaPage {
   remedios: Array<Remedio> = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public toastCtrl: ToastController, public remedioApi: RemedioApi) { }
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public toastCtrl: ToastController, public remedioApi: RemedioApi) {
+    GoogleAnalytics.sendPageViewForPage('/pesquisa');
+  }
 
   async buscarRemedio(ev) {
+    GoogleAnalytics.sendEvent('click', "Pesquisa:Buscar:Remedio");
     let remedio = ev.target.value;
     if (!remedio || !remedio.trim()) {
       this.remedios = [];
@@ -29,6 +34,7 @@ export class PesquisaPage {
   }
 
   abrirRemedio(remedio: Remedio) {
+    GoogleAnalytics.sendEvent('click', "Pesquisa:Abrir:Remedio");
     this.navCtrl.push('RemedioDetalhesPage', {
       remedio: remedio
     });
