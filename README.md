@@ -1,6 +1,7 @@
 # APP Meu Remédio
 
-[![CircleCI](https://circleci.com/gh/yagoluiz/meuremedio.svg?style=svg)](https://circleci.com/gh/yagoluiz/meuremedio-app)
+[![CircleCI](https://circleci.com/gh/yagoluiz/meuremedio-app.svg?style=svg)]
+(https://circleci.com/gh/yagoluiz/meuremedio-app)
 
 * Site do projeto (deploy Heroku) => https://meuremedioweb.herokuapp.com
 
