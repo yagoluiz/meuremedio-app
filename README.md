@@ -1,5 +1,7 @@
 # APP Meu Remédio
 
+[![CircleCI](https://circleci.com/gh/yagoluiz/meuremedio.svg?style=svg)](https://circleci.com/gh/yagoluiz/meuremedio-app)
+
 * Site do projeto (deploy Heroku) => https://meuremedioweb.herokuapp.com
 
 * Informações disponibilizados no site da [ANVISA](http://portal.anvisa.gov.br/listas-de-precos);
