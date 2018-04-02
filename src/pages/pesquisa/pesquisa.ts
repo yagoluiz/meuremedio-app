@@ -39,6 +39,7 @@ export class PesquisaPage {
     }).catch((error: any) => {
       //TODO: Refatoração quando serviço estiver refatorado (HTTPS)
       this.criarMensagem('Ooops! Erro ao listar remédio.');
+      
 //      this.MockRemedios = this.remediosMock.query({
 //        principioAtivo: remedio
 //      });
