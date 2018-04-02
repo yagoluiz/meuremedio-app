@@ -8,7 +8,7 @@ import { FirstRunPage } from '../pages/pages';
 @Component({
   template: `<ion-menu [content]="content">
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="primary">
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>

@@ -1,1 +1,163 @@
-webpackJsonp([0],{245:function(l,n,u){"use strict";function a(l){return r._19(2,[(l()(),r.Z(0,0,null,null,1,"div",[["class","slide-zoom"]],null,null,null,null,null)),r._10(null,0)],null,null)}function i(l){return r._19(2,[(l()(),r.Z(0,0,null,null,3,"div",[["class","swiper-container"]],[[1,"dir",0]],null,null,null,null)),(l()(),r.Z(1,0,null,null,1,"div",[["class","swiper-wrapper"]],null,null,null,null,null)),r._10(null,0),(l()(),r.Z(3,0,null,null,0,"div",[["class","swiper-pagination"]],[[2,"hide",null]],null,null,null,null))],null,function(l,n){var u=n.component;l(n,0,0,u._rtl?"rtl":null);l(n,3,0,!u.pager)})}function o(l){return r._19(0,[(l()(),r.Z(0,0,null,null,7,"ion-buttons",[["end",""]],null,null,null,null,null)),r.Y(1,16384,null,1,C.a,[j.a,r.j,r.z,[2,Y.a],[2,y.a]],null,null),r._16(603979776,1,{_buttons:1}),(l()(),r._18(-1,null,["\n      "])),(l()(),r.Z(4,0,null,null,2,"button",[["color","primary"],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.iniciarApp()&&a}return a},w.b,w.a)),r.Y(5,1097728,[[1,4]],0,z.a,[[8,""],j.a,r.j,r.z],{color:[0,"color"]},null),(l()(),r._18(-1,0,["Sair"])),(l()(),r._18(-1,null,["\n    "]))],function(l,n){l(n,5,0,"primary")},null)}function e(l){return r._19(0,[(l()(),r.Z(0,0,null,null,8,"ion-slide",[],null,null,null,a,P)),r.Y(1,180224,null,0,A.a,[r.j,r.z,x.a],null,null),(l()(),r._18(-1,0,["\n      "])),(l()(),r.Z(3,0,null,0,0,"img",[["class","slide-image"]],[[8,"src",4]],null,null,null,null)),(l()(),r._18(-1,0,["\n      "])),(l()(),r.Z(5,0,null,0,0,"h2",[["class","slide-titulo"]],[[8,"innerHTML",1]],null,null,null,null)),(l()(),r._18(-1,0,["\n      "])),(l()(),r.Z(7,0,null,0,0,"p",[],[[8,"innerHTML",1]],null,null,null,null)),(l()(),r._18(-1,0,["\n    "]))],null,function(l,n){l(n,3,0,n.context.$implicit.imagem);l(n,5,0,n.context.$implicit.titulo);l(n,7,0,n.context.$implicit.descricao)})}function t(l){return r._19(0,[(l()(),r.Z(0,0,null,null,9,"ion-header",[["no-shadow",""]],null,null,null,null,null)),r.Y(1,16384,null,0,S.a,[j.a,r.j,r.z,[2,T.a]],null,null),(l()(),r._18(-1,null,["\n  "])),(l()(),r.Z(3,0,null,null,5,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,q.b,q.a)),r.Y(4,49152,null,0,y.a,[F.a,[2,T.a],[2,I.a],j.a,r.j,r.z],null,null),(l()(),r._18(-1,3,["\n    "])),(l()(),r.U(16777216,null,2,1,null,o)),r.Y(7,16384,null,0,W.i,[r.I,r.F],{ngIf:[0,"ngIf"]},null),(l()(),r._18(-1,3,["\n  "])),(l()(),r._18(-1,null,["\n"])),(l()(),r._18(-1,null,["\n\n"])),(l()(),r.Z(11,0,null,null,25,"ion-content",[["no-bounce",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,E.b,E.a)),r.Y(12,4374528,null,0,V.a,[j.a,B.a,L.a,r.j,r.z,F.a,M.a,r.u,[2,T.a],[2,I.a]],null,null),(l()(),r._18(-1,1,["\n  "])),(l()(),r.Z(14,0,null,1,21,"ion-slides",[["pager","true"]],null,[[null,"ionSlideWillChange"]],function(l,n,u){var a=!0;if("ionSlideWillChange"===n){a=!1!==l.component.verificarSlide(u)&&a}return a},i,O)),r.Y(15,1228800,null,0,x.a,[j.a,B.a,r.u,[2,T.a],r.j,r.z],{pager:[0,"pager"],dir:[1,"dir"]},{ionSlideWillChange:"ionSlideWillChange"}),(l()(),r._18(-1,0,["\n    "])),(l()(),r.U(16777216,null,0,1,null,e)),r.Y(18,802816,null,0,W.h,[r.I,r.F,r.p],{ngForOf:[0,"ngForOf"]},null),(l()(),r._18(-1,0,["\n    "])),(l()(),r.Z(20,0,null,0,14,"ion-slide",[],null,null,null,a,P)),r.Y(21,180224,null,0,A.a,[r.j,r.z,x.a],null,null),(l()(),r._18(-1,0,["\n      "])),(l()(),r.Z(23,0,null,0,0,"img",[["class","slide-imagem"],["src","assets/img/ica-slidebox-img-4.png"]],null,null,null,null,null)),(l()(),r._18(-1,0,["\n      "])),(l()(),r.Z(25,0,null,0,1,"h2",[["class","slide-titulo"]],null,null,null,null,null)),(l()(),r._18(-1,null,["Tudo pronto?"])),(l()(),r._18(-1,0,["\n      "])),(l()(),r.Z(28,0,null,0,5,"button",[["clear",""],["icon-end",""],["ion-button",""],["large",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.iniciarApp()&&a}return a},w.b,w.a)),r.Y(29,1097728,null,0,z.a,[[8,""],j.a,r.j,r.z],{large:[0,"large"],clear:[1,"clear"]},null),(l()(),r._18(-1,0,["\n        Use o app agora\n        "])),(l()(),r.Z(31,0,null,0,1,"ion-icon",[["name","arrow-forward"],["role","img"]],[[2,"hide",null]],null,null,null,null)),r.Y(32,147456,null,0,X.a,[j.a,r.j,r.z],{name:[0,"name"]},null),(l()(),r._18(-1,0,["\n      "])),(l()(),r._18(-1,0,["\n    "])),(l()(),r._18(-1,0,["\n  "])),(l()(),r._18(-1,1,["\n"])),(l()(),r._18(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,7,0,u.sair);l(n,15,0,"true",r._2(1,"",u.dir,""));l(n,18,0,u.slides);l(n,29,0,"","");l(n,32,0,"arrow-forward")},function(l,n){l(n,3,0,r._11(n,4)._hidden,r._11(n,4)._sbPadding);l(n,11,0,r._11(n,12).statusbarPadding,r._11(n,12)._hasRefresher);l(n,31,0,r._11(n,32)._hidden)})}Object.defineProperty(n,"__esModule",{value:!0});var r=u(0),s=(u(5),u(114),u(200)),c=u(246),d=function(){function l(l,n,u){this.navCtrl=l,this.menuCtrl=n,this.platform=u,this.sair=!0,this.dir="ltr",c.a.sendPageViewForPage("/tutorial"),this.dir=u.dir(),this.slides=[{titulo:"Bem-vindo ao meu remédio :)",descricao:"O <b>meu remédio</b> é um app para consulta de medicamentos, desde de preços máximo que podem ser oferecidos pelo consumidar até informações detalhadas da medicação.",imagem:"assets/img/ica-slidebox-img-1.png"},{titulo:"Como usar o meu rémedio?",descricao:"Pesquise o nome do rémedio desejado e o app irá trazer várias informações, além do preço máximo disponível ao consumidor. Bem fácil, não é mesmo?",imagem:"assets/img/ica-slidebox-img-2.png"},{titulo:"Como começar?",descricao:"Comece agora! Entedeu tudo direitinho? Termine o tutorial e comece a usar o app já :)",imagem:"assets/img/ica-slidebox-img-3.png"}]}return l.prototype.iniciarApp=function(){c.a.sendEvent("click","Tutorial:Iniciar:App"),this.navCtrl.setRoot(s.b,{},{animate:!0,direction:"forward"})},l.prototype.verificarSlide=function(l){this.sair=!l.isEnd()},l.prototype.ionViewDidEnter=function(){this.menuCtrl.enable(!1)},l.prototype.ionViewWillLeave=function(){this.menuCtrl.enable(!0)},l}(),m=function(){return function(){}}(),g=u(189),p=u(190),_=u(191),b=u(192),f=u(193),v=u(194),h=u(195),k=u(196),Z=u(197),C=u(124),j=u(1),Y=u(34),y=u(33),w=u(43),z=u(20),A=u(118),x=u(74),P=r.X({encapsulation:2,styles:[],data:{}}),S=u(73),T=u(4),q=u(247),F=u(8),I=u(19),W=u(11),E=u(198),V=u(21),B=u(3),L=u(9),M=u(24),O=r.X({encapsulation:2,styles:[],data:{}}),X=u(42),U=u(22),$=r.X({encapsulation:2,styles:[],data:{}}),H=r.V("page-tutorial",d,function(l){return r._19(0,[(l()(),r.Z(0,0,null,null,1,"page-tutorial",[],null,null,null,t,$)),r.Y(1,49152,null,0,d,[I.a,U.a,B.a],null,null)],null,null)},{},{},[]),R=u(18),D=u(115),J=u(37);u.d(n,"TutorialPageModuleNgFactory",function(){return N});var N=r.W(m,[],function(l){return r._7([r._8(512,r.i,r.S,[[8,[g.a,p.a,_.a,b.a,f.a,v.a,h.a,k.a,Z.a,H]],[3,r.i],r.s]),r._8(4608,W.k,W.j,[r.r,[2,W.s]]),r._8(4608,R.k,R.k,[]),r._8(4608,R.c,R.c,[]),r._8(512,W.b,W.b,[]),r._8(512,R.j,R.j,[]),r._8(512,R.d,R.d,[]),r._8(512,R.i,R.i,[]),r._8(512,D.a,D.a,[]),r._8(512,D.b,D.b,[]),r._8(512,m,m,[]),r._8(256,J.a,d,[])])})},246:function(l,n,u){"use strict";u.d(n,"a",function(){return a});var a=function(){function l(){}return l.googleAnalytics=function(){for(var l=[],n=0;n<arguments.length;n++)l[n]=arguments[n];(u=window).ga.apply(u,l);var u},l.sendPageViewForPage=function(n){l.googleAnalytics("set","page",n),l.googleAnalytics("send","pageview")},l.sendEvent=function(n,u,a){void 0===a&&(a=""),l.googleAnalytics("send",{hitType:"event",eventCategory:n,eventAction:u,eventLabel:a})},l}()},247:function(l,n,u){"use strict";function a(l){return i._19(0,[(l()(),i.Z(0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),i.Y(1,278528,null,0,o.g,[i.p,i.q,i.j,i.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),i.Z(2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.backButtonClick(u)&&a}return a},e.b,e.a)),i.Y(3,278528,null,0,o.g,[i.p,i.q,i.j,i.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),i.Y(4,1097728,null,0,t.a,[[8,"bar-button"],r.a,i.j,i.z],null,null),(l()(),i.Z(5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),i.Y(6,278528,null,0,o.g,[i.p,i.q,i.j,i.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),i.Y(7,147456,null,0,s.a,[r.a,i.j,i.z],{name:[0,"name"]},null),(l()(),i.Z(8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),i.Y(9,278528,null,0,o.g,[i.p,i.q,i.j,i.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),i._18(10,null,["",""])),i._10(null,0),i._10(null,1),i._10(null,2),(l()(),i.Z(14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),i.Y(15,278528,null,0,o.g,[i.p,i.q,i.j,i.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),i._10(null,3)],function(l,n){var u=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+u._mode);l(n,3,0,"back-button","back-button-"+u._mode);l(n,6,0,"back-button-icon","back-button-icon-"+u._mode);l(n,7,0,u._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+u._mode);l(n,15,0,"toolbar-content","toolbar-content-"+u._mode)},function(l,n){var u=n.component;l(n,2,0,u._hideBb);l(n,5,0,i._11(n,7)._hidden);l(n,10,0,u._backText)})}u.d(n,"a",function(){return c}),n.b=a;var i=u(0),o=u(11),e=u(43),t=u(20),r=u(1),s=u(42),c=(u(4),u(19),i.X({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([0],{
+
+/***/ 284:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TutorialPageModule", function() { return TutorialPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tutorial__ = __webpack_require__(290);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var TutorialPageModule = /** @class */ (function () {
+    function TutorialPageModule() {
+    }
+    TutorialPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__tutorial__["a" /* TutorialPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__tutorial__["a" /* TutorialPage */])
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__tutorial__["a" /* TutorialPage */]
+            ]
+        })
+    ], TutorialPageModule);
+    return TutorialPageModule;
+}());
+
+//# sourceMappingURL=tutorial.module.js.map
+
+/***/ }),
+
+/***/ 285:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoogleAnalytics; });
+var GoogleAnalytics = /** @class */ (function () {
+    function GoogleAnalytics() {
+    }
+    GoogleAnalytics.googleAnalytics = function () {
+        var fields = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            fields[_i] = arguments[_i];
+        }
+        (_a = window).ga.apply(_a, fields);
+        var _a;
+    };
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/single-page-applications?hl=pt-br
+    GoogleAnalytics.sendPageViewForPage = function (nomePage) {
+        GoogleAnalytics.googleAnalytics('set', 'page', nomePage);
+        GoogleAnalytics.googleAnalytics('send', 'pageview');
+    };
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/events?hl=pt-br
+    GoogleAnalytics.sendEvent = function (eventCategory, eventAction, eventLabel) {
+        if (eventLabel === void 0) { eventLabel = ''; }
+        GoogleAnalytics.googleAnalytics('send', {
+            hitType: 'event',
+            eventCategory: eventCategory,
+            eventAction: eventAction,
+            eventLabel: eventLabel
+        });
+    };
+    return GoogleAnalytics;
+}());
+
+//# sourceMappingURL=google-analytics.js.map
+
+/***/ }),
+
+/***/ 290:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TutorialPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__ = __webpack_require__(285);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var TutorialPage = /** @class */ (function () {
+    function TutorialPage(navCtrl, menuCtrl, platform) {
+        this.navCtrl = navCtrl;
+        this.menuCtrl = menuCtrl;
+        this.platform = platform;
+        this.sair = true;
+        this.dir = 'ltr';
+        __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__["a" /* GoogleAnalytics */].sendPageViewForPage('/tutorial');
+        this.dir = platform.dir();
+        this.slides = [
+            {
+                titulo: 'Bem-vindo ao meu remédio :)',
+                descricao: 'O <b>meu remédio</b> é um app para consulta de medicamentos, desde de preços máximo que podem ser oferecidos pelo consumidar até informações detalhadas da medicação.',
+                imagem: 'assets/img/ica-slidebox-img-1.png',
+            },
+            {
+                titulo: 'Como usar o meu rémedio?',
+                descricao: 'Pesquise o nome do rémedio desejado e o app irá trazer várias informações, além do preço máximo disponível ao consumidor. Bem fácil, não é mesmo?',
+                imagem: 'assets/img/ica-slidebox-img-2.png',
+            },
+            {
+                titulo: 'Como começar?',
+                descricao: 'Comece agora! Entedeu tudo direitinho? Termine o tutorial e comece a usar o app já :)',
+                imagem: 'assets/img/ica-slidebox-img-3.png',
+            }
+        ];
+    }
+    TutorialPage.prototype.iniciarApp = function () {
+        __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__["a" /* GoogleAnalytics */].sendEvent('click', "Tutorial:Iniciar:App");
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__pages__["b" /* MainPage */], {}, {
+            animate: true,
+            direction: 'forward'
+        });
+    };
+    TutorialPage.prototype.verificarSlide = function (slider) {
+        this.sair = !slider.isEnd();
+    };
+    TutorialPage.prototype.ionViewDidEnter = function () {
+        this.menuCtrl.enable(false);
+    };
+    TutorialPage.prototype.ionViewWillLeave = function () {
+        this.menuCtrl.enable(true);
+    };
+    TutorialPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-tutorial',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\tutorial\tutorial.html"*/'<ion-header no-shadow>\n  <ion-navbar>\n    <ion-buttons end *ngIf="sair">\n      <button ion-button (click)="iniciarApp()" color="primary">Sair</button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-bounce>\n  <ion-slides pager="true" dir="{{dir}}" (ionSlideWillChange)="verificarSlide($event)">\n    <ion-slide *ngFor="let slide of slides">\n      <img [src]="slide.imagem" class="slide-image" />\n      <h2 class="slide-titulo" [innerHTML]="slide.titulo"></h2>\n      <p [innerHTML]="slide.descricao"></p>\n    </ion-slide>\n    <ion-slide>\n      <img src="assets/img/ica-slidebox-img-4.png" class="slide-imagem" />\n      <h2 class="slide-titulo">Tudo pronto?</h2>\n      <button ion-button icon-end large clear (click)="iniciarApp()">\n        Use o app agora\n        <ion-icon name="arrow-forward"></ion-icon>\n      </button>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\tutorial\tutorial.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]])
+    ], TutorialPage);
+    return TutorialPage;
+}());
+
+//# sourceMappingURL=tutorial.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=0.js.map

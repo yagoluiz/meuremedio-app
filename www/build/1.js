@@ -1,1 +1,122 @@
-webpackJsonp([1],{243:function(l,n,u){"use strict";function a(l){return t._19(0,[(l()(),t.Z(0,0,null,null,10,"ion-header",[],null,null,null,null,null)),t.Y(1,16384,null,0,f.a,[v.a,t.j,t.z,[2,h.a]],null,null),(l()(),t._18(-1,null,["\n    "])),(l()(),t.Z(3,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,j.b,j.a)),t.Y(4,49152,null,0,C.a,[m.a,[2,h.a],[2,A.a],v.a,t.j,t.z],null,null),(l()(),t._18(-1,3,["\n      "])),(l()(),t.Z(6,0,null,3,2,"ion-title",[],null,null,null,Y.b,Y.a)),t.Y(7,49152,null,0,y.a,[v.a,t.j,t.z,[2,Z.a],[2,C.a]],null,null),(l()(),t._18(-1,0,["Sobre"])),(l()(),t._18(-1,3,["\n    "])),(l()(),t._18(-1,null,["\n  "])),(l()(),t._18(-1,null,["\n\n"])),(l()(),t.Z(12,0,null,null,5,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,z.b,z.a)),t.Y(13,4374528,null,0,P.a,[v.a,w.a,q.a,t.j,t.z,m.a,x.a,t.u,[2,h.a],[2,A.a]],null,null),(l()(),t._18(-1,1,["\n    "])),(l()(),t.Z(15,0,null,1,1,"p",[],null,null,null,null,null)),(l()(),t._18(16,null,["",""])),(l()(),t._18(-1,1,["\n"]))],null,function(l,n){var u=n.component;l(n,3,0,t._11(n,4)._hidden,t._11(n,4)._sbPadding);l(n,12,0,t._11(n,13).statusbarPadding,t._11(n,13)._hasRefresher);l(n,16,0,u.descricao)})}Object.defineProperty(n,"__esModule",{value:!0});var t=u(0),o=(u(5),u(114),u(246)),e=function(){return function(l,n){this.navCtrl=l,o.a.sendPageViewForPage("/sobre"),this.descricao="Este app utiliza dados disponibilizados pela ANVISA :)"}}(),s=function(){return function(){}}(),i=u(189),c=u(190),r=u(191),b=u(192),d=u(193),_=u(194),g=u(195),k=u(196),p=u(197),f=u(73),v=u(1),h=u(4),j=u(247),C=u(33),m=u(8),A=u(19),Y=u(199),y=u(53),Z=u(34),z=u(198),P=u(21),w=u(3),q=u(9),x=u(24),S=u(10),V=t.X({encapsulation:2,styles:[],data:{}}),F=t.V("page-sobre",e,function(l){return t._19(0,[(l()(),t.Z(0,0,null,null,1,"page-sobre",[],null,null,null,a,V)),t.Y(1,49152,null,0,e,[A.a,S.a],null,null)],null,null)},{},{},[]),B=u(11),E=u(18),I=u(115),M=u(37);u.d(n,"SobrePageModuleNgFactory",function(){return N});var N=t.W(s,[],function(l){return t._7([t._8(512,t.i,t.S,[[8,[i.a,c.a,r.a,b.a,d.a,_.a,g.a,k.a,p.a,F]],[3,t.i],t.s]),t._8(4608,B.k,B.j,[t.r,[2,B.s]]),t._8(4608,E.k,E.k,[]),t._8(4608,E.c,E.c,[]),t._8(512,B.b,B.b,[]),t._8(512,E.j,E.j,[]),t._8(512,E.d,E.d,[]),t._8(512,E.i,E.i,[]),t._8(512,I.a,I.a,[]),t._8(512,I.b,I.b,[]),t._8(512,s,s,[]),t._8(256,M.a,e,[])])})},246:function(l,n,u){"use strict";u.d(n,"a",function(){return a});var a=function(){function l(){}return l.googleAnalytics=function(){for(var l=[],n=0;n<arguments.length;n++)l[n]=arguments[n];(u=window).ga.apply(u,l);var u},l.sendPageViewForPage=function(n){l.googleAnalytics("set","page",n),l.googleAnalytics("send","pageview")},l.sendEvent=function(n,u,a){void 0===a&&(a=""),l.googleAnalytics("send",{hitType:"event",eventCategory:n,eventAction:u,eventLabel:a})},l}()},247:function(l,n,u){"use strict";function a(l){return t._19(0,[(l()(),t.Z(0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t.Y(1,278528,null,0,o.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t.Z(2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.backButtonClick(u)&&a}return a},e.b,e.a)),t.Y(3,278528,null,0,o.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t.Y(4,1097728,null,0,s.a,[[8,"bar-button"],i.a,t.j,t.z],null,null),(l()(),t.Z(5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t.Y(6,278528,null,0,o.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t.Y(7,147456,null,0,c.a,[i.a,t.j,t.z],{name:[0,"name"]},null),(l()(),t.Z(8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t.Y(9,278528,null,0,o.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),t._18(10,null,["",""])),t._10(null,0),t._10(null,1),t._10(null,2),(l()(),t.Z(14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t.Y(15,278528,null,0,o.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t._10(null,3)],function(l,n){var u=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+u._mode);l(n,3,0,"back-button","back-button-"+u._mode);l(n,6,0,"back-button-icon","back-button-icon-"+u._mode);l(n,7,0,u._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+u._mode);l(n,15,0,"toolbar-content","toolbar-content-"+u._mode)},function(l,n){var u=n.component;l(n,2,0,u._hideBb);l(n,5,0,t._11(n,7)._hidden);l(n,10,0,u._backText)})}u.d(n,"a",function(){return r}),n.b=a;var t=u(0),o=u(11),e=u(43),s=u(20),i=u(1),c=u(42),r=(u(4),u(19),t.X({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([1],{
+
+/***/ 282:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SobrePageModule", function() { return SobrePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sobre__ = __webpack_require__(288);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var SobrePageModule = /** @class */ (function () {
+    function SobrePageModule() {
+    }
+    SobrePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__sobre__["a" /* SobrePage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sobre__["a" /* SobrePage */])
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__sobre__["a" /* SobrePage */]
+            ]
+        })
+    ], SobrePageModule);
+    return SobrePageModule;
+}());
+
+//# sourceMappingURL=sobre.module.js.map
+
+/***/ }),
+
+/***/ 285:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoogleAnalytics; });
+var GoogleAnalytics = /** @class */ (function () {
+    function GoogleAnalytics() {
+    }
+    GoogleAnalytics.googleAnalytics = function () {
+        var fields = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            fields[_i] = arguments[_i];
+        }
+        (_a = window).ga.apply(_a, fields);
+        var _a;
+    };
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/single-page-applications?hl=pt-br
+    GoogleAnalytics.sendPageViewForPage = function (nomePage) {
+        GoogleAnalytics.googleAnalytics('set', 'page', nomePage);
+        GoogleAnalytics.googleAnalytics('send', 'pageview');
+    };
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/events?hl=pt-br
+    GoogleAnalytics.sendEvent = function (eventCategory, eventAction, eventLabel) {
+        if (eventLabel === void 0) { eventLabel = ''; }
+        GoogleAnalytics.googleAnalytics('send', {
+            hitType: 'event',
+            eventCategory: eventCategory,
+            eventAction: eventAction,
+            eventLabel: eventLabel
+        });
+    };
+    return GoogleAnalytics;
+}());
+
+//# sourceMappingURL=google-analytics.js.map
+
+/***/ }),
+
+/***/ 288:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SobrePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_google_analytics__ = __webpack_require__(285);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var SobrePage = /** @class */ (function () {
+    function SobrePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        __WEBPACK_IMPORTED_MODULE_2__app_google_analytics__["a" /* GoogleAnalytics */].sendPageViewForPage('/sobre');
+        this.descricao = 'Este app utiliza dados disponibilizados pela ANVISA :)';
+    }
+    SobrePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-sobre',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\sobre\sobre.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n      <ion-title>Sobre</ion-title>\n\n    </ion-navbar>\n\n  </ion-header>\n\n\n\n<ion-content>\n\n    <p>{{descricao}}</p>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\sobre\sobre.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], SobrePage);
+    return SobrePage;
+}());
+
+//# sourceMappingURL=sobre.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=1.js.map

@@ -1,13 +1,14 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Pesquisa</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Pesquise pelo nome do seu remédio"></ion-searchbar>
+  <ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>
   <ion-list>
-    <button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">
+    <!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS): remedios = MockRemedios -->
+    <button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of MockRemedios">
       <h2>{{remedio.nome}}</h2>
       <p>{{remedio.laboratorioNome}}</p>
       <p>{{remedio.apresentacao}}</p>

@@ -4,6 +4,8 @@ import { IonicPage, NavController, NavParams, LoadingController, ToastController
 import { Remedio } from '../../models/remedio'
 import { RemedioApi } from '../../providers/api/remedio'
 
+import { RemediosMock } from '../../providers/providers';
+
 import { GoogleAnalytics } from "../../app/google-analytics";
 
 @IonicPage()
@@ -13,8 +15,14 @@ import { GoogleAnalytics } from "../../app/google-analytics";
 })
 export class PesquisaPage {
   remedios: Array<Remedio> = [];
+  MockRemedios: any = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public toastCtrl: ToastController, public remedioApi: RemedioApi) {
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    public loadingCtrl: LoadingController,
+    public toastCtrl: ToastController,
+    public remedioApi: RemedioApi,
+    public remediosMock: RemediosMock) {
     GoogleAnalytics.sendPageViewForPage('/pesquisa');
   }
 
@@ -29,7 +37,11 @@ export class PesquisaPage {
       this.criarLoading();
       this.remedios = result;
     }).catch((error: any) => {
-      this.criarMensagem('Ooops! Erro ao listar remédio.');
+      //TODO: Refatoração quando serviço estiver refatorado (HTTPS)
+      // this.criarMensagem('Ooops! Erro ao listar remédio.');
+      this.MockRemedios = this.remediosMock.query({
+        principioAtivo: remedio
+      });
     });
   }
 

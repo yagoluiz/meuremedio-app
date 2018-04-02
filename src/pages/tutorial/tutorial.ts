@@ -21,7 +21,9 @@ export class TutorialPage {
   sair = true;
   dir: string = 'ltr';
 
-  constructor(public navCtrl: NavController, public menuCtrl: MenuController, public platform: Platform) {
+  constructor(public navCtrl: NavController,
+    public menuCtrl: MenuController,
+    public platform: Platform) {
     GoogleAnalytics.sendPageViewForPage('/tutorial');
     this.dir = platform.dir();
     this.slides = [

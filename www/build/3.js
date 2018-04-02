@@ -1,1 +1,221 @@
-webpackJsonp([3],{241:function(n,l,u){"use strict";function e(n){return r._19(0,[r._16(402653184,1,{_searchbarInput:0}),r._16(402653184,2,{_searchbarIcon:0}),r._16(402653184,3,{_cancelButton:0}),(n()(),r.Z(3,0,null,null,8,"div",[["class","searchbar-input-container"]],null,null,null,null,null)),(n()(),r.Z(4,0,null,null,3,"button",[["class","searchbar-md-cancel"],["clear",""],["color","dark"],["ion-button",""],["mode","md"],["type","button"]],null,[[null,"click"],[null,"mousedown"]],function(n,l,u){var e=!0,t=n.component;if("click"===l){e=!1!==t.cancelSearchbar(u)&&e}if("mousedown"===l){e=!1!==t.cancelSearchbar(u)&&e}return e},X.b,X.a)),r.Y(5,1097728,null,0,U.a,[[8,""],Z.a,r.j,r.z],{color:[0,"color"],mode:[1,"mode"],clear:[2,"clear"]},null),(n()(),r.Z(6,0,null,0,1,"ion-icon",[["name","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),r.Y(7,147456,null,0,D.a,[Z.a,r.j,r.z],{name:[0,"name"]},null),(n()(),r.Z(8,0,[[2,0],["searchbarIcon",1]],null,0,"div",[["class","searchbar-search-icon"]],null,null,null,null,null)),(n()(),r.Z(9,0,[[1,0],["searchbarInput",1]],null,0,"input",[["class","searchbar-input"],["dir","auto"]],[[1,"placeholder",0],[1,"type",0],[1,"autocomplete",0],[1,"autocorrect",0],[1,"spellcheck",0]],[[null,"input"],[null,"blur"],[null,"focus"]],function(n,l,u){var e=!0,t=n.component;if("input"===l){e=!1!==t.inputChanged(u)&&e}if("blur"===l){e=!1!==t.inputBlurred()&&e}if("focus"===l){e=!1!==t.inputFocused()&&e}return e},null,null)),(n()(),r.Z(10,0,null,null,1,"button",[["class","searchbar-clear-icon"],["clear",""],["ion-button",""],["type","button"]],null,[[null,"click"],[null,"mousedown"]],function(n,l,u){var e=!0,t=n.component;if("click"===l){e=!1!==t.clearInput(u)&&e}if("mousedown"===l){e=!1!==t.clearInput(u)&&e}return e},X.b,X.a)),r.Y(11,1097728,null,0,U.a,[[8,""],Z.a,r.j,r.z],{mode:[0,"mode"],clear:[1,"clear"]},null),(n()(),r.Z(12,0,[[3,0]],null,2,"button",[["class","searchbar-ios-cancel"],["clear",""],["ion-button",""],["mode","ios"],["type","button"]],[[8,"tabIndex",0]],[[null,"click"],[null,"mousedown"]],function(n,l,u){var e=!0,t=n.component;if("click"===l){e=!1!==t.cancelSearchbar(u)&&e}if("mousedown"===l){e=!1!==t.cancelSearchbar(u)&&e}return e},X.b,X.a)),r.Y(13,1097728,[["cancelButton",4]],0,U.a,[[8,""],Z.a,r.j,r.z],{mode:[0,"mode"],clear:[1,"clear"]},null),(n()(),r._18(14,0,["",""]))],function(n,l){var u=l.component;n(l,5,0,"dark","md","");n(l,7,0,"md-arrow-back");n(l,11,0,u._mode,"");n(l,13,0,"ios","")},function(n,l){var u=l.component;n(l,6,0,r._11(l,7)._hidden);n(l,9,0,u.placeholder,u.type,u._autocomplete,u._autocorrect,u._spellcheck);n(l,12,0,u._isActive?1:-1);n(l,14,0,u.cancelButtonText)})}function t(n){return r._19(0,[(n()(),r.Z(0,0,null,null,2,"ion-note",[["item-end",""]],null,null,null,null,null)),r.Y(1,16384,null,0,j.a,[Z.a,r.j,r.z],null,null),(n()(),r._18(2,null,["",""]))],null,function(n,l){n(l,2,0,l.parent.context.$implicit.tarja)})}function a(n){return r._19(0,[(n()(),r.Z(0,0,null,null,18,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(n,l,u){var e=!0;if("click"===l){e=!1!==n.component.abrirRemedio(n.context.$implicit)&&e}return e},Y.b,Y.a)),r.Y(1,1097728,null,3,C.a,[x.a,Z.a,r.j,r.z,[2,P.a]],null,null),r._16(335544320,1,{contentLabel:0}),r._16(603979776,2,{_buttons:1}),r._16(603979776,3,{_icons:1}),r.Y(5,16384,null,0,A.a,[],null,null),(n()(),r._18(-1,2,["\n      "])),(n()(),r.Z(7,0,null,2,1,"h2",[],null,null,null,null,null)),(n()(),r._18(8,null,["",""])),(n()(),r._18(-1,2,["\n      "])),(n()(),r.Z(10,0,null,2,1,"p",[],null,null,null,null,null)),(n()(),r._18(11,null,["",""])),(n()(),r._18(-1,2,["\n      "])),(n()(),r.Z(13,0,null,2,1,"p",[],null,null,null,null,null)),(n()(),r._18(14,null,["",""])),(n()(),r._18(-1,2,["\n      "])),(n()(),r.U(16777216,null,4,1,null,t)),r.Y(17,16384,null,0,I.i,[r.I,r.F],{ngIf:[0,"ngIf"]},null),(n()(),r._18(-1,2,["\n    "]))],function(n,l){n(l,17,0,l.context.$implicit.tarja)},function(n,l){n(l,8,0,l.context.$implicit.nome);n(l,11,0,l.context.$implicit.laboratorioNome);n(l,14,0,l.context.$implicit.apresentacao)})}function o(n){return r._19(0,[(n()(),r.Z(0,0,null,null,10,"ion-header",[],null,null,null,null,null)),r.Y(1,16384,null,0,q.a,[Z.a,r.j,r.z,[2,z.a]],null,null),(n()(),r._18(-1,null,["\n  "])),(n()(),r.Z(3,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,B.b,B.a)),r.Y(4,49152,null,0,F.a,[R.a,[2,z.a],[2,S.a],Z.a,r.j,r.z],null,null),(n()(),r._18(-1,3,["\n    "])),(n()(),r.Z(6,0,null,3,2,"ion-title",[],null,null,null,$.b,$.a)),r.Y(7,49152,null,0,E.a,[Z.a,r.j,r.z,[2,L.a],[2,F.a]],null,null),(n()(),r._18(-1,0,["Pesquisa"])),(n()(),r._18(-1,3,["\n  "])),(n()(),r._18(-1,null,["\n"])),(n()(),r._18(-1,null,["\n\n"])),(n()(),r.Z(12,0,null,null,12,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,M.b,M.a)),r.Y(13,4374528,null,0,O.a,[Z.a,T.a,N.a,r.j,r.z,R.a,V.a,r.u,[2,z.a],[2,S.a]],null,null),(n()(),r._18(-1,1,["\n  "])),(n()(),r.Z(15,0,null,1,1,"ion-searchbar",[["placeholder","Pesquise pelo nome do seu remédio"]],[[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null]],[[null,"ionInput"]],function(n,l,u){var e=!0;if("ionInput"===l){e=!1!==n.component.buscarRemedio(u)&&e}return e},e,W)),r.Y(16,1294336,null,0,G.a,[Z.a,T.a,r.j,r.z,[2,J.f]],{placeholder:[0,"placeholder"]},{ionInput:"ionInput"}),(n()(),r._18(-1,1,["\n  "])),(n()(),r.Z(18,0,null,1,5,"ion-list",[],null,null,null,null,null)),r.Y(19,16384,null,0,H.a,[Z.a,r.j,r.z,T.a,K.l,N.a],null,null),(n()(),r._18(-1,null,["\n    "])),(n()(),r.U(16777216,null,null,1,null,a)),r.Y(22,802816,null,0,I.h,[r.I,r.F,r.p],{ngForOf:[0,"ngForOf"]},null),(n()(),r._18(-1,null,["\n  "])),(n()(),r._18(-1,1,["\n"]))],function(n,l){var u=l.component;n(l,16,0,"Pesquise pelo nome do seu remédio");n(l,22,0,u.remedios)},function(n,l){n(l,3,0,r._11(l,4)._hidden,r._11(l,4)._sbPadding);n(l,12,0,r._11(l,13).statusbarPadding,r._11(l,13)._hasRefresher);n(l,15,0,r._11(l,16)._animated,r._11(l,16)._value,r._11(l,16)._isActive,r._11(l,16)._showCancelButton,r._11(l,16)._shouldAlignLeft,r._11(l,16)._isFocus)})}Object.defineProperty(l,"__esModule",{value:!0});var r=u(0),c=(u(5),u(114),u(116)),i=u(246),s=this&&this.__awaiter||function(n,l,u,e){return new(u||(u=Promise))(function(t,a){function o(n){try{c(e.next(n))}catch(n){a(n)}}function r(n){try{c(e.throw(n))}catch(n){a(n)}}function c(n){n.done?t(n.value):new u(function(l){l(n.value)}).then(o,r)}c((e=e.apply(n,l||[])).next())})},d=this&&this.__generator||function(n,l){function u(u){return function(o){return function(u){if(e)throw new TypeError("Generator is already executing.");for(;r;)try{if(e=1,t&&(a=t[2&u[0]?"return":u[0]?"throw":"next"])&&!(a=a.call(t,u[1])).done)return a;switch(t=0,a&&(u=[0,a.value]),u[0]){case 0:case 1:a=u;break;case 4:return r.label++,{value:u[1],done:!1};case 5:r.label++,t=u[1],u=[0];continue;case 7:u=r.ops.pop(),r.trys.pop();continue;default:if(a=r.trys,!(a=a.length>0&&a[a.length-1])&&(6===u[0]||2===u[0])){r=0;continue}if(3===u[0]&&(!a||u[1]>a[0]&&u[1]<a[3])){r.label=u[1];break}if(6===u[0]&&r.label<a[1]){r.label=a[1],a=u;break}if(a&&r.label<a[2]){r.label=a[2],r.ops.push(u);break}a[2]&&r.ops.pop(),r.trys.pop();continue}u=l.call(n,r)}catch(n){u=[6,n],t=0}finally{e=a=0}if(5&u[0])throw u[1];return{value:u[0]?u[1]:void 0,done:!0}}([u,o])}}var e,t,a,o,r={label:0,sent:function(){if(1&a[0])throw a[1];return a[1]},trys:[],ops:[]};return o={next:u(0),throw:u(1),return:u(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o},b=function(){function n(n,l,u,e,t){this.navCtrl=n,this.navParams=l,this.loadingCtrl=u,this.toastCtrl=e,this.remedioApi=t,this.remedios=[],i.a.sendPageViewForPage("/pesquisa")}return n.prototype.buscarRemedio=function(n){return s(this,void 0,void 0,function(){var l,u=this;return d(this,function(e){switch(e.label){case 0:return i.a.sendEvent("click","Pesquisa:Buscar:Remedio"),(l=n.target.value)&&l.trim()?[4,this.remedioApi.getByNome(l).then(function(n){u.criarLoading(),u.remedios=n}).catch(function(n){u.criarMensagem("Ooops! Erro ao listar remédio.")})]:(this.remedios=[],[2]);case 1:return e.sent(),[2]}})})},n.prototype.abrirRemedio=function(n){i.a.sendEvent("click","Pesquisa:Abrir:Remedio"),this.navCtrl.push("RemedioDetalhesPage",{remedio:n})},n.prototype.criarLoading=function(){return this.loadingCtrl.create({content:"Carregando...",duration:3e3}).present()},n.prototype.criarMensagem=function(n){return this.toastCtrl.create({message:n,position:"top",duration:3e3}).present()},n}(),p=function(){return function(){}}(),_=u(189),f=u(190),h=u(191),m=u(192),g=u(193),k=u(194),v=u(195),y=u(196),w=u(197),j=u(123),Z=u(1),Y=u(122),C=u(16),x=u(15),P=u(38),A=u(54),I=u(11),q=u(73),z=u(4),B=u(247),F=u(33),R=u(8),S=u(19),$=u(199),E=u(53),L=u(34),M=u(198),O=u(21),T=u(3),N=u(9),V=u(24),X=u(43),U=u(20),D=u(42),G=u(117),J=u(18),W=r.X({encapsulation:2,styles:[],data:{}}),H=u(44),K=u(6),Q=u(10),nn=u(76),ln=u(77),un=r.X({encapsulation:2,styles:[],data:{}}),en=r.V("page-pesquisa",b,function(n){return r._19(0,[(n()(),r.Z(0,0,null,null,1,"page-pesquisa",[],null,null,null,o,un)),r.Y(1,49152,null,0,b,[S.a,Q.a,nn.a,ln.a,c.a],null,null)],null,null)},{},{},[]),tn=u(115),an=u(37);u.d(l,"PesquisaPageModuleNgFactory",function(){return on});var on=r.W(p,[],function(n){return r._7([r._8(512,r.i,r.S,[[8,[_.a,f.a,h.a,m.a,g.a,k.a,v.a,y.a,w.a,en]],[3,r.i],r.s]),r._8(4608,I.k,I.j,[r.r,[2,I.s]]),r._8(4608,J.k,J.k,[]),r._8(4608,J.c,J.c,[]),r._8(512,I.b,I.b,[]),r._8(512,J.j,J.j,[]),r._8(512,J.d,J.d,[]),r._8(512,J.i,J.i,[]),r._8(512,tn.a,tn.a,[]),r._8(512,tn.b,tn.b,[]),r._8(512,p,p,[]),r._8(256,an.a,b,[])])})},246:function(n,l,u){"use strict";u.d(l,"a",function(){return e});var e=function(){function n(){}return n.googleAnalytics=function(){for(var n=[],l=0;l<arguments.length;l++)n[l]=arguments[l];(u=window).ga.apply(u,n);var u},n.sendPageViewForPage=function(l){n.googleAnalytics("set","page",l),n.googleAnalytics("send","pageview")},n.sendEvent=function(l,u,e){void 0===e&&(e=""),n.googleAnalytics("send",{hitType:"event",eventCategory:l,eventAction:u,eventLabel:e})},n}()},247:function(n,l,u){"use strict";function e(n){return t._19(0,[(n()(),t.Z(0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),t.Y(1,278528,null,0,a.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),t.Z(2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(n,l,u){var e=!0;if("click"===l){e=!1!==n.component.backButtonClick(u)&&e}return e},o.b,o.a)),t.Y(3,278528,null,0,a.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t.Y(4,1097728,null,0,r.a,[[8,"bar-button"],c.a,t.j,t.z],null,null),(n()(),t.Z(5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),t.Y(6,278528,null,0,a.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t.Y(7,147456,null,0,i.a,[c.a,t.j,t.z],{name:[0,"name"]},null),(n()(),t.Z(8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),t.Y(9,278528,null,0,a.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),t._18(10,null,["",""])),t._10(null,0),t._10(null,1),t._10(null,2),(n()(),t.Z(14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),t.Y(15,278528,null,0,a.g,[t.p,t.q,t.j,t.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),t._10(null,3)],function(n,l){var u=l.component;n(l,1,0,"toolbar-background","toolbar-background-"+u._mode);n(l,3,0,"back-button","back-button-"+u._mode);n(l,6,0,"back-button-icon","back-button-icon-"+u._mode);n(l,7,0,u._bbIcon);n(l,9,0,"back-button-text","back-button-text-"+u._mode);n(l,15,0,"toolbar-content","toolbar-content-"+u._mode)},function(n,l){var u=l.component;n(l,2,0,u._hideBb);n(l,5,0,t._11(l,7)._hidden);n(l,10,0,u._backText)})}u.d(l,"a",function(){return s}),l.b=e;var t=u(0),a=u(11),o=u(43),r=u(20),c=u(1),i=u(42),s=(u(4),u(19),t.X({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([3],{
+
+/***/ 280:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PesquisaPageModule", function() { return PesquisaPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pesquisa__ = __webpack_require__(286);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var PesquisaPageModule = /** @class */ (function () {
+    function PesquisaPageModule() {
+    }
+    PesquisaPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__pesquisa__["a" /* PesquisaPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__pesquisa__["a" /* PesquisaPage */])
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__pesquisa__["a" /* PesquisaPage */]
+            ]
+        })
+    ], PesquisaPageModule);
+    return PesquisaPageModule;
+}());
+
+//# sourceMappingURL=pesquisa.module.js.map
+
+/***/ }),
+
+/***/ 285:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoogleAnalytics; });
+var GoogleAnalytics = /** @class */ (function () {
+    function GoogleAnalytics() {
+    }
+    GoogleAnalytics.googleAnalytics = function () {
+        var fields = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            fields[_i] = arguments[_i];
+        }
+        (_a = window).ga.apply(_a, fields);
+        var _a;
+    };
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/single-page-applications?hl=pt-br
+    GoogleAnalytics.sendPageViewForPage = function (nomePage) {
+        GoogleAnalytics.googleAnalytics('set', 'page', nomePage);
+        GoogleAnalytics.googleAnalytics('send', 'pageview');
+    };
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/events?hl=pt-br
+    GoogleAnalytics.sendEvent = function (eventCategory, eventAction, eventLabel) {
+        if (eventLabel === void 0) { eventLabel = ''; }
+        GoogleAnalytics.googleAnalytics('send', {
+            hitType: 'event',
+            eventCategory: eventCategory,
+            eventAction: eventAction,
+            eventLabel: eventLabel
+        });
+    };
+    return GoogleAnalytics;
+}());
+
+//# sourceMappingURL=google-analytics.js.map
+
+/***/ }),
+
+/***/ 286:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PesquisaPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_providers__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_google_analytics__ = __webpack_require__(285);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+var PesquisaPage = /** @class */ (function () {
+    function PesquisaPage(navCtrl, navParams, loadingCtrl, toastCtrl, remedioApi, remediosMock) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.remedioApi = remedioApi;
+        this.remediosMock = remediosMock;
+        this.remedios = [];
+        this.MockRemedios = [];
+        __WEBPACK_IMPORTED_MODULE_4__app_google_analytics__["a" /* GoogleAnalytics */].sendPageViewForPage('/pesquisa');
+    }
+    PesquisaPage.prototype.buscarRemedio = function (ev) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            var remedio;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        __WEBPACK_IMPORTED_MODULE_4__app_google_analytics__["a" /* GoogleAnalytics */].sendEvent('click', "Pesquisa:Buscar:Remedio");
+                        remedio = ev.target.value;
+                        if (!remedio || !remedio.trim()) {
+                            this.remedios = [];
+                            return [2 /*return*/];
+                        }
+                        return [4 /*yield*/, this.remedioApi.getByNome(remedio).then(function (result) {
+                                _this.criarLoading();
+                                _this.remedios = result;
+                            }).catch(function (error) {
+                                //TODO: Refatoração quando serviço estiver refatorado (HTTPS)
+                                // this.criarMensagem('Ooops! Erro ao listar remédio.');
+                                _this.MockRemedios = _this.remediosMock.query({
+                                    principioAtivo: remedio
+                                });
+                            })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    PesquisaPage.prototype.abrirRemedio = function (remedio) {
+        __WEBPACK_IMPORTED_MODULE_4__app_google_analytics__["a" /* GoogleAnalytics */].sendEvent('click', "Pesquisa:Abrir:Remedio");
+        this.navCtrl.push('RemedioDetalhesPage', {
+            remedio: remedio
+        });
+    };
+    PesquisaPage.prototype.criarLoading = function () {
+        return this.loadingCtrl.create({
+            content: "Carregando...",
+            duration: 3000
+        }).present();
+    };
+    PesquisaPage.prototype.criarMensagem = function (mensagem) {
+        return this.toastCtrl.create({
+            message: mensagem,
+            position: 'top',
+            duration: 3000
+        }).present();
+    };
+    PesquisaPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-pesquisa',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Pesquisa</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>\n  <ion-list>\n    <!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS): remedios = MockRemedios -->\n    <button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of MockRemedios">\n      <h2>{{remedio.nome}}</h2>\n      <p>{{remedio.laboratorioNome}}</p>\n      <p>{{remedio.apresentacao}}</p>\n      <ion-note item-end *ngIf="remedio.tarja">{{remedio.tarja}}</ion-note>\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__["a" /* RemedioApi */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_providers__["b" /* RemediosMock */]])
+    ], PesquisaPage);
+    return PesquisaPage;
+}());
+
+//# sourceMappingURL=pesquisa.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=3.js.map

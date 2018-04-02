@@ -11,7 +11,8 @@ import { GoogleAnalytics } from "../../app/google-analytics";
 export class RemedioDetalhesPage {
   remedio: any;
 
-  constructor(public navCtrl: NavController, navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+    navParams: NavParams) {
     GoogleAnalytics.sendPageViewForPage('/remedio-detalhes');
     this.remedio = navParams.get('remedio');
   }

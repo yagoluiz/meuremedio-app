@@ -1,1 +1,123 @@
-webpackJsonp([2],{242:function(l,n,u){"use strict";function a(l){return e._19(0,[(l()(),e.Z(0,0,null,null,10,"ion-header",[],null,null,null,null,null)),e.Y(1,16384,null,0,k.a,[f.a,e.j,e.z,[2,Z.a]],null,null),(l()(),e._18(-1,null,["\n  "])),(l()(),e.Z(3,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,v.b,v.a)),e.Y(4,49152,null,0,h.a,[j.a,[2,Z.a],[2,C.a],f.a,e.j,e.z],null,null),(l()(),e._18(-1,3,["\n    "])),(l()(),e.Z(6,0,null,3,2,"ion-title",[],null,null,null,Y.b,Y.a)),e.Y(7,49152,null,0,y.a,[f.a,e.j,e.z,[2,A.a],[2,h.a]],null,null),(l()(),e._18(8,0,["",""])),(l()(),e._18(-1,3,["\n  "])),(l()(),e._18(-1,null,["\n"])),(l()(),e._18(-1,null,["\n\n"])),(l()(),e.Z(12,0,null,null,53,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,P.b,P.a)),e.Y(13,4374528,null,0,x.a,[f.a,w.a,z.a,e.j,e.z,j.a,q.a,e.u,[2,Z.a],[2,C.a]],null,null),(l()(),e._18(-1,1,["\n  "])),(l()(),e.Z(15,0,null,1,49,"div",[["class","item-detalhes"],["padding",""]],null,null,null,null,null)),(l()(),e._18(-1,null,["\n    "])),(l()(),e.Z(17,0,null,null,4,"p",[],null,null,null,null,null)),(l()(),e._18(-1,null,["\n      "])),(l()(),e.Z(19,0,null,null,1,"strong",[],null,null,null,null,null)),(l()(),e._18(-1,null,["Tarja: "])),(l()(),e._18(21,null,["",""])),(l()(),e._18(-1,null,["\n    "])),(l()(),e.Z(23,0,null,null,4,"p",[],null,null,null,null,null)),(l()(),e._18(-1,null,["\n      "])),(l()(),e.Z(25,0,null,null,1,"strong",[],null,null,null,null,null)),(l()(),e._18(-1,null,["Laboratório: "])),(l()(),e._18(27,null,["",""])),(l()(),e._18(-1,null,["\n    "])),(l()(),e.Z(29,0,null,null,4,"p",[],null,null,null,null,null)),(l()(),e._18(-1,null,["\n      "])),(l()(),e.Z(31,0,null,null,1,"strong",[],null,null,null,null,null)),(l()(),e._18(-1,null,["Princípio ativo: "])),(l()(),e._18(33,null,["",""])),(l()(),e._18(-1,null,["\n    "])),(l()(),e.Z(35,0,null,null,4,"p",[],null,null,null,null,null)),(l()(),e._18(-1,null,["\n      "])),(l()(),e.Z(37,0,null,null,1,"strong",[],null,null,null,null,null)),(l()(),e._18(-1,null,["Descrição: "])),(l()(),e._18(39,null,["",""])),(l()(),e._18(-1,null,["\n    "])),(l()(),e.Z(41,0,null,null,4,"p",[],null,null,null,null,null)),(l()(),e._18(-1,null,["\n      "])),(l()(),e.Z(43,0,null,null,1,"strong",[],null,null,null,null,null)),(l()(),e._18(-1,null,["Classe terapêutica: "])),(l()(),e._18(45,null,["",""])),(l()(),e._18(-1,null,["\n    "])),(l()(),e.Z(47,0,null,null,4,"p",[],null,null,null,null,null)),(l()(),e._18(-1,null,["\n      "])),(l()(),e.Z(49,0,null,null,1,"strong",[],null,null,null,null,null)),(l()(),e._18(-1,null,["Tipo: "])),(l()(),e._18(51,null,["",""])),(l()(),e._18(-1,null,["\n    "])),(l()(),e.Z(53,0,null,null,4,"p",[],null,null,null,null,null)),(l()(),e._18(-1,null,["\n      "])),(l()(),e.Z(55,0,null,null,1,"strong",[],null,null,null,null,null)),(l()(),e._18(-1,null,["Preço máximo farmácia: "])),(l()(),e._18(57,null,["R$ ",""])),(l()(),e._18(-1,null,["\n    "])),(l()(),e.Z(59,0,null,null,4,"p",[],null,null,null,null,null)),(l()(),e._18(-1,null,["\n      "])),(l()(),e.Z(61,0,null,null,1,"strong",[],null,null,null,null,null)),(l()(),e._18(-1,null,["Preço máximo consumidor: "])),(l()(),e._18(63,null,["R$ ",""])),(l()(),e._18(-1,null,["\n  "])),(l()(),e._18(-1,1,["\n"]))],null,function(l,n){var u=n.component;l(n,3,0,e._11(n,4)._hidden,e._11(n,4)._sbPadding);l(n,8,0,u.remedio.nome);l(n,12,0,e._11(n,13).statusbarPadding,e._11(n,13)._hasRefresher);l(n,21,0,u.remedio.tarja);l(n,27,0,u.remedio.laboratorioNome);l(n,33,0,u.remedio.principioAtivo);l(n,39,0,u.remedio.apresentacao);l(n,45,0,u.remedio.classeTerapeutica);l(n,51,0,u.remedio.tipo);l(n,57,0,u.remedio.precoFabrica);l(n,63,0,u.remedio.precoMaximo)})}Object.defineProperty(n,"__esModule",{value:!0});var e=u(0),t=(u(5),u(114),u(246)),o=function(){return function(l,n){this.navCtrl=l,t.a.sendPageViewForPage("/remedio-detalhes"),this.remedio=n.get("remedio")}}(),s=function(){return function(){}}(),i=u(189),r=u(190),c=u(191),_=u(192),d=u(193),b=u(194),g=u(195),p=u(196),m=u(197),k=u(73),f=u(1),Z=u(4),v=u(247),h=u(33),j=u(8),C=u(19),Y=u(199),y=u(53),A=u(34),P=u(198),x=u(21),w=u(3),z=u(9),q=u(24),T=u(10),F=e.X({encapsulation:2,styles:[],data:{}}),R=e.V("page-remedio-detalhes",o,function(l){return e._19(0,[(l()(),e.Z(0,0,null,null,1,"page-remedio-detalhes",[],null,null,null,a,F)),e.Y(1,49152,null,0,o,[C.a,T.a],null,null)],null,null)},{},{},[]),M=u(11),V=u(18),B=u(115),D=u(37);u.d(n,"RemedioDetalhesPageModuleNgFactory",function(){return L});var L=e.W(s,[],function(l){return e._7([e._8(512,e.i,e.S,[[8,[i.a,r.a,c.a,_.a,d.a,b.a,g.a,p.a,m.a,R]],[3,e.i],e.s]),e._8(4608,M.k,M.j,[e.r,[2,M.s]]),e._8(4608,V.k,V.k,[]),e._8(4608,V.c,V.c,[]),e._8(512,M.b,M.b,[]),e._8(512,V.j,V.j,[]),e._8(512,V.d,V.d,[]),e._8(512,V.i,V.i,[]),e._8(512,B.a,B.a,[]),e._8(512,B.b,B.b,[]),e._8(512,s,s,[]),e._8(256,D.a,o,[])])})},246:function(l,n,u){"use strict";u.d(n,"a",function(){return a});var a=function(){function l(){}return l.googleAnalytics=function(){for(var l=[],n=0;n<arguments.length;n++)l[n]=arguments[n];(u=window).ga.apply(u,l);var u},l.sendPageViewForPage=function(n){l.googleAnalytics("set","page",n),l.googleAnalytics("send","pageview")},l.sendEvent=function(n,u,a){void 0===a&&(a=""),l.googleAnalytics("send",{hitType:"event",eventCategory:n,eventAction:u,eventLabel:a})},l}()},247:function(l,n,u){"use strict";function a(l){return e._19(0,[(l()(),e.Z(0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),e.Y(1,278528,null,0,t.g,[e.p,e.q,e.j,e.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),e.Z(2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.backButtonClick(u)&&a}return a},o.b,o.a)),e.Y(3,278528,null,0,t.g,[e.p,e.q,e.j,e.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),e.Y(4,1097728,null,0,s.a,[[8,"bar-button"],i.a,e.j,e.z],null,null),(l()(),e.Z(5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),e.Y(6,278528,null,0,t.g,[e.p,e.q,e.j,e.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),e.Y(7,147456,null,0,r.a,[i.a,e.j,e.z],{name:[0,"name"]},null),(l()(),e.Z(8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),e.Y(9,278528,null,0,t.g,[e.p,e.q,e.j,e.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),e._18(10,null,["",""])),e._10(null,0),e._10(null,1),e._10(null,2),(l()(),e.Z(14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),e.Y(15,278528,null,0,t.g,[e.p,e.q,e.j,e.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),e._10(null,3)],function(l,n){var u=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+u._mode);l(n,3,0,"back-button","back-button-"+u._mode);l(n,6,0,"back-button-icon","back-button-icon-"+u._mode);l(n,7,0,u._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+u._mode);l(n,15,0,"toolbar-content","toolbar-content-"+u._mode)},function(l,n){var u=n.component;l(n,2,0,u._hideBb);l(n,5,0,e._11(n,7)._hidden);l(n,10,0,u._backText)})}u.d(n,"a",function(){return c}),n.b=a;var e=u(0),t=u(11),o=u(43),s=u(20),i=u(1),r=u(42),c=(u(4),u(19),e.X({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([2],{
+
+/***/ 281:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemedioDetalhesPageModule", function() { return RemedioDetalhesPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__ = __webpack_require__(287);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var RemedioDetalhesPageModule = /** @class */ (function () {
+    function RemedioDetalhesPageModule() {
+    }
+    RemedioDetalhesPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__["a" /* RemedioDetalhesPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__["a" /* RemedioDetalhesPage */])
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__["a" /* RemedioDetalhesPage */]
+            ]
+        })
+    ], RemedioDetalhesPageModule);
+    return RemedioDetalhesPageModule;
+}());
+
+//# sourceMappingURL=remedio-detalhes.module.js.map
+
+/***/ }),
+
+/***/ 285:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoogleAnalytics; });
+var GoogleAnalytics = /** @class */ (function () {
+    function GoogleAnalytics() {
+    }
+    GoogleAnalytics.googleAnalytics = function () {
+        var fields = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            fields[_i] = arguments[_i];
+        }
+        (_a = window).ga.apply(_a, fields);
+        var _a;
+    };
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/single-page-applications?hl=pt-br
+    GoogleAnalytics.sendPageViewForPage = function (nomePage) {
+        GoogleAnalytics.googleAnalytics('set', 'page', nomePage);
+        GoogleAnalytics.googleAnalytics('send', 'pageview');
+    };
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/events?hl=pt-br
+    GoogleAnalytics.sendEvent = function (eventCategory, eventAction, eventLabel) {
+        if (eventLabel === void 0) { eventLabel = ''; }
+        GoogleAnalytics.googleAnalytics('send', {
+            hitType: 'event',
+            eventCategory: eventCategory,
+            eventAction: eventAction,
+            eventLabel: eventLabel
+        });
+    };
+    return GoogleAnalytics;
+}());
+
+//# sourceMappingURL=google-analytics.js.map
+
+/***/ }),
+
+/***/ 287:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemedioDetalhesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_google_analytics__ = __webpack_require__(285);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var RemedioDetalhesPage = /** @class */ (function () {
+    function RemedioDetalhesPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        __WEBPACK_IMPORTED_MODULE_2__app_google_analytics__["a" /* GoogleAnalytics */].sendPageViewForPage('/remedio-detalhes');
+        this.remedio = navParams.get('remedio');
+    }
+    RemedioDetalhesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-remedio-detalhes',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\remedio-detalhes\remedio-detalhes.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Informações</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div class="item-detalhes" padding>\n    <h2><strong>{{remedio.nome}}</strong></h2>\n    <p>\n      <strong>Tarja: </strong>{{remedio.tarja}}</p>\n    <p>\n      <strong>Laboratório: </strong>{{remedio.laboratorioNome}}</p>\n    <p>\n      <strong>Princípio ativo: </strong>{{remedio.principioAtivo}}</p>\n    <p>\n      <strong>Descrição: </strong>{{remedio.apresentacao}}</p>\n    <p>\n      <strong>Classe terapêutica: </strong>{{remedio.classeTerapeutica}}</p>\n    <p>\n      <strong>Tipo: </strong>{{remedio.tipo}}</p>\n    <p>\n      <strong>Preço máximo farmácia: </strong>R$ {{remedio.precoFabrica}}</p>\n    <p>\n      <strong>Preço máximo consumidor: </strong>R$ {{remedio.precoMaximo}}</p>\n  </div>\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\remedio-detalhes\remedio-detalhes.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], RemedioDetalhesPage);
+    return RemedioDetalhesPage;
+}());
+
+//# sourceMappingURL=remedio-detalhes.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=2.js.map
