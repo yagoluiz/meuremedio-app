@@ -279,7 +279,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var RemedioApi = /** @class */ (function () {
     function RemedioApi(http) {
         this.http = http;
-        this.API_URL = 'http://192.168.1.5:8080/api/';
+        this.API_URL = 'https://meuremedio-backend.herokuapp.com/api/';
     }
     RemedioApi.prototype.getByNome = function (remedio) {
         return __awaiter(this, void 0, void 0, function () {
@@ -312,7 +312,7 @@ var RemedioApi = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_remedio__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_remedios_mock__ = __webpack_require__(158);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_remedio__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__mocks_providers_remedios_mock__["a"]; });
+/* unused harmony reexport RemediosMock */
 
 
 

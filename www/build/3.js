@@ -87,8 +87,7 @@ var GoogleAnalytics = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_providers__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_google_analytics__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__ = __webpack_require__(285);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -137,18 +136,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
-
 var PesquisaPage = /** @class */ (function () {
-    function PesquisaPage(navCtrl, navParams, loadingCtrl, toastCtrl, remedioApi, remediosMock) {
+    function PesquisaPage(navCtrl, navParams, loadingCtrl, toastCtrl, remedioApi) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.loadingCtrl = loadingCtrl;
         this.toastCtrl = toastCtrl;
         this.remedioApi = remedioApi;
-        this.remediosMock = remediosMock;
         this.remedios = [];
-        this.mockRemedios = [];
-        __WEBPACK_IMPORTED_MODULE_4__app_google_analytics__["a" /* GoogleAnalytics */].sendPageViewForPage('/pesquisa');
+        __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__["a" /* GoogleAnalytics */].sendPageViewForPage('/pesquisa');
     }
     PesquisaPage.prototype.buscarRemedio = function (ev) {
         return __awaiter(this, void 0, void 0, function () {
@@ -157,21 +153,17 @@ var PesquisaPage = /** @class */ (function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        __WEBPACK_IMPORTED_MODULE_4__app_google_analytics__["a" /* GoogleAnalytics */].sendEvent('click', "Pesquisa:Buscar:Remedio");
+                        __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__["a" /* GoogleAnalytics */].sendEvent('click', "Pesquisa:Buscar:Remedio");
                         remedio = ev.target.value;
                         if (!remedio || !remedio.trim()) {
                             this.remedios = [];
                             return [2 /*return*/];
                         }
                         return [4 /*yield*/, this.remedioApi.getByNome(remedio).then(function (result) {
-                                _this.criarLoading();
+                                _this.inserirLoading();
                                 _this.remedios = result;
                             }).catch(function (error) {
-                                //TODO: Refatoração quando serviço estiver refatorado (HTTPS)
-                                //this.criarMensagem('Ooops! Erro ao listar remédio.');
-                                _this.mockRemedios = _this.remediosMock.query({
-                                    principioAtivo: remedio
-                                });
+                                _this.inserirMensagem('Ooops! Erro ao listar remédio.');
                             })];
                     case 1:
                         _a.sent();
@@ -181,18 +173,18 @@ var PesquisaPage = /** @class */ (function () {
         });
     };
     PesquisaPage.prototype.abrirRemedio = function (remedio) {
-        __WEBPACK_IMPORTED_MODULE_4__app_google_analytics__["a" /* GoogleAnalytics */].sendEvent('click', "Pesquisa:Abrir:Remedio");
+        __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__["a" /* GoogleAnalytics */].sendEvent('click', "Pesquisa:Abrir:Remedio");
         this.navCtrl.push('RemedioDetalhesPage', {
             remedio: remedio
         });
     };
-    PesquisaPage.prototype.criarLoading = function () {
+    PesquisaPage.prototype.inserirLoading = function () {
         return this.loadingCtrl.create({
             content: "Carregando...",
             duration: 3000
         }).present();
     };
-    PesquisaPage.prototype.criarMensagem = function (mensagem) {
+    PesquisaPage.prototype.inserirMensagem = function (mensagem) {
         return this.toastCtrl.create({
             message: mensagem,
             position: 'top',
@@ -201,16 +193,12 @@ var PesquisaPage = /** @class */ (function () {
     };
     PesquisaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pesquisa',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n\n	<ion-navbar color="primary">\n\n		<ion-title>Pesquisa</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>\n\n	<ion-list>\n\n		<!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS): mockRemedios = remedios -->\n\n		<ion-card (click)="abrirRemedio(remedio)" *ngFor="let remedio of mockRemedios">\n\n			<ion-grid>\n\n				<ion-row>\n\n					<ion-col col-10>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<h2>{{remedio.nome}}</h2>\n\n						</ion-row>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<p>{{remedio.apresentacao}}</p>\n\n						</ion-row>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<p>{{remedio.laboratorioNome}}</p>\n\n						</ion-row>\n\n					</ion-col>\n\n					<!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS) -->\n\n					<!-- <ion-col col-2>\n\n						<ion-row justify-content-end>\n\n							<ion-col col-12></ion-col>\n\n							<p>\n\n								<strong>Máximo: </strong>R$ {{remedio.precoConsumidor20}}</p>\n\n						</ion-row>\n\n					</ion-col> -->\n\n				</ion-row>\n\n			</ion-grid>\n\n		</ion-card>\n\n\n\n	</ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/
+            selector: 'page-pesquisa',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n\n	<ion-navbar color="primary">\n\n		<ion-title>Pesquisa</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>\n\n	<ion-list>\n\n		<ion-card (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">\n\n			<ion-grid>\n\n				<ion-row>\n\n					<ion-col col-10>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<h2>{{remedio.nome}}</h2>\n\n						</ion-row>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<p>{{remedio.apresentacao}}</p>\n\n						</ion-row>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<p>{{remedio.laboratorioNome}}</p>\n\n						</ion-row>\n\n					</ion-col>\n\n					<ion-col col-2>\n\n						<ion-row justify-content-end>\n\n							<ion-col col-12></ion-col>\n\n							<p>\n\n								<strong>Máximo: </strong>R$ {{remedio.precoConsumidor20}}</p>\n\n						</ion-row>\n\n					</ion-col>\n\n				</ion-row>\n\n			</ion-grid>\n\n		</ion-card>\n\n	</ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__["a" /* RemedioApi */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_providers__["b" /* RemediosMock */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__["a" /* RemedioApi */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__["a" /* RemedioApi */]) === "function" && _e || Object])
     ], PesquisaPage);
     return PesquisaPage;
+    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=pesquisa.js.map
