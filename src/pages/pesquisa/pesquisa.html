@@ -7,12 +7,23 @@
 <ion-content>
   <ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>
   <ion-list>
-    <!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS): remedios = MockRemedios -->
-    <button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of MockRemedios">
-      <h2>{{remedio.nome}}</h2>
-      <p>{{remedio.laboratorioNome}}</p>
-      <p>{{remedio.apresentacao}}</p>
-      <ion-note item-end *ngIf="remedio.tarja">{{remedio.tarja}}</ion-note>
-    </button>
+
+    <ion-card (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">
+
+	  <ion-grid>
+		  <ion-row>
+		    <ion-col col-10>
+		    <ion-row><ion-col col-12></ion-col><h2>{{remedio.nome}}</h2></ion-row>
+		    <ion-row><ion-col col-12></ion-col><p>{{remedio.apresentacao}}</p></ion-row>
+		    <ion-row><ion-col col-12></ion-col><p>{{remedio.laboratorioNome}}</p></ion-row>
+		    </ion-col>
+		    <ion-col col-2>
+		    	<ion-row justify-content-end><ion-col col-12></ion-col><p><strong>Máximo: </strong>R$ {{remedio.precoConsumidor20}}</p></ion-row>
+		    </ion-col>
+		  </ion-row>
+		</ion-grid>
+	  
+  	</ion-card>
+    
   </ion-list>
 </ion-content>

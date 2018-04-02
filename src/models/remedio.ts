@@ -1,15 +1,18 @@
 export class Remedio {
-    id: number;
-    nome: string;
-    principioAtivo: string;
-    apresentacao: string;
-    classeTerapeutica: string;
-    tipo: string;
-    restricaoHospitalar: boolean;
-    tarja: string;
-    precoFabrica: number;
-    precoMaximo: number;
-    laboratorioNome: string;
-    laboratorioCnpj: string;
-    laboratorioRegistro: string;
+  idMedicamento: number;
+  nome: string;
+  principioAtivo: string;
+  apresentacao: string;
+  classeTerapeutica: string;
+  tipo: string;
+  restricaoHospitalar: boolean;
+  tarja: string;
+  precoFabrica: number;
+  precoConsumidor0: number;
+  precoConsumidor12: number;
+  precoConsumidor17: number;
+  precoConsumidor20: number;
+  laboratorioNome: string;
+  laboratorioCnpj: string;
+  laboratorioRegistro: string;
 }
