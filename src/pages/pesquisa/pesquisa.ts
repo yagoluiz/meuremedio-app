@@ -15,7 +15,7 @@ import { GoogleAnalytics } from "../../app/google-analytics";
 })
 export class PesquisaPage {
   remedios: Array<Remedio> = [];
-  MockRemedios: any = [];
+  mockRemedios: any = [];
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
@@ -35,14 +35,13 @@ export class PesquisaPage {
     }
     await this.remedioApi.getByNome(remedio).then((result: Array<Remedio>) => {
       this.criarLoading();
-      this.remedios = result;      
+      this.remedios = result;
     }).catch((error: any) => {
       //TODO: Refatoração quando serviço estiver refatorado (HTTPS)
-      this.criarMensagem('Ooops! Erro ao listar remédio.');
-      
-//      this.MockRemedios = this.remediosMock.query({
-//        principioAtivo: remedio
-//      });
+      //this.criarMensagem('Ooops! Erro ao listar remédio.');
+      this.mockRemedios = this.remediosMock.query({
+        principioAtivo: remedio
+      });
     });
   }
 

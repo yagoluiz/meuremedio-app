@@ -1,31 +1,41 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>Pesquisa</ion-title>
-  </ion-navbar>
+	<ion-navbar color="primary">
+		<ion-title>Pesquisa</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>
-  <ion-list>
+	<ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>
+	<ion-list>
+		<!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS): mockRemedios = remedios -->
+		<ion-card (click)="abrirRemedio(remedio)" *ngFor="let remedio of mockRemedios">
+			<ion-grid>
+				<ion-row>
+					<ion-col col-10>
+						<ion-row>
+							<ion-col col-12></ion-col>
+							<h2>{{remedio.nome}}</h2>
+						</ion-row>
+						<ion-row>
+							<ion-col col-12></ion-col>
+							<p>{{remedio.apresentacao}}</p>
+						</ion-row>
+						<ion-row>
+							<ion-col col-12></ion-col>
+							<p>{{remedio.laboratorioNome}}</p>
+						</ion-row>
+					</ion-col>
+					<!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS) -->
+					<!-- <ion-col col-2>
+						<ion-row justify-content-end>
+							<ion-col col-12></ion-col>
+							<p>
+								<strong>Máximo: </strong>R$ {{remedio.precoConsumidor20}}</p>
+						</ion-row>
+					</ion-col> -->
+				</ion-row>
+			</ion-grid>
+		</ion-card>
 
-    <ion-card (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">
-
-	  <ion-grid>
-		  <ion-row>
-		    <ion-col col-10>
-		    <ion-row><ion-col col-12></ion-col><h2>{{remedio.nome}}</h2></ion-row>
-		    <ion-row><ion-col col-12></ion-col><p>{{remedio.apresentacao}}</p></ion-row>
-		    <ion-row><ion-col col-12></ion-col><p>{{remedio.laboratorioNome}}</p></ion-row>
-		    </ion-col>
-		    <ion-col col-2>
-		    	<ion-row justify-content-end>
-		    		<ion-col col-12></ion-col><p><strong>Máximo: </strong>R$ {{remedio.precoConsumidor20}}</p>
-		    	</ion-row>
-		    </ion-col>
-		  </ion-row>
-		</ion-grid>
-	  
-  	</ion-card>
-    
-  </ion-list>
+	</ion-list>
 </ion-content>

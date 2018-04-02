@@ -147,7 +147,7 @@ var PesquisaPage = /** @class */ (function () {
         this.remedioApi = remedioApi;
         this.remediosMock = remediosMock;
         this.remedios = [];
-        this.MockRemedios = [];
+        this.mockRemedios = [];
         __WEBPACK_IMPORTED_MODULE_4__app_google_analytics__["a" /* GoogleAnalytics */].sendPageViewForPage('/pesquisa');
     }
     PesquisaPage.prototype.buscarRemedio = function (ev) {
@@ -168,8 +168,8 @@ var PesquisaPage = /** @class */ (function () {
                                 _this.remedios = result;
                             }).catch(function (error) {
                                 //TODO: Refatoração quando serviço estiver refatorado (HTTPS)
-                                // this.criarMensagem('Ooops! Erro ao listar remédio.');
-                                _this.MockRemedios = _this.remediosMock.query({
+                                //this.criarMensagem('Ooops! Erro ao listar remédio.');
+                                _this.mockRemedios = _this.remediosMock.query({
                                     principioAtivo: remedio
                                 });
                             })];
@@ -201,7 +201,7 @@ var PesquisaPage = /** @class */ (function () {
     };
     PesquisaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pesquisa',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Pesquisa</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>\n  <ion-list>\n    <!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS): remedios = MockRemedios -->\n    <button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of MockRemedios">\n      <h2>{{remedio.nome}}</h2>\n      <p>{{remedio.laboratorioNome}}</p>\n      <p>{{remedio.apresentacao}}</p>\n      <ion-note item-end *ngIf="remedio.tarja">{{remedio.tarja}}</ion-note>\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/
+            selector: 'page-pesquisa',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n\n	<ion-navbar color="primary">\n\n		<ion-title>Pesquisa</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>\n\n	<ion-list>\n\n		<!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS): mockRemedios = remedios -->\n\n		<ion-card (click)="abrirRemedio(remedio)" *ngFor="let remedio of mockRemedios">\n\n			<ion-grid>\n\n				<ion-row>\n\n					<ion-col col-10>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<h2>{{remedio.nome}}</h2>\n\n						</ion-row>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<p>{{remedio.apresentacao}}</p>\n\n						</ion-row>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<p>{{remedio.laboratorioNome}}</p>\n\n						</ion-row>\n\n					</ion-col>\n\n					<!-- TODO: Refatoração quando serviço estiver refatorado (HTTPS) -->\n\n					<!-- <ion-col col-2>\n\n						<ion-row justify-content-end>\n\n							<ion-col col-12></ion-col>\n\n							<p>\n\n								<strong>Máximo: </strong>R$ {{remedio.precoConsumidor20}}</p>\n\n						</ion-row>\n\n					</ion-col> -->\n\n				</ion-row>\n\n			</ion-grid>\n\n		</ion-card>\n\n\n\n	</ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
