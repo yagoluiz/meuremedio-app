@@ -17,8 +17,7 @@ import { MyApp } from './app.component';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp, {
-      backButtonText: 'Voltar',
-      cancelButtonText: 'Cancelar'
+      backButtonText: 'Voltar'
     })
   ],
   bootstrap: [IonicApp],
