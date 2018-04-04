@@ -1,4 +1,4 @@
-webpackJsonp([5],{
+webpackJsonp([4],{
 
 /***/ 110:
 /***/ (function(module, exports) {
@@ -33,12 +33,8 @@ var map = {
 		282,
 		1
 	],
-	"../pages/tabs/tabs.module": [
-		283,
-		4
-	],
 	"../pages/tutorial/tutorial.module": [
-		284,
+		283,
 		0
 	]
 };
@@ -58,13 +54,13 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 158:
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemediosMock; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_remedio_mock__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_remedio_mock__ = __webpack_require__(278);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -208,24 +204,8 @@ var RemediosMock = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FirstRunPage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return MainPage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Tab1Root; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Tab2Root; });
-var FirstRunPage = 'TutorialPage';
-var MainPage = 'TabsPage';
-var Tab1Root = 'PesquisaPage';
-var Tab2Root = 'SobrePage';
-//# sourceMappingURL=pages.js.map
-
-/***/ }),
-
-/***/ 199:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemedioApi; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
@@ -305,28 +285,25 @@ var RemedioApi = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 199:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FirstRunPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return MainPage; });
+var FirstRunPage = 'TutorialPage';
+var MainPage = 'PesquisaPage';
+//# sourceMappingURL=pages.js.map
+
+/***/ }),
+
 /***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_remedio__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_remedios_mock__ = __webpack_require__(158);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_remedio__["a"]; });
-/* unused harmony reexport RemediosMock */
-
-
-
-//# sourceMappingURL=providers.js.map
-
-/***/ }),
-
-/***/ 201:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(221);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -334,7 +311,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 222:
+/***/ 221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -345,8 +322,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_providers__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mocks_providers_remedios_mock__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_providers__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mocks_providers_remedios_mock__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(279);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -379,7 +356,6 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/pesquisa/pesquisa.module#PesquisaPageModule', name: 'PesquisaPage', segment: 'pesquisa', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/remedio-detalhes/remedio-detalhes.module#RemedioDetalhesPageModule', name: 'RemedioDetalhesPage', segment: 'remedio-detalhes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sobre/sobre.module#SobrePageModule', name: 'SobrePage', segment: 'sobre', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] }
                     ]
                 })
@@ -404,7 +380,22 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 261:
+/***/ 277:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_remedio__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_remedios_mock__ = __webpack_require__(197);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_remedio__["a"]; });
+/* unused harmony reexport RemediosMock */
+
+
+
+//# sourceMappingURL=providers.js.map
+
+/***/ }),
+
+/***/ 278:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -431,7 +422,7 @@ var RemedioMock = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_pages__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_pages__ = __webpack_require__(199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -453,7 +444,7 @@ var MyApp = /** @class */ (function () {
         this.splashScreen = splashScreen;
         this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_pages__["a" /* FirstRunPage */];
         this.pages = [
-            { title: 'Pesquisar', component: 'TabsPage' },
+            { title: 'Pesquisar', component: 'PesquisaPage' },
             { title: 'Sobre', component: 'SobrePage' }
         ];
         platform.ready().then(function () {
@@ -481,5 +472,5 @@ var MyApp = /** @class */ (function () {
 
 /***/ })
 
-},[201]);
+},[200]);
 //# sourceMappingURL=main.js.map

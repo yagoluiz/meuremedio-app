@@ -1,76 +1,63 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>Informações</ion-title>
-  </ion-navbar>
+	<ion-navbar color="primary">
+		<ion-title>Informações</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content>
-<!--   <div class="item-detalhes" padding> -->
-<!--     <h2><strong>{{remedio.nome}}</strong></h2> -->
-<!--     <p> -->
-<!--       <strong>Tarja: </strong>{{remedio.tarja}}</p> -->
-<!--     <p> -->
-<!--       <strong>Laboratório: </strong>{{remedio.laboratorioNome}}</p> -->
-<!--     <p> -->
-<!--       <strong>Princípio ativo: </strong>{{remedio.principioAtivo}}</p> -->
-<!--     <p> -->
-<!--       <strong>Descrição: </strong>{{remedio.apresentacao}}</p> -->
-<!--     <p> -->
-<!--       <strong>Classe terapêutica: </strong>{{remedio.classeTerapeutica}}</p> -->
-<!--     <p> -->
-<!--       <strong>Tipo: </strong>{{remedio.tipo}}</p> -->
-<!--     <p> -->
-<!--       <strong>Preço máximo farmácia: </strong>R$ {{remedio.precoFabrica}}</p> -->
-<!--     <p> -->
-<!--       <strong>Preço máximo consumidor: </strong>R$ {{remedio.precoConsumidor20}}</p> -->
-<!--   </div> -->
-  
 	<ion-card>
-   		<ion-card-header>
-    		<h2><strong>{{remedio.nome}}</strong></h2>
-    		<p>{{remedio.apresentacao}}</p>
-  	</ion-card-header>
-  
-  	<ion-grid>
-  		<ion-row>
-    		<ion-col col-12>
-    			<ion-row>
-    				<ion-col col-2><strong>Classe terapêutica: </strong></ion-col>
-    				<ion-col col-10><p>{{remedio.classeTerapeutica}}</p></ion-col>
-    			</ion-row>
-    			<ion-row>
-    				<ion-col col-2><strong>Princípio ativo: </strong></ion-col>
-    				<ion-col col-10><p>{{remedio.principioAtivo}}</p></ion-col>
-    			</ion-row>
-    			<ion-row>
-    				<ion-col col-2><strong>Laboratório: </strong></ion-col>
-    				<ion-col col-10><p>{{remedio.laboratorioNome}}</p></ion-col>
-    			</ion-row>
-		    	<ion-row>
-    				<ion-col col-6><strong>CNPJ: </strong>{{remedio.laboratorioCnpj}}</ion-col>
-    				<ion-col col-6><strong>Registro: </strong>{{remedio.laboratorioRegistro}}</ion-col>
-    			</ion-row>  
-    			<ion-row>
-    				<ion-col col-4><strong>Tipo: </strong>{{remedio.tipo}}</ion-col>
-    				<ion-col col-4>{{remedio.restricaoHospitalarStr}}</ion-col>
-    				<ion-col col-4>{{remedio.tarja}}</ion-col>
-    			</ion-row> 	
-    		</ion-col>
-<!--     		<ion-col col-2> -->
-<!--     			<ion-row><ion-col>PF: {{remedio.precoFabrica}}</ion-col></ion-row> -->
-<!--     			<ion-row><ion-col>P00: {{remedio.precoConsumidor0}}</ion-col></ion-row> -->
-<!--     			<ion-row><ion-col>P12: {{remedio.precoConsumidor12}}</ion-col></ion-row> -->
-<!--     			<ion-row><ion-col>P17: {{remedio.precoConsumidor17}}</ion-col></ion-row> -->
-<!--     			<ion-row><ion-col>P20: {{remedio.precoConsumidor20}}</ion-col></ion-row> -->
-<!--     		</ion-col> -->
-  		</ion-row>
-		<ion-row><ion-col>PF: {{remedio.precoFabrica}}</ion-col></ion-row>
-    	<ion-row><ion-col>P00: {{remedio.precoConsumidor0}}</ion-col></ion-row>
-    	<ion-row><ion-col>P12: {{remedio.precoConsumidor12}}</ion-col></ion-row>
-    	<ion-row><ion-col>P17: {{remedio.precoConsumidor17}}</ion-col></ion-row>
-    	<ion-row><ion-col>P20: {{remedio.precoConsumidor20}}</ion-col></ion-row>
-	</ion-grid>
-	
-</ion-card>
-  
+		<ion-list>
+			<ion-item [ngClass]="{
+					'tarja-verde': remedio.tarja === 'Venda Livre',
+					'tarja-vermelha': remedio.tarja === 'Tarja Vermelha',
+					'tarja-preta': remedio.tarja === 'Tarja Preta'}">
+				<h2 class="texto-branco">
+					{{remedio.nome}}
+				</h2>
+				<p class="texto-branco">{{remedio.apresentacao}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-card>
+	<ion-card>
+		<ion-list class="preco-farmacia" padding>
+			<h2 class="texto-branco">Preço farmácia</h2>
+			<p class="texto-branco">R$ {{remedio.precoFabrica}}</p>
+		</ion-list>
+		<ion-list class="preco-consumidor" padding>
+			<h2 class="texto-branco">Preço consumidor</h2>
+			<p class="texto-branco">R$ {{remedio.precoConsumidor0}}</p>
+		</ion-list>
+	</ion-card>
+	<ion-card>
+		<ion-list>
+			<ion-item class="informacoes-cinza">
+				<h2 class="texto-preto">Princípio ativo</h2>
+				<p class="texto-cinza">{{remedio.principioAtivo}}</p>
+			</ion-item>
+			<ion-item class="informacoes-branco">
+				<h2 class="texto-preto">Classe terapeutica</h2>
+				<p class="texto-cinza">{{remedio.classeTerapeutica}}</p>
+			</ion-item>
+			<ion-item class="informacoes-cinza">
+				<h2 class="texto-preto">Laboratório</h2>
+				<p class="texto-cinza">{{remedio.laboratorioNome}}</p>
+			</ion-item>
+			<ion-item class="informacoes-branco">
+				<h2 class="texto-preto">CNPJ</h2>
+				<p class="texto-cinza">{{remedio.laboratorioCnpj}}</p>
+			</ion-item>
+			<ion-item class="informacoes-cinza">
+				<h2 class="texto-preto">Registro</h2>
+				<p class="texto-cinza">{{remedio.laboratorioRegistro}}</p>
+			</ion-item>
+			<ion-item class="informacoes-branco">
+				<h2 class="texto-preto">Tipo</h2>
+				<p class="texto-cinza">{{remedio.laboratorioRegistro}}</p>
+			</ion-item>
+			<ion-item class="informacoes-cinza">
+				<h2 class="texto-preto">Registro hospitalar</h2>
+				<p class="texto-cinza">{{remedio.restricaoHospitalarStr}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-card>
 </ion-content>

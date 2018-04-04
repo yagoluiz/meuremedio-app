@@ -1,5 +1,8 @@
 <ion-header>
 	<ion-navbar color="primary">
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
 		<ion-title>Pesquisa</ion-title>
 	</ion-navbar>
 </ion-header>
@@ -7,32 +10,15 @@
 <ion-content>
 	<ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>
 	<ion-list>
-		<ion-card (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">
-			<ion-grid>
-				<ion-row>
-					<ion-col col-10>
-						<ion-row>
-							<ion-col col-12></ion-col>
-							<h2>{{remedio.nome}}</h2>
-						</ion-row>
-						<ion-row>
-							<ion-col col-12></ion-col>
-							<p>{{remedio.apresentacao}}</p>
-						</ion-row>
-						<ion-row>
-							<ion-col col-12></ion-col>
-							<p>{{remedio.laboratorioNome}}</p>
-						</ion-row>
-					</ion-col>
-					<ion-col col-2>
-						<ion-row justify-content-end>
-							<ion-col col-12></ion-col>
-							<p>
-								<strong>Máximo: </strong>R$ {{remedio.precoConsumidor20}}</p>
-						</ion-row>
-					</ion-col>
-				</ion-row>
-			</ion-grid>
-		</ion-card>
+		<button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">
+			<ion-icon name="information-circle" [ngClass]="{
+				'tarja-verde': remedio.tarja === 'Venda Livre',
+				'tarja-vermelha': remedio.tarja === 'Tarja Vermelha',
+				'tarja-preta': remedio.tarja === 'Tarja Preta'}" item-start>
+			</ion-icon>
+			<h2>{{remedio.nome}}</h2>
+			<p>{{remedio.principioAtivo}}</p>
+			<p>{{remedio.apresentacao}}</p>
+		</button>
 	</ion-list>
 </ion-content>

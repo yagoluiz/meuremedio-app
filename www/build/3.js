@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PesquisaPageModule", function() { return PesquisaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pesquisa__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pesquisa__ = __webpack_require__(285);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var PesquisaPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 285:
+/***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79,15 +79,15 @@ var GoogleAnalytics = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 286:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PesquisaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__ = __webpack_require__(284);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -193,12 +193,15 @@ var PesquisaPage = /** @class */ (function () {
     };
     PesquisaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pesquisa',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n\n	<ion-navbar color="primary">\n\n		<ion-title>Pesquisa</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>\n\n	<ion-list>\n\n		<ion-card (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">\n\n			<ion-grid>\n\n				<ion-row>\n\n					<ion-col col-10>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<h2>{{remedio.nome}}</h2>\n\n						</ion-row>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<p>{{remedio.apresentacao}}</p>\n\n						</ion-row>\n\n						<ion-row>\n\n							<ion-col col-12></ion-col>\n\n							<p>{{remedio.laboratorioNome}}</p>\n\n						</ion-row>\n\n					</ion-col>\n\n					<ion-col col-2>\n\n						<ion-row justify-content-end>\n\n							<ion-col col-12></ion-col>\n\n							<p>\n\n								<strong>Máximo: </strong>R$ {{remedio.precoConsumidor20}}</p>\n\n						</ion-row>\n\n					</ion-col>\n\n				</ion-row>\n\n			</ion-grid>\n\n		</ion-card>\n\n	</ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/
+            selector: 'page-pesquisa',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n\n	<ion-navbar color="primary">\n\n		<button ion-button menuToggle>\n\n			<ion-icon name="menu"></ion-icon>\n\n		</button>\n\n		<ion-title>Pesquisa</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>\n\n	<ion-list>\n\n		<button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">\n\n			<ion-icon name="information-circle" [ngClass]="{\n\n				\'tarja-verde\': remedio.tarja === \'Venda Livre\',\n\n				\'tarja-vermelha\': remedio.tarja === \'Tarja Vermelha\',\n\n				\'tarja-preta\': remedio.tarja === \'Tarja Preta\'}" item-start>\n\n			</ion-icon>\n\n			<h2>{{remedio.nome}}</h2>\n\n			<p>{{remedio.principioAtivo}}</p>\n\n			<p>{{remedio.apresentacao}}</p>\n\n		</button>\n\n	</ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__["a" /* RemedioApi */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__["a" /* RemedioApi */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_api_remedio__["a" /* RemedioApi */]])
     ], PesquisaPage);
     return PesquisaPage;
-    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=pesquisa.js.map

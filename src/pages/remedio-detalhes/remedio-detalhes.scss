@@ -1,7 +1,32 @@
 page-remedio-detalhes {
-  .item-detalhes {
-    width: 100%;
-    background: white;
-    position: absolute;
-  }
+    .tarja-verde {
+      background-color: #008000;
+    }
+    .tarja-vermelha {
+      background-color: #ff0000;
+    }
+    .tarja-preta {
+    background-color: #000000;
+    }
+    .preco-farmacia {
+      background-color: #474646;
+    }
+    .preco-consumidor {
+      background-color: #7e7c7c;
+    }
+    .informacoes-cinza {
+      background-color: #e0e0e0;
+    }
+    .informacoes-branco {
+      background-color: #ffffff;
+    }
+    .texto-branco {
+      color: #ffffff;
+    }
+    .texto-cinza {
+      color: #474646;
+    }
+    .texto-preto {
+      color: #000000;
+    }
 }
