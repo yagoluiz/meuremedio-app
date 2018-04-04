@@ -37,6 +37,11 @@ export class PesquisaPage {
     });
   }
 
+  cancelarPesquisa(ev) {
+    this.remedios = [];
+    return;
+  }
+
   abrirRemedio(remedio: Remedio) {
     GoogleAnalytics.sendEvent('click', "Pesquisa:Abrir:Remedio");
     this.navCtrl.push('RemedioDetalhesPage', {

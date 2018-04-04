@@ -172,6 +172,10 @@ var PesquisaPage = /** @class */ (function () {
             });
         });
     };
+    PesquisaPage.prototype.cancelarPesquisa = function (ev) {
+        this.remedios = [];
+        return;
+    };
     PesquisaPage.prototype.abrirRemedio = function (remedio) {
         __WEBPACK_IMPORTED_MODULE_3__app_google_analytics__["a" /* GoogleAnalytics */].sendEvent('click', "Pesquisa:Abrir:Remedio");
         this.navCtrl.push('RemedioDetalhesPage', {
@@ -193,7 +197,7 @@ var PesquisaPage = /** @class */ (function () {
     };
     PesquisaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pesquisa',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n\n	<ion-navbar color="primary">\n\n		<button ion-button menuToggle>\n\n			<ion-icon name="menu"></ion-icon>\n\n		</button>\n\n		<ion-title>Pesquisa</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>\n\n	<ion-list>\n\n		<button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">\n\n			<ion-icon name="information-circle" [ngClass]="{\n\n				\'tarja-verde\': remedio.tarja === \'Venda Livre\',\n\n				\'tarja-vermelha\': remedio.tarja === \'Tarja Vermelha\',\n\n				\'tarja-preta\': remedio.tarja === \'Tarja Preta\'}" item-start>\n\n			</ion-icon>\n\n			<h2>{{remedio.nome}}</h2>\n\n			<p>{{remedio.principioAtivo}}</p>\n\n			<p>{{remedio.apresentacao}}</p>\n\n		</button>\n\n	</ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/
+            selector: 'page-pesquisa',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/'<ion-header>\n\n	<ion-navbar color="primary">\n\n		<button ion-button menuToggle>\n\n			<ion-icon name="menu"></ion-icon>\n\n		</button>\n\n		<ion-title>Pesquisa</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-searchbar (ionInput)="buscarRemedio($event)" (ionCancel)="cancelarPesquisa($event)" [showCancelButton]="true" cancelButtonText="Cancelar" placeholder="Qual o nome do seu remédio?"></ion-searchbar>\n\n	<ion-list>\n\n		<button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">\n\n			<ion-icon name="information-circle" [ngClass]="{\n\n				\'tarja-verde\': remedio.tarja === \'Venda Livre\',\n\n				\'tarja-vermelha\': remedio.tarja === \'Tarja Vermelha\',\n\n				\'tarja-preta\': remedio.tarja === \'Tarja Preta\'}" item-start>\n\n			</ion-icon>\n\n			<h2>{{remedio.nome}}</h2>\n\n			<p>{{remedio.principioAtivo}}</p>\n\n			<p>{{remedio.apresentacao}}</p>\n\n		</button>\n\n	</ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\pesquisa\pesquisa.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],

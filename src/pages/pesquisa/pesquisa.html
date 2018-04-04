@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content>
-	<ion-searchbar (ionInput)="buscarRemedio($event)" placeholder="Qual o nome do seu remédio?"></ion-searchbar>
+	<ion-searchbar (ionInput)="buscarRemedio($event)" (ionCancel)="cancelarPesquisa($event)" [showCancelButton]="true" placeholder="Qual o nome do seu remédio?"></ion-searchbar>
 	<ion-list>
 		<button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">
 			<ion-icon name="information-circle" [ngClass]="{

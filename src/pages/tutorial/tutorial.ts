@@ -34,7 +34,7 @@ export class TutorialPage {
       },
       {
         titulo: 'Como usar o meu rémedio?',
-        descricao: 'Pesquise o <strong>nome</strong> do remédio desejado como no exemplo acima para consultar às informações. Bem fácil, não é mesmo?',
+        descricao: 'Como no exemplo acima, pesquise o <strong>nome</strong> do remédio desejado para consultar as informações. A <strong>cor</strong> ao lado indicará a tarja do remédio. Bem fácil, não é mesmo?',
         imagem: 'assets/img/pagina-pesquisa.png',
       }
     ];
