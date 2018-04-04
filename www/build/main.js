@@ -445,6 +445,7 @@ var MyApp = /** @class */ (function () {
         this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_pages__["a" /* FirstRunPage */];
         this.pages = [
             { title: 'Pesquisar', component: 'PesquisaPage' },
+            { title: 'Tutorial', component: 'TutorialPage' },
             { title: 'Sobre', component: 'SobrePage' }
         ];
         platform.ready().then(function () {

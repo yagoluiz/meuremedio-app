@@ -25707,7 +25707,7 @@ page-remedio-detalhes .preco-farmacia {
 }
 
 page-remedio-detalhes .preco-consumidor {
-  background-color: #7e7c7c;
+  background-color: #60646b;
 }
 
 page-remedio-detalhes .informacoes-cinza {
@@ -25735,6 +25735,11 @@ page-tutorial .toolbar-background {
   border-color: transparent;
 }
 
+page-tutorial .swiper-pagination-bullet-active {
+  background: #c40000;
+  opacity: 1;
+}
+
 page-tutorial .slide-zoom {
   height: 100%;
 }
@@ -25744,22 +25749,19 @@ page-tutorial .slide-titulo {
 }
 
 page-tutorial .slide-imagem {
-  max-height: 40%;
+  max-height: 50%;
   max-width: 60%;
   margin: 36px 0;
 }
 
-page-tutorial b {
-  font-weight: 500;
-}
-
 page-tutorial p {
   padding: 0 40px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
-  color: #60646B;
+  color: #60646b;
 }
 
-page-tutorial p b {
+page-tutorial p strong {
   color: #000000;
+  font-weight: 500;
 }

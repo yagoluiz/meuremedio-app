@@ -18,7 +18,7 @@ export interface Slide {
 })
 export class TutorialPage {
   slides: Slide[];
-  sair = true;
+  sair = false;
   dir: string = 'ltr';
 
   constructor(public navCtrl: NavController,
@@ -29,18 +29,13 @@ export class TutorialPage {
     this.slides = [
       {
         titulo: 'Bem-vindo ao meu remédio :)',
-        descricao: 'O <b>meu remédio</b> é um app para consulta de medicamentos, desde de preços máximo que podem ser oferecidos pelo consumidar até informações detalhadas da medicação.',
-        imagem: 'assets/img/ica-slidebox-img-1.png',
+        descricao: 'O <strong>meu remédio</strong> é um app para consulta de preços de remédios. Aqui você encontra informações de preços máximos que podem ser oferecidos para o <strong>consumidor</strong>, preços máximos que as <strong>farmácias</strong> podem adquirir o remédio das fábricas e detalhes sobre o remédio.',
+        imagem: 'assets/img/logo-original.png',
       },
       {
         titulo: 'Como usar o meu rémedio?',
-        descricao: 'Pesquise o nome do rémedio desejado e o app irá trazer várias informações, além do preço máximo disponível ao consumidor. Bem fácil, não é mesmo?',
-        imagem: 'assets/img/ica-slidebox-img-2.png',
-      },
-      {
-        titulo: 'Como começar?',
-        descricao: 'Comece agora! Entedeu tudo direitinho? Termine o tutorial e comece a usar o app já :)',
-        imagem: 'assets/img/ica-slidebox-img-3.png',
+        descricao: 'Pesquise o <strong>nome</strong> do remédio desejado como no exemplo acima para consultar às informações. Bem fácil, não é mesmo?',
+        imagem: 'assets/img/pagina-pesquisa.png',
       }
     ];
   }
@@ -54,7 +49,7 @@ export class TutorialPage {
   }
 
   verificarSlide(slider) {
-    this.sair = !slider.isEnd();
+    this.sair = slider.isEnd();
   }
 
   ionViewDidEnter() {
