@@ -9,7 +9,7 @@ import { FirstRunPage } from '../pages/pages';
   template: `<ion-menu [content]="content">
     <ion-header>
       <ion-toolbar color="primary">
-        <ion-title>Menu</ion-title>
+        <ion-title><img src="assets/img/logo-branca.png" alt="logo"></ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -30,7 +30,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Pesquisar', component: 'PesquisaPage' },
+    { title: 'Pesquisa', component: 'PesquisaPage' },
     { title: 'Tutorial', component: 'TutorialPage' },
     { title: 'Sobre', component: 'SobrePage' }
   ]
