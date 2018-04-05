@@ -33,7 +33,7 @@ export class TutorialPage {
         imagem: 'assets/img/logo-original.png',
       },
       {
-        titulo: 'Como usar o meu rémedio?',
+        titulo: 'Como usar o meu remédio?',
         descricao: 'Como no exemplo acima, pesquise o <strong>nome</strong> do remédio desejado para consultar as informações. A <strong>cor</strong> ao lado indicará a tarja do remédio. Bem fácil, não é mesmo?',
         imagem: 'assets/img/pagina-pesquisa.png',
       }

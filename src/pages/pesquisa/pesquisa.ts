@@ -1,3 +1,5 @@
+import 'rxjs/add/operator/toPromise';
+
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 
@@ -13,6 +15,8 @@ import { GoogleAnalytics } from "../../app/google-analytics";
 })
 export class PesquisaPage {
   remedios: Array<Remedio> = [];
+  remedio: string = null;
+  remedioQtd: number = 0;
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
@@ -24,17 +28,33 @@ export class PesquisaPage {
 
   async buscarRemedio(ev) {
     GoogleAnalytics.sendEvent('click', "Pesquisa:Buscar:Remedio");
-    let remedio = ev.target.value;
-    if (!remedio || !remedio.trim()) {
+    this.remedioQtd = 0;
+    this.remedio = ev.target.value;
+    if (!this.remedio || !this.remedio.trim()) {
       this.remedios = [];
       return;
     }
-    await this.remedioApi.getByNome(remedio).then((result: Array<Remedio>) => {
-      this.inserirLoading();
-      this.remedios = result;
-    }).catch((error: any) => {
-      this.inserirMensagem('Ooops! Erro ao listar remédio.');
+    let loading = this.loadingCtrl.create({
+      content: 'Carregando...'
     });
+    loading.present();
+    await this.remedioApi.getByNome(this.remedio).then((result: Array<Remedio>) => {
+      this.remedios = result.slice(0, 10);
+      loading.dismiss();
+    }).catch((error: any) => {
+      loading.dismiss();
+      this.inserirMensagem('Ooops! Erro ao listar remédios.');
+    });
+  }
+
+  async carregarRemedio(ev) {
+    this.remedioQtd++;
+    await this.remedioApi.getByNome(this.remedio).then((result: Array<Remedio>) => {
+      this.remedios = result.slice(0, 20 * this.remedioQtd);
+    }).catch((error: any) => {
+      this.inserirMensagem('Ooops! Erro ao listar remédios.');
+    });
+    ev.complete();
   }
 
   cancelarPesquisa(ev) {
@@ -49,18 +69,11 @@ export class PesquisaPage {
     });
   }
 
-  inserirLoading() {
-    return this.loadingCtrl.create({
-      content: "Carregando...",
-      duration: 3000
-    }).present();
-  }
-
   inserirMensagem(mensagem: string) {
     return this.toastCtrl.create({
       message: mensagem,
       position: 'top',
       duration: 3000
-    }).present();
+    });
   }
 }
