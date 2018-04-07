@@ -1,7 +1,6 @@
 import 'rxjs/add/operator/toPromise';
 
 import {HttpClient, HttpResponse} from '@angular/common/http';
-//import {Observable} from 'rxjs/Observable';
 import {Injectable} from '@angular/core';
 
 import {Comentario} from '../../models/comentario'
@@ -17,19 +16,20 @@ export class ComentarioApi {
 
   create(comentario: Comentario) {
     console.log('salvar: ' + comentario);
-    //this.http.post<Comentario>(this.API_URL, comentario, {observe: 'response'});
-    
-    
+
     var data = {
-        nome: comentario.nome,
-        email: comentario.email        
+        "nome": comentario.nome,
+        "email": comentario.email,
+        "faixaEtaria": comentario.faixaEtaria,
+        "sexo": comentario.sexo,
+        "comentario": comentario.comentario        
       };
     
     return new Promise((resolve, reject) => {
-      //this.http.post(this.API_URL + 'comentarios', {comentarioDTO: comentario})
       this.http.post(this.API_URL + 'comentarios', data)
         .subscribe((result: any) => {
-          resolve(result.json());
+          //resolve(result.json());
+          resolve(result);
         },
         (error) => {
           reject(error.json());

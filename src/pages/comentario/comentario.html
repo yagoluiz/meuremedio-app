@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content>
-	<form name="comentarioForm" (ngSubmit)="save()" #form="ngForm">
+	<form name="comentarioForm" (ngSubmit)="salvar()" #form="ngForm">
 		<ion-item> 
 			<ion-label>Nome</ion-label> 
 			<ion-input type="text" [(ngModel)]="comentario.nome" name="nome"></ion-input> 
