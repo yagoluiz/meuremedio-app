@@ -1,0 +1,44 @@
+<ion-header>
+	<ion-navbar color="primary">
+		<ion-title>Denúncia</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+		<ion-list>
+			<ion-item class="informacoes-cinza">
+				<h2 class="texto-preto">Remédio: </h2>
+				<p class="texto-cinza">{{remedio.nome}}</p>
+			</ion-item>
+			<ion-item class="informacoes-branco">
+				<h2 class="texto-preto">Apresentação: </h2>
+				<p class="texto-cinza">{{remedio.apresentacao}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-card>
+	<form name="denunciaForm" (ngSubmit)="salvar()" #form="ngForm">
+		<ion-item> 
+			<ion-label>Nome</ion-label> 
+			<ion-input type="text" [(ngModel)]="denuncia.nome" name="nome"></ion-input> 
+		</ion-item>
+		<ion-item> 
+			<ion-label>E-mail</ion-label> 
+			<ion-input type="email" [(ngModel)]="denuncia.email" name="email"></ion-input> 
+		</ion-item>
+		<ion-item> 
+			<ion-label>Farmácia</ion-label> 
+			<ion-input type="text" [(ngModel)]="denuncia.farmacia" name="farmacia"></ion-input> 
+		</ion-item>
+		<ion-item> 
+			<ion-label>Preço</ion-label> 
+			<ion-input type="number" [(ngModel)]="denuncia.preco" name="preco"></ion-input> 
+		</ion-item>
+		<ion-item> 
+			<ion-label>Comentário</ion-label> 
+			<ion-textarea rows="3" [(ngModel)]="denuncia.texto" name="texto" ></ion-textarea> 
+		</ion-item>
+		
+		<button ion-button type="submit" block>Salvar Denúncia</button>
+	</form>
+</ion-content>

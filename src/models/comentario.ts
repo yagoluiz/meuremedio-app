@@ -1,4 +1,3 @@
-import {BaseEntity} from './base-entity';
 
 export const enum FaixaEtaria {
   'QUINZE_VINTE',
@@ -14,7 +13,7 @@ export const enum Sexo {
   'FEMININO'
 }
 
-export class Comentario implements BaseEntity {
+export class Comentario {
   constructor(
     public id?: number,
     public data?: any,

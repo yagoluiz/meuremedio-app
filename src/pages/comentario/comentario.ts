@@ -29,13 +29,14 @@ export class ComentarioPage {
 
     this.comentarioApi.create(this.comentario)
       .then((result: any) => {        
-        this.inserirMensagem('Usuário criado com sucesso');
+        this.inserirMensagem('Comentário criado com sucesso');
       })
       .catch((error: any) => {        
-        this.inserirMensagem('Erro ao criar o usuário.');
+        this.inserirMensagem('Erro ao criar comentário.');
       });
   }
 
+  //TODO se for usar dessa forma mesmo eh melhor "externalizar" pra ser reusado nos outros modulos
   inserirMensagem(mensagem: string) {
     return this.toastCtrl.create({
       message: mensagem,

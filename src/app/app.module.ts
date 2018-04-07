@@ -7,6 +7,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { RemedioApi } from '../providers/providers';
 import { ComentarioApi } from '../providers/providers';
+import { DenunciaApi } from '../providers/providers';
 import { Constantes } from '../providers/providers';
 import { RemediosMock } from '../mocks/providers/remedios-mock';
 import { MyApp } from './app.component';
@@ -29,6 +30,7 @@ import { MyApp } from './app.component';
   providers: [
     RemedioApi,
     ComentarioApi,
+    DenunciaApi,
     Constantes,
     RemediosMock,    
     SplashScreen,

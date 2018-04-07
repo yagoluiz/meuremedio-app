@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { Remedio } from '../../models/remedio'
+
 import { GoogleAnalytics } from "../../app/google-analytics";
 
 @IonicPage()
@@ -15,5 +17,12 @@ export class RemedioDetalhesPage {
     navParams: NavParams) {
     GoogleAnalytics.sendPageViewForPage('/remedio-detalhes');
     this.remedio = navParams.get('remedio');
+  }
+  
+  iniciarDenuncia(remedio: Remedio) {
+    GoogleAnalytics.sendEvent('click', "RemedioDetalhe:Iniciar:Denuncia");
+    this.navCtrl.push('DenunciaPage', {
+      remedio: remedio
+    });
   }
 }
