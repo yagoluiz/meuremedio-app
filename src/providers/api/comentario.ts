@@ -5,14 +5,16 @@ import {Injectable} from '@angular/core';
 
 import {Comentario} from '../../models/comentario'
 
-export type EntityResponseType = HttpResponse<Comentario>;
+//export type EntityResponseType = HttpResponse<Comentario>;
+
+import {Constantes} from '../../providers/constantes'
 
 @Injectable()
 export class ComentarioApi {
   //API_URL: string = 'https://meuremedio-backend.herokuapp.com/api/';
   API_URL: string = 'http://127.0.0.1:8080/api/';
 
-  constructor(public http: HttpClient) {}
+  constructor(public http: HttpClient, public constantes: Constantes) {}
 
   create(comentario: Comentario) {
     console.log('salvar: ' + comentario);
@@ -26,7 +28,7 @@ export class ComentarioApi {
       };
     
     return new Promise((resolve, reject) => {
-      this.http.post(this.API_URL + 'comentarios', data)
+      this.http.post(this.constantes.getBaseUrl() + 'comentarios', data)
         .subscribe((result: any) => {
           //resolve(result.json());
           resolve(result);
