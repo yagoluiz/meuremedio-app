@@ -1,0 +1,47 @@
+<ion-header>
+	<ion-navbar color="primary">
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Comentário</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<form name="comentarioForm" (ngSubmit)="save()" #form="ngForm">
+		<ion-item> 
+			<ion-label>Nome</ion-label> 
+			<ion-input type="text" [(ngModel)]="comentario.nome" name="nome"></ion-input> 
+		</ion-item>
+		<ion-item> 
+			<ion-label>E-mail</ion-label> 
+			<ion-input type="email" [(ngModel)]="comentario.email" name="email"></ion-input> 
+		</ion-item>
+		<ion-item>
+	  		<ion-label>Faixa Etária</ion-label>
+	  		<ion-select [(ngModel)]="comentario.faixaEtaria" name="faixaEtaria">
+	    		<ion-option value="QUINZE_VINTE">15-19</ion-option>
+	    		<ion-option value="VINTE_TRINTA">20-29</ion-option>
+	    		<ion-option value="TRINTA_QUARENTA">30-39</ion-option>
+	    		<ion-option value="QUARENTA_CINQUENTA">40-49</ion-option>
+	    		<ion-option value="CINQUENTA_SETENTA">50-69</ion-option>
+	    		<ion-option value="MAIOR_QUE_SETENTA">70+</ion-option>    		
+	  		</ion-select>
+		</ion-item>
+		<ion-item>
+	  		<ion-label>Sexo</ion-label>
+	  		<ion-select [(ngModel)]="comentario.sexo" name="sexo">
+	    		<ion-option value="FEMININO">Feminino</ion-option>
+	    		<ion-option value="MASCULINO">Masculino</ion-option>
+	  		</ion-select>
+		</ion-item>
+		
+		<ion-item> 
+			<ion-label>Comentário</ion-label> 
+			<ion-textarea rows="5" [(ngModel)]="comentario.comentario" name="comentario" ></ion-textarea> 
+		</ion-item>
+		
+		<button ion-button type="submit" block>Salvar Comentário</button>
+	</form>
+</ion-content>
+

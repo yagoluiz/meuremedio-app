@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { RemedioApi } from '../providers/providers';
+import { ComentarioApi } from '../providers/providers';
 import { RemediosMock } from '../mocks/providers/remedios-mock';
 import { MyApp } from './app.component';
 
@@ -26,7 +27,8 @@ import { MyApp } from './app.component';
   ],
   providers: [
     RemedioApi,
-    RemediosMock,
+    ComentarioApi,
+    RemediosMock,    
     SplashScreen,
     StatusBar,
     { provide: ErrorHandler, useClass: IonicErrorHandler }

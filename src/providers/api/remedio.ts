@@ -7,7 +7,8 @@ import { Remedio } from '../../models/remedio'
 
 @Injectable()
 export class RemedioApi {
-    API_URL: string = 'https://meuremedio-backend.herokuapp.com/api/';
+    //API_URL: string = 'https://meuremedio-backend.herokuapp.com/api/';
+    API_URL: string = 'http://127.0.0.1:8080/api/';
 
     constructor(public http: HttpClient) { }
 
