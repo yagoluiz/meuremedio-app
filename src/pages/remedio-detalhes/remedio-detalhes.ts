@@ -29,7 +29,7 @@ export class RemedioDetalhesPage {
     this.precoFabrica = precoFabrica != undefined &&
       precoFabrica != 0 &&
       precoFabrica != '' ?
-      `R$ ${precoFabrica}` : 'Preço não informado pela ANVISA';
+      `R$ ${precoFabrica}` : 'Não informado pela ANVISA';
   }
 
   selecionarEstado(estado) {
@@ -41,7 +41,7 @@ export class RemedioDetalhesPage {
       this.precoConsumidor = precoConsumidor20 != undefined &&
         precoConsumidor20 != 0 &&
         precoConsumidor20 != '' ?
-        `R$ ${precoConsumidor20}` : 'Preço não informado pela ANVISA';
+        `R$ ${precoConsumidor20}` : 'Não informado pela ANVISA';
     } else if (this.estado == 'AM' ||
       this.estado == 'AP' ||
       this.estado == 'BA' ||
@@ -61,13 +61,13 @@ export class RemedioDetalhesPage {
       this.precoConsumidor = precoConsumidor18 != undefined &&
         precoConsumidor18 != 0 &&
         precoConsumidor18 != '' ?
-        `R$ ${precoConsumidor18}` : 'Preço não informado pela ANVISA';
+        `R$ ${precoConsumidor18}` : 'Não informado pela ANVISA';
     } else {
       let precoConsumidor17 = this.remedio.precoConsumidor17;
       this.precoConsumidor = precoConsumidor17 != undefined &&
         precoConsumidor17 != 0 &&
         precoConsumidor17 != '' ?
-        `R$ ${precoConsumidor17}` : 'Preço não informado pela ANVISA';
+        `R$ ${precoConsumidor17}` : 'Não informado pela ANVISA';
     }
   }
 
