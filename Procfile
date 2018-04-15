@@ -1,1 +1,1 @@
-web: node web.js
+web: npm rum build && npm start
