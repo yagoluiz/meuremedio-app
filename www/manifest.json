@@ -1,13 +1,13 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "Meu remédio",
+  "short_name": "Meu remédio",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
-    "src": "assets/imgs/logo.png",
+    "src": "assets/imgs/logo-branca.png",
     "sizes": "512x512",
     "type": "image/png"
   }],
-  "background_color": "#4e8ef7",
-  "theme_color": "#4e8ef7"
+  "background_color": "#960b0b",
+  "theme_color": "#960b0b"
 }
