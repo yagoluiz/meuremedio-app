@@ -23,7 +23,7 @@
 			<ion-label>Nome</ion-label>
 			<ion-input type="text" [(ngModel)]="denuncia.nome" formControlName="nome" [class.error1]="!denunciaForm.controls.nome.valid && denunciaForm.controls.nome.dirty"></ion-input>
 		</ion-item>
-		<ion-item no-lines *ngIf="(denunciaForm.get('nome').hasError('minlength') || denunciaForm.get('nome').hasError('maxlength') || denunciaForm.get('nome').hasError('pattern') || denunciaForm.get('nome').hasError('required')) && denunciaForm.get('nome').touched">
+		<ion-item no-lines *ngIf="(denunciaForm.get('nome').hasError('maxlength') || denunciaForm.get('nome').hasError('pattern') || denunciaForm.get('nome').hasError('required')) && denunciaForm.get('nome').touched">
 			<div class="form-erro" *ngIf="denunciaForm.get('nome').hasError('required') && denunciaForm.get('nome').touched">
 				Nome é obrigatório
 			</div>
