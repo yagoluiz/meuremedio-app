@@ -1,1 +1,813 @@
-webpackJsonp([4],{119:function(a,e,n){"use strict";n.d(e,"a",function(){return r});n(5);var o=n(200),t=(n.n(o),this&&this.__awaiter||function(a,e,n,o){return new(n||(n=Promise))(function(t,l){function r(a){try{u(o.next(a))}catch(a){l(a)}}function i(a){try{u(o.throw(a))}catch(a){l(a)}}function u(a){a.done?t(a.value):new n(function(e){e(a.value)}).then(r,i)}u((o=o.apply(a,e||[])).next())})}),l=this&&this.__generator||function(a,e){function n(n){return function(r){return function(n){if(o)throw new TypeError("Generator is already executing.");for(;i;)try{if(o=1,t&&(l=t[2&n[0]?"return":n[0]?"throw":"next"])&&!(l=l.call(t,n[1])).done)return l;switch(t=0,l&&(n=[0,l.value]),n[0]){case 0:case 1:l=n;break;case 4:return i.label++,{value:n[1],done:!1};case 5:i.label++,t=n[1],n=[0];continue;case 7:n=i.ops.pop(),i.trys.pop();continue;default:if(l=i.trys,!(l=l.length>0&&l[l.length-1])&&(6===n[0]||2===n[0])){i=0;continue}if(3===n[0]&&(!l||n[1]>l[0]&&n[1]<l[3])){i.label=n[1];break}if(6===n[0]&&i.label<l[1]){i.label=l[1],l=n;break}if(l&&i.label<l[2]){i.label=l[2],i.ops.push(n);break}l[2]&&i.ops.pop(),i.trys.pop();continue}n=e.call(a,i)}catch(a){n=[6,a],t=0}finally{o=l=0}if(5&n[0])throw n[1];return{value:n[0]?n[1]:void 0,done:!0}}([n,r])}}var o,t,l,r,i={label:0,sent:function(){if(1&l[0])throw l[1];return l[1]},trys:[],ops:[]};return r={next:n(0),throw:n(1),return:n(2)},"function"==typeof Symbol&&(r[Symbol.iterator]=function(){return this}),r},r=function(){function a(a){this.http=a,this.API_URL="https://meuremedio-backend.herokuapp.com/api/"}return a.prototype.getByNome=function(a){return t(this,void 0,void 0,function(){var e;return l(this,function(n){switch(n.label){case 0:return[4,this.http.get(this.API_URL+"consulta?value="+a).toPromise()];case 1:return e=n.sent(),[2,e]}})})},a}()},135:function(a,e){function n(a){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+a+"'.")})}n.keys=function(){return[]},n.resolve=n,a.exports=n,n.id=135},166:function(a,e,n){function o(a){var e=t[a];return e?n.e(e[1]).then(function(){return n(e[0])}):Promise.reject(new Error("Cannot find module '"+a+"'."))}var t={"../pages/pesquisa/pesquisa.module.ngfactory":[242,3],"../pages/remedio-detalhes/remedio-detalhes.module.ngfactory":[243,2],"../pages/sobre/sobre.module.ngfactory":[245,1],"../pages/tutorial/tutorial.module.ngfactory":[244,0]};o.keys=function(){return Object.keys(t)},o.id=166,a.exports=o},202:function(a,e,n){"use strict";n.d(e,"a",function(){return o}),n.d(e,"b",function(){return t});var o="TutorialPage",t="PesquisaPage"},203:function(a,e,n){"use strict";function o(a){return r._19(0,[(a()(),r.Z(0,0,null,null,7,"button",[["class","item item-block"],["ion-item",""],["menuClose",""]],null,[[null,"click"]],function(a,e,n){var o=!0,t=a.component;if("click"===e){o=!1!==r._11(a,6).close()&&o}if("click"===e){o=!1!==t.openPage(a.context.$implicit)&&o}return o},P.b,P.a)),r.Y(1,1097728,null,3,y.a,[O.a,S.a,r.j,r.z,[2,N.a]],null,null),r._16(335544320,4,{contentLabel:0}),r._16(603979776,5,{_buttons:1}),r._16(603979776,6,{_icons:1}),r.Y(5,16384,null,0,L.a,[],null,null),r.Y(6,16384,null,0,F.a,[v.a],{menuClose:[0,"menuClose"]},null),(a()(),r._18(7,2,["\n          ","\n        "]))],function(a,e){a(e,6,0,"")},function(a,e){a(e,7,0,e.context.$implicit.title)})}function t(a){return r._19(0,[r._16(402653184,1,{nav:0}),(a()(),r.Z(1,0,null,null,28,"ion-menu",[["role","navigation"]],null,null,null,j.b,j.a)),r._14(6144,null,D.a,null,[w.a]),r.Y(3,245760,null,2,w.a,[v.a,r.j,S.a,B.a,r.z,k.a,X.l,G.a,x.a],{content:[0,"content"]},null),r._16(335544320,2,{menuContent:0}),r._16(335544320,3,{menuNav:0}),(a()(),r._18(-1,0,["\n    "])),(a()(),r.Z(7,0,null,0,10,"ion-header",[],null,null,null,null,null)),r.Y(8,16384,null,0,q.a,[S.a,r.j,r.z,[2,H.a]],null,null),(a()(),r._18(-1,null,["\n      "])),(a()(),r.Z(10,0,null,null,6,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Y.b,Y.a)),r.Y(11,49152,null,0,U.a,[S.a,r.j,r.z],{color:[0,"color"]},null),(a()(),r._18(-1,3,["\n        "])),(a()(),r.Z(13,0,null,3,2,"ion-title",[],null,null,null,Z.b,Z.a)),r.Y(14,49152,null,0,z.a,[S.a,r.j,r.z,[2,U.a],[2,V.a]],null,null),(a()(),r.Z(15,0,null,0,0,"img",[["alt","logo"],["src","assets/img/logo-branca.png"]],null,null,null,null,null)),(a()(),r._18(-1,3,["\n      "])),(a()(),r._18(-1,null,["\n    "])),(a()(),r._18(-1,0,["\n\n    "])),(a()(),r.Z(19,0,null,0,9,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,K.b,K.a)),r.Y(20,4374528,[[2,4]],0,$.a,[S.a,B.a,G.a,r.j,r.z,x.a,k.a,r.u,[2,H.a],[2,J.a]],null,null),(a()(),r._18(-1,1,["\n      "])),(a()(),r.Z(22,0,null,1,5,"ion-list",[],null,null,null,null,null)),r.Y(23,16384,null,0,W.a,[S.a,r.j,r.z,B.a,X.l,G.a],null,null),(a()(),r._18(-1,null,["\n        "])),(a()(),r.U(16777216,null,null,1,null,o)),r.Y(26,802816,null,0,Q.h,[r.I,r.F,r.p],{ngForOf:[0,"ngForOf"]},null),(a()(),r._18(-1,null,["\n      "])),(a()(),r._18(-1,1,["\n    "])),(a()(),r._18(-1,0,["\n\n  "])),(a()(),r._18(-1,null,["\n  "])),(a()(),r.Z(31,0,null,null,2,"ion-nav",[["swipeBackEnabled","true"]],null,null,null,aa.b,aa.a)),r._14(6144,null,D.a,null,[ea.a]),r.Y(33,4374528,[[1,4],["content",4]],0,ea.a,[[2,H.a],[2,J.a],x.a,S.a,B.a,r.j,r.u,r.z,r.i,X.l,na.a,[2,oa.a],G.a,r.k],{swipeBackEnabled:[0,"swipeBackEnabled"],root:[1,"root"]},null)],function(a,e){var n=e.component;a(e,3,0,r._11(e,33));a(e,11,0,"primary");a(e,26,0,n.pages);a(e,33,0,"true",n.rootPage)},function(a,e){a(e,10,0,r._11(e,11)._sbPadding);a(e,19,0,r._11(e,20).statusbarPadding,r._11(e,20)._hasRefresher)})}Object.defineProperty(e,"__esModule",{value:!0});var l=n(35),r=n(0),i=(n(5),n(83)),u=n(56),c=n(57),s=(n(114),n(119)),p=function(){return function(a){for(var e in a)this[e]=a[e]}}(),_=function(){function a(){this.remedios=[],this.default={id:1,nome:"FILINAR G",principioAtivo:"ACEBROFILINA",apresentacao:"5 MG/ML GEL OR CT FR PLAS INC X 120ML + COL MED",classeTerapeutica:"R05C0 - EXPECTORANTES",tipo:"Novo (Referência)",restricaoHospitalar:!1,tarja:"Tarja Vermelha",precoFabrica:11.85,precoMaximo:20.47,laboratorioNome:"EUROFARMA LABORATÓRIOS S.A.",laboratorioCnpj:"61.190.096/0001-92",laboratorioRegistro:"EUROFARMA LABORATÓRIOS S.A."};for(var a=0,e=[{id:1,nome:"FILINAR G",principioAtivo:"ACEBROFILINA",apresentacao:"5 MG/ML GEL OR CT FR PLAS INC X 120ML + COL MED",classeTerapeutica:"R05C0 - EXPECTORANTES",tipo:"Novo (Referência)",restricaoHospitalar:!1,tarja:"Tarja Vermelha",precoFabrica:11.85,precoMaximo:20.47,laboratorioNome:"EUROFARMA LABORATÓRIOS S.A.",laboratorioCnpj:"61.190.096/0001-92",laboratorioRegistro:"EUROFARMA LABORATÓRIOS S.A."},{id:2,nome:"ACEBROFILINA",principioAtivo:"ACEBROFILINA",apresentacao:"10 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",classeTerapeutica:"R05C0 - EXPECTORANTES",tipo:"Genérico",restricaoHospitalar:!1,tarja:"Tarja Vermelha",precoFabrica:15.7,precoMaximo:27.14,laboratorioNome:"CIMED INDÚSTRIA DE MEDICAMENTOS LTDA",laboratorioCnpj:"02.814.497/0001-07",laboratorioRegistro:"CIMED INDÚSTRIA DE MEDICAMENTOS LTDA"},{id:3,nome:"ACEBROFILINA",principioAtivo:"ACEBROFILINA",apresentacao:"10 MG/ML XPE CX 50 FR PLAS AMB X 120 ML + 50 CP MED (EMB HOSP)",classeTerapeutica:"R05C0 - EXPECTORANTES",tipo:"Genérico",restricaoHospitalar:!0,tarja:"Tarja Vermelha",precoFabrica:579.85,precoMaximo:0,laboratorioNome:"CIMED INDÚSTRIA DE MEDICAMENTOS LTDA",laboratorioCnpj:"02.814.497/0001-07",laboratorioRegistro:"CIMED INDÚSTRIA DE MEDICAMENTOS LTDA"},{id:4,nome:"BRONTEK",principioAtivo:"ACEBROFILINA",apresentacao:"10 MG/ML XPE CT FR PEAD X 120 ML + CP MED",classeTerapeutica:"R05C0 - EXPECTORANTES",tipo:"Similar",restricaoHospitalar:!1,tarja:"Tarja Vermelha",precoFabrica:22.94,precoMaximo:39.63,laboratorioNome:"GEOLAB INDÚSTRIA FARMACÊUTICA S/A",laboratorioCnpj:"03.485.572/0001-04",laboratorioRegistro:"GEOLAB INDÚSTRIA FARMACÊUTICA S/A"},{id:5,nome:"BRONTEK",principioAtivo:"ACEBROFILINA",apresentacao:"10 MG/ML XPE CX 60 FR PEAD X 120 ML + 60 CP MED (EMB HOSP)",classeTerapeutica:"R05C0 - EXPECTORANTES",tipo:"Similar",restricaoHospitalar:!0,tarja:"Tarja Vermelha",precoFabrica:1202.68,precoMaximo:0,laboratorioNome:"GEOLAB INDÚSTRIA FARMACÊUTICA S/A",laboratorioCnpj:"03.485.572/0001-04",laboratorioRegistro:"GEOLAB INDÚSTRIA FARMACÊUTICA S/A"}];a<e.length;a++){this.remedios.push(new p(e[a]))}}return a.prototype.query=function(a){return a?this.remedios.filter(function(e){for(var n in a){var o=e[n];if("string"==typeof o&&o.toLowerCase().indexOf(a[n].toLowerCase())>=0)return e;if(o==a[n])return e}return null}):this.remedios},a.prototype.add=function(a){this.remedios.push(a)},a.prototype.delete=function(a){this.remedios.splice(this.remedios.indexOf(a),1)},a}(),f=n(202),d=function(){function a(a,e,n){var o=this;this.statusBar=e,this.splashScreen=n,this.rootPage=f.a,this.pages=[{title:"Pesquisa",component:"PesquisaPage"},{title:"Tutorial",component:"TutorialPage"},{title:"Sobre",component:"SobrePage"}],a.ready().then(function(){o.statusBar.styleDefault(),o.splashScreen.hide()})}return a.prototype.openPage=function(a){this.nav.setRoot(a.component)},a}(),m=function(){return function(){}}(),b=n(46),A=n(189),h=n(190),E=n(191),R=n(192),g=n(193),C=n(194),T=n(195),M=n(196),I=n(197),P=n(120),y=n(16),O=n(14),S=n(1),N=n(38),L=n(54),F=n(93),v=n(22),j=n(239),D=n(32),w=n(67),B=n(3),k=n(24),X=n(6),G=n(9),x=n(8),q=n(73),H=n(4),Y=n(240),U=n(34),Z=n(198),z=n(53),V=n(33),K=n(199),$=n(21),J=n(19),W=n(44),Q=n(11),aa=n(241),ea=n(51),na=n(29),oa=n(15),ta=r.X({encapsulation:2,styles:[],data:{}}),la=r.V("ng-component",d,function(a){return r._19(0,[(a()(),r.Z(0,0,null,null,1,"ng-component",[],null,null,null,t,ta)),r.Y(1,49152,null,0,d,[B.a,c.a,u.a],null,null)],null,null)},{},{},[]),ra=n(96),ia=n(18),ua=n(87),ca=n(89),sa=n(95),pa=n(31),_a=n(76),fa=n(115),da=n(48),ma=n(37),ba=n(100),Aa=n(62),ha=n(104),Ea=n(98),Ra=n(77),ga=n(188),Ca=n(97),Ta=n(94),Ma=n(99),Ia=r.W(m,[b.b],function(a){return r._7([r._8(512,r.i,r.S,[[8,[A.a,h.a,E.a,R.a,g.a,C.a,T.a,M.a,I.a,la]],[3,r.i],r.s]),r._8(5120,r.r,r._15,[[3,r.r]]),r._8(4608,Q.k,Q.j,[r.r,[2,Q.s]]),r._8(5120,r.b,r._1,[]),r._8(5120,r.p,r._9,[]),r._8(5120,r.q,r._12,[]),r._8(4608,l.c,l.q,[Q.c]),r._8(6144,r.D,null,[l.c]),r._8(4608,l.f,ra.a,[]),r._8(5120,l.d,function(a,e,n,o,t){return[new l.k(a,e),new l.o(n),new l.n(o,t)]},[Q.c,r.u,Q.c,Q.c,l.f]),r._8(4608,l.e,l.e,[l.d,r.u]),r._8(135680,l.m,l.m,[Q.c]),r._8(4608,l.l,l.l,[l.e,l.m]),r._8(6144,r.B,null,[l.l]),r._8(6144,l.p,null,[l.m]),r._8(4608,r.G,r.G,[r.u]),r._8(4608,l.h,l.h,[Q.c]),r._8(4608,l.i,l.i,[Q.c]),r._8(4608,i.h,i.n,[Q.c,r.w,i.l]),r._8(4608,i.o,i.o,[i.h,i.m]),r._8(5120,i.a,function(a){return[a]},[i.o]),r._8(4608,i.k,i.k,[]),r._8(6144,i.i,null,[i.k]),r._8(4608,i.g,i.g,[i.i]),r._8(6144,i.b,null,[i.g]),r._8(4608,i.f,i.j,[i.b,r.o]),r._8(4608,i.c,i.c,[i.f]),r._8(4608,ia.k,ia.k,[]),r._8(4608,ia.c,ia.c,[]),r._8(4608,ua.a,ua.a,[x.a,S.a]),r._8(4608,ca.a,ca.a,[x.a,S.a]),r._8(4608,sa.a,sa.a,[]),r._8(4608,O.a,O.a,[]),r._8(4608,pa.a,pa.a,[B.a]),r._8(4608,k.a,k.a,[S.a,B.a,r.u,G.a]),r._8(4608,_a.a,_a.a,[x.a,S.a]),r._8(5120,Q.f,fa.c,[Q.q,[2,Q.a],S.a]),r._8(4608,Q.e,Q.e,[Q.f]),r._8(5120,da.b,da.d,[x.a,da.a]),r._8(5120,oa.a,oa.b,[x.a,da.b,Q.e,ma.b,r.i]),r._8(4608,ba.a,ba.a,[x.a,S.a,oa.a]),r._8(4608,Aa.a,Aa.a,[x.a,S.a]),r._8(4608,ha.a,ha.a,[x.a,S.a,oa.a]),r._8(4608,Ea.a,Ea.a,[S.a,B.a,G.a,x.a,X.l]),r._8(4608,Ra.a,Ra.a,[x.a,S.a]),r._8(4608,na.a,na.a,[B.a,S.a]),r._8(4608,s.a,s.a,[i.c]),r._8(4608,_,_,[]),r._8(4608,u.a,u.a,[]),r._8(4608,c.a,c.a,[]),r._8(512,Q.b,Q.b,[]),r._8(512,r.k,ga.a,[]),r._8(256,S.b,{backButtonText:"Voltar"},[]),r._8(1024,Ca.a,Ca.b,[]),r._8(1024,B.a,B.b,[l.b,Ca.a,r.u]),r._8(1024,S.a,S.c,[S.b,B.a]),r._8(512,G.a,G.a,[B.a]),r._8(512,v.a,v.a,[]),r._8(512,x.a,x.a,[S.a,B.a,[2,v.a]]),r._8(512,X.l,X.l,[x.a]),r._8(256,da.a,{links:[{loadChildren:"../pages/pesquisa/pesquisa.module.ngfactory#PesquisaPageModuleNgFactory",name:"PesquisaPage",segment:"pesquisa",priority:"low",defaultHistory:[]},{loadChildren:"../pages/remedio-detalhes/remedio-detalhes.module.ngfactory#RemedioDetalhesPageModuleNgFactory",name:"RemedioDetalhesPage",segment:"remedio-detalhes",priority:"low",defaultHistory:[]},{loadChildren:"../pages/tutorial/tutorial.module.ngfactory#TutorialPageModuleNgFactory",name:"TutorialPage",segment:"tutorial",priority:"low",defaultHistory:[]},{loadChildren:"../pages/sobre/sobre.module.ngfactory#SobrePageModuleNgFactory",name:"SobrePage",segment:"sobre",priority:"low",defaultHistory:[]}]},[]),r._8(512,r.h,r.h,[]),r._8(512,Ta.a,Ta.a,[r.h]),r._8(1024,ma.b,ma.c,[Ta.a,r.o]),r._8(1024,r.c,function(a,e,n,o,t,r,i,u,c,s,p,_,f){return[l.s(a),Ma.a(e),sa.b(n,o),Ea.b(t,r,i,u,c),ma.d(s,p,_,f)]},[[2,r.t],S.a,B.a,G.a,S.a,B.a,G.a,x.a,X.l,S.a,da.a,ma.b,r.u]),r._8(512,r.d,r.d,[[2,r.c]]),r._8(131584,r.f,r.f,[r.u,r.T,r.o,r.k,r.i,r.d]),r._8(512,r.e,r.e,[r.f]),r._8(512,l.a,l.a,[[3,l.a]]),r._8(512,i.e,i.e,[]),r._8(512,i.d,i.d,[]),r._8(512,ia.j,ia.j,[]),r._8(512,ia.d,ia.d,[]),r._8(512,ia.i,ia.i,[]),r._8(512,fa.a,fa.a,[]),r._8(512,m,m,[]),r._8(256,i.l,"XSRF-TOKEN",[]),r._8(256,i.m,"X-XSRF-TOKEN",[]),r._8(256,b.a,d,[]),r._8(256,Q.a,"/",[])])});Object(r.M)(),Object(l.j)().bootstrapModuleFactory(Ia)}},[203]);
+webpackJsonp([6],{
+
+/***/ 103:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Alerta; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(52);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Alerta = /** @class */ (function () {
+    function Alerta(toastCtrl) {
+        this.toastCtrl = toastCtrl;
+    }
+    Alerta.prototype.create = function (mensagem) {
+        return this.toastCtrl.create({
+            message: mensagem,
+            position: 'top',
+            duration: 3000
+        }).present();
+    };
+    Alerta = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
+    ], Alerta);
+    return Alerta;
+}());
+
+//# sourceMappingURL=alerta.js.map
+
+/***/ }),
+
+/***/ 104:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Regex; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var Regex = /** @class */ (function () {
+    function Regex() {
+        this.ALFABETO = '[a-zA-Z ]*';
+        this.EMAIL = /^[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/;
+    }
+    Regex = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
+    ], Regex);
+    return Regex;
+}());
+
+//# sourceMappingURL=regex.js.map
+
+/***/ }),
+
+/***/ 116:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 116;
+
+/***/ }),
+
+/***/ 162:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"../pages/comentario/comentario.module": [
+		285,
+		1
+	],
+	"../pages/denuncia/denuncia.module": [
+		286,
+		0
+	],
+	"../pages/pesquisa/pesquisa.module": [
+		287,
+		5
+	],
+	"../pages/remedio-detalhes/remedio-detalhes.module": [
+		288,
+		4
+	],
+	"../pages/sobre/sobre.module": [
+		289,
+		3
+	],
+	"../pages/tutorial/tutorial.module": [
+		290,
+		2
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(ids[0]);
+	});
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = 162;
+module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ 202:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemediosMock; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_remedio_mock__ = __webpack_require__(283);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var RemediosMock = /** @class */ (function () {
+    function RemediosMock() {
+        this.remedios = [];
+        this.default = {
+            "id": 1,
+            "nome": "FILINAR G",
+            "principioAtivo": "ACEBROFILINA",
+            "apresentacao": "5 MG/ML GEL OR CT FR PLAS INC X 120ML + COL MED",
+            "classeTerapeutica": "R05C0 - EXPECTORANTES",
+            "tipo": "Novo (Referência)",
+            "restricaoHospitalar": false,
+            "tarja": "Tarja Vermelha",
+            "precoFabrica": 11.85,
+            "precoMaximo": 20.47,
+            "laboratorioNome": "EUROFARMA LABORATÓRIOS S.A.",
+            "laboratorioCnpj": "61.190.096/0001-92",
+            "laboratorioRegistro": "EUROFARMA LABORATÓRIOS S.A."
+        };
+        var remedios = [{
+                "id": 1,
+                "nome": "FILINAR G",
+                "principioAtivo": "ACEBROFILINA",
+                "apresentacao": "5 MG/ML GEL OR CT FR PLAS INC X 120ML + COL MED",
+                "classeTerapeutica": "R05C0 - EXPECTORANTES",
+                "tipo": "Novo (Referência)",
+                "restricaoHospitalar": false,
+                "tarja": "Tarja Vermelha",
+                "precoFabrica": 11.85,
+                "precoMaximo": 20.47,
+                "laboratorioNome": "EUROFARMA LABORATÓRIOS S.A.",
+                "laboratorioCnpj": "61.190.096/0001-92",
+                "laboratorioRegistro": "EUROFARMA LABORATÓRIOS S.A."
+            }, {
+                "id": 2,
+                "nome": "ACEBROFILINA",
+                "principioAtivo": "ACEBROFILINA",
+                "apresentacao": "10 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+                "classeTerapeutica": "R05C0 - EXPECTORANTES",
+                "tipo": "Genérico",
+                "restricaoHospitalar": false,
+                "tarja": "Tarja Vermelha",
+                "precoFabrica": 15.70,
+                "precoMaximo": 27.14,
+                "laboratorioNome": "CIMED INDÚSTRIA DE MEDICAMENTOS LTDA",
+                "laboratorioCnpj": "02.814.497/0001-07",
+                "laboratorioRegistro": "CIMED INDÚSTRIA DE MEDICAMENTOS LTDA"
+            }, {
+                "id": 3,
+                "nome": "ACEBROFILINA",
+                "principioAtivo": "ACEBROFILINA",
+                "apresentacao": "10 MG/ML XPE CX 50 FR PLAS AMB X 120 ML + 50 CP MED (EMB HOSP)",
+                "classeTerapeutica": "R05C0 - EXPECTORANTES",
+                "tipo": "Genérico",
+                "restricaoHospitalar": true,
+                "tarja": "Tarja Vermelha",
+                "precoFabrica": 579.85,
+                "precoMaximo": 0.00,
+                "laboratorioNome": "CIMED INDÚSTRIA DE MEDICAMENTOS LTDA",
+                "laboratorioCnpj": "02.814.497/0001-07",
+                "laboratorioRegistro": "CIMED INDÚSTRIA DE MEDICAMENTOS LTDA"
+            }, {
+                "id": 4,
+                "nome": "BRONTEK",
+                "principioAtivo": "ACEBROFILINA",
+                "apresentacao": "10 MG/ML XPE CT FR PEAD X 120 ML + CP MED",
+                "classeTerapeutica": "R05C0 - EXPECTORANTES",
+                "tipo": "Similar",
+                "restricaoHospitalar": false,
+                "tarja": "Tarja Vermelha",
+                "precoFabrica": 22.94,
+                "precoMaximo": 39.63,
+                "laboratorioNome": "GEOLAB INDÚSTRIA FARMACÊUTICA S/A",
+                "laboratorioCnpj": "03.485.572/0001-04",
+                "laboratorioRegistro": "GEOLAB INDÚSTRIA FARMACÊUTICA S/A"
+            }, {
+                "id": 5,
+                "nome": "BRONTEK",
+                "principioAtivo": "ACEBROFILINA",
+                "apresentacao": "10 MG/ML XPE CX 60 FR PEAD X 120 ML + 60 CP MED (EMB HOSP)",
+                "classeTerapeutica": "R05C0 - EXPECTORANTES",
+                "tipo": "Similar",
+                "restricaoHospitalar": true,
+                "tarja": "Tarja Vermelha",
+                "precoFabrica": 1202.68,
+                "precoMaximo": 0.00,
+                "laboratorioNome": "GEOLAB INDÚSTRIA FARMACÊUTICA S/A",
+                "laboratorioCnpj": "03.485.572/0001-04",
+                "laboratorioRegistro": "GEOLAB INDÚSTRIA FARMACÊUTICA S/A"
+            }];
+        for (var _i = 0, remedios_1 = remedios; _i < remedios_1.length; _i++) {
+            var remedio = remedios_1[_i];
+            this.remedios.push(new __WEBPACK_IMPORTED_MODULE_1__models_remedio_mock__["a" /* RemedioMock */](remedio));
+        }
+    }
+    RemediosMock.prototype.query = function (params) {
+        if (!params) {
+            return this.remedios;
+        }
+        return this.remedios.filter(function (item) {
+            for (var key in params) {
+                var field = item[key];
+                if (typeof field == 'string' && field.toLowerCase().indexOf(params[key].toLowerCase()) >= 0) {
+                    return item;
+                }
+                else if (field == params[key]) {
+                    return item;
+                }
+            }
+            return null;
+        });
+    };
+    RemediosMock.prototype.add = function (remedio) {
+        this.remedios.push(remedio);
+    };
+    RemediosMock.prototype.delete = function (remedio) {
+        this.remedios.splice(this.remedios.indexOf(remedio), 1);
+    };
+    RemediosMock = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], RemediosMock);
+    return RemediosMock;
+}());
+
+//# sourceMappingURL=remedios-mock.js.map
+
+/***/ }),
+
+/***/ 203:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FirstRunPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return MainPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComentarioPage; });
+var FirstRunPage = 'TutorialPage';
+var MainPage = 'PesquisaPage';
+var ComentarioPage = 'ComentarioPage';
+//# sourceMappingURL=pages.js.map
+
+/***/ }),
+
+/***/ 204:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComentarioApi; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_constantes__ = __webpack_require__(46);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+var ComentarioApi = /** @class */ (function () {
+    function ComentarioApi(http, constantes) {
+        this.http = http;
+        this.constantes = constantes;
+        this.path = this.constantes.getBaseUrl() + "comentarios";
+    }
+    ComentarioApi.prototype.create = function (comentario) {
+        return __awaiter(this, void 0, void 0, function () {
+            var data, result;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        data = {
+                            "nome": comentario.nome,
+                            "email": comentario.email,
+                            "faixaEtaria": comentario.faixaEtaria,
+                            "sexo": comentario.sexo,
+                            "comentario": comentario.comentario
+                        };
+                        return [4 /*yield*/, this.http.post(this.path, data).toPromise()];
+                    case 1:
+                        result = _a.sent();
+                        return [2 /*return*/, result];
+                }
+            });
+        });
+    };
+    ComentarioApi = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__providers_constantes__["a" /* Constantes */]])
+    ], ComentarioApi);
+    return ComentarioApi;
+}());
+
+//# sourceMappingURL=comentario.js.map
+
+/***/ }),
+
+/***/ 205:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DenunciaApi; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_constantes__ = __webpack_require__(46);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+var DenunciaApi = /** @class */ (function () {
+    function DenunciaApi(http, constantes) {
+        this.http = http;
+        this.constantes = constantes;
+        this.path = this.constantes.getBaseUrl() + "denuncias";
+    }
+    DenunciaApi.prototype.create = function (denuncia) {
+        return __awaiter(this, void 0, void 0, function () {
+            var data, result;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        data = {
+                            "nome": denuncia.nome,
+                            "email": denuncia.email,
+                            "farmacia": denuncia.farmacia,
+                            "preco": denuncia.preco,
+                            "texto": denuncia.texto,
+                            "medicamentoId": denuncia.medicamentoId
+                        };
+                        return [4 /*yield*/, this.http.post(this.path, data).toPromise()];
+                    case 1:
+                        result = _a.sent();
+                        return [2 /*return*/, result];
+                }
+            });
+        });
+    };
+    DenunciaApi = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__providers_constantes__["a" /* Constantes */]])
+    ], DenunciaApi);
+    return DenunciaApi;
+}());
+
+//# sourceMappingURL=denuncia.js.map
+
+/***/ }),
+
+/***/ 206:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemedioApi; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_constantes__ = __webpack_require__(46);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+var RemedioApi = /** @class */ (function () {
+    function RemedioApi(http, constantes) {
+        this.http = http;
+        this.constantes = constantes;
+        this.path = this.constantes.getBaseUrl() + "consulta";
+    }
+    RemedioApi.prototype.getByNome = function (remedio) {
+        return __awaiter(this, void 0, void 0, function () {
+            var result;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.http.get(this.path + "?value=" + remedio).toPromise()];
+                    case 1:
+                        result = _a.sent();
+                        return [2 /*return*/, result];
+                }
+            });
+        });
+    };
+    RemedioApi = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__providers_constantes__["a" /* Constantes */]])
+    ], RemedioApi);
+    return RemedioApi;
+}());
+
+//# sourceMappingURL=remedio.js.map
+
+/***/ }),
+
+/***/ 207:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(228);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 228:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_providers__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_alerta__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_regex__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__mocks_providers_remedios_mock__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(284);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */], {
+                    backButtonText: 'Voltar'
+                }, {
+                    links: [
+                        { loadChildren: '../pages/comentario/comentario.module#ComentarioModule', name: 'ComentarioPage', segment: 'comentario', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/denuncia/denuncia.module#RemedioDetalhesPageModule', name: 'DenunciaPage', segment: 'denuncia', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/pesquisa/pesquisa.module#PesquisaPageModule', name: 'PesquisaPage', segment: 'pesquisa', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/remedio-detalhes/remedio-detalhes.module#RemedioDetalhesPageModule', name: 'RemedioDetalhesPage', segment: 'remedio-detalhes', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sobre/sobre.module#SobrePageModule', name: 'SobrePage', segment: 'sobre', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] }
+                    ]
+                })
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["b" /* IonicApp */]],
+            entryComponents: [
+                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */]
+            ],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_6__providers_providers__["d" /* RemedioApi */],
+                __WEBPACK_IMPORTED_MODULE_6__providers_providers__["a" /* ComentarioApi */],
+                __WEBPACK_IMPORTED_MODULE_6__providers_providers__["c" /* DenunciaApi */],
+                __WEBPACK_IMPORTED_MODULE_6__providers_providers__["b" /* Constantes */],
+                __WEBPACK_IMPORTED_MODULE_7__providers_alerta__["a" /* Alerta */],
+                __WEBPACK_IMPORTED_MODULE_8__providers_regex__["a" /* Regex */],
+                __WEBPACK_IMPORTED_MODULE_9__mocks_providers_remedios_mock__["a" /* RemediosMock */],
+                __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["c" /* IonicErrorHandler */] }
+            ]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 283:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemedioMock; });
+var RemedioMock = /** @class */ (function () {
+    function RemedioMock(fields) {
+        for (var f in fields) {
+            this[f] = fields[f];
+        }
+    }
+    return RemedioMock;
+}());
+
+//# sourceMappingURL=remedio-mock.js.map
+
+/***/ }),
+
+/***/ 284:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_pages__ = __webpack_require__(203);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var MyApp = /** @class */ (function () {
+    function MyApp(platform, statusBar, splashScreen) {
+        var _this = this;
+        this.statusBar = statusBar;
+        this.splashScreen = splashScreen;
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_pages__["b" /* FirstRunPage */];
+        this.pages = [
+            { title: 'Comentário', component: 'ComentarioPage' },
+            { title: 'Pesquisa', component: 'PesquisaPage' },
+            { title: 'Tutorial', component: 'TutorialPage' },
+            { title: 'Sobre', component: 'SobrePage' }
+        ];
+        platform.ready().then(function () {
+            _this.statusBar.styleDefault();
+            _this.splashScreen.hide();
+        });
+    }
+    MyApp.prototype.openPage = function (page) {
+        this.nav.setRoot(page.component);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* Nav */])
+    ], MyApp.prototype, "nav", void 0);
+    MyApp = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            template: "<ion-menu [content]=\"content\">\n    <ion-header>\n      <ion-toolbar color=\"primary\">\n        <ion-title><img src=\"assets/img/logo-branca.png\" alt=\"logo\"></ion-title>\n      </ion-toolbar>\n    </ion-header>\n\n    <ion-content>\n      <ion-list>\n        <button menuClose ion-item *ngFor=\"let p of pages\" (click)=\"openPage(p)\">\n          {{p.title}}\n        </button>\n      </ion-list>\n    </ion-content>\n\n  </ion-menu>\n  <ion-nav [root]=\"rootPage\" #content swipeBackEnabled=\"true\"></ion-nav>"
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    ], MyApp);
+    return MyApp;
+}());
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 46:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constantes; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var Constantes = /** @class */ (function () {
+    function Constantes() {
+        this.API_URL = 'https://meuremedio-backend.herokuapp.com/api/';
+    }
+    Constantes.prototype.getBaseUrl = function () {
+        return this.API_URL;
+    };
+    Constantes = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
+    ], Constantes);
+    return Constantes;
+}());
+
+//# sourceMappingURL=constantes.js.map
+
+/***/ }),
+
+/***/ 51:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_remedio__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__api_comentario__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_denuncia__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constantes__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__alerta__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__regex__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mocks_providers_remedios_mock__ = __webpack_require__(202);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__api_remedio__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__api_comentario__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__api_denuncia__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__constantes__["a"]; });
+/* unused harmony reexport Alerta */
+/* unused harmony reexport Regex */
+/* unused harmony reexport RemediosMock */
+
+
+
+
+
+
+
+
+//# sourceMappingURL=providers.js.map
+
+/***/ })
+
+},[207]);
+//# sourceMappingURL=main.js.map

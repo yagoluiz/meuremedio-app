@@ -1,0 +1,90 @@
+<ion-header>
+	<ion-navbar color="primary">
+		<ion-title>Denúncia</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+		<ion-list>
+			<ion-item [ngClass]="{
+					'tarja-verde': remedio.tarja === 'Venda Livre',
+					'tarja-vermelha': remedio.tarja === 'Tarja Vermelha',
+					'tarja-preta': remedio.tarja === 'Tarja Preta'}">
+				<h2 class="texto-branco" text-wrap>
+					{{remedio.nome}}
+				</h2>
+				<p class="texto-branco" text-wrap>{{remedio.apresentacao}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-card>
+	<form [formGroup]="denunciaForm" (ngSubmit)="salvarDenuncia()" padding novalidate>
+		<ion-item>
+			<ion-label>Nome</ion-label>
+			<ion-input type="text" [(ngModel)]="denuncia.nome" formControlName="nome" [class.error1]="!denunciaForm.controls.nome.valid && denunciaForm.controls.nome.dirty"></ion-input>
+		</ion-item>
+		<ion-item no-lines *ngIf="(denunciaForm.get('nome').hasError('minlength') || denunciaForm.get('nome').hasError('maxlength') || denunciaForm.get('nome').hasError('pattern') || denunciaForm.get('nome').hasError('required')) && denunciaForm.get('nome').touched">
+			<div class="form-erro" *ngIf="denunciaForm.get('nome').hasError('required') && denunciaForm.get('nome').touched">
+				Nome é obrigatório
+			</div>
+			<div class="form-erro" *ngIf="denunciaForm.get('nome').hasError('maxlength') && denunciaForm.get('nome').touched">
+				Máximo de 50 caracteres
+			</div>
+			<div class="form-erro" *ngIf="denunciaForm.get('nome').hasError('pattern') && denunciaForm.get('nome').touched">
+				Utlize apenas letras do alfabeto
+			</div>
+		</ion-item>
+		<ion-item>
+			<ion-label>E-mail</ion-label>
+			<ion-input type="email" [(ngModel)]="denuncia.email" formControlName="email" [class.error1]="!denunciaForm.controls.email.valid && denunciaForm.controls.email.dirty"></ion-input>
+		</ion-item>
+		<ion-item no-lines *ngIf="(denunciaForm.get('email').hasError('maxlength') || denunciaForm.get('email').hasError('pattern') || denunciaForm.get('email').hasError('required')) && denunciaForm.get('email').touched">
+			<div class="form-erro" *ngIf="denunciaForm.get('email').hasError('required') && denunciaForm.get('email').touched">
+				Email é obrigatório
+			</div>
+			<div class="form-erro" *ngIf="denunciaForm.get('email').hasError('maxlength') && denunciaForm.get('email').touched">
+				Máximo de 50 caracteres
+			</div>
+			<div class="form-erro" *ngIf="denunciaForm.get('email').hasError('pattern') && denunciaForm.get('email').touched">
+				Email inválido
+			</div>
+		</ion-item>
+		<ion-item>
+			<ion-label>Farmácia</ion-label>
+			<ion-input type="text" [(ngModel)]="denuncia.farmacia" formControlName="farmacia" [class.error1]="!denunciaForm.controls.farmacia.valid && denunciaForm.controls.farmacia.dirty"></ion-input>
+		</ion-item>
+		<ion-item no-lines *ngIf="(denunciaForm.get('farmacia').hasError('maxlength') || denunciaForm.get('farmacia').hasError('required')) && denunciaForm.get('farmacia').touched">
+			<div class="form-erro" *ngIf="denunciaForm.get('farmacia').hasError('required') && denunciaForm.get('farmacia').touched">
+				Farmácia é obrigatória
+			</div>
+			<div class="form-erro" *ngIf="denunciaForm.get('farmacia').hasError('maxlength') && denunciaForm.get('farmacia').touched">
+				Máximo de 50 caracteres
+			</div>
+		</ion-item>
+		<ion-item>
+			<ion-label>Preço</ion-label>
+			<ion-input type="number" [(ngModel)]="denuncia.preco" formControlName="preco" [class.error1]="!denunciaForm.controls.preco.valid && denunciaForm.controls.preco.dirty"></ion-input>
+		</ion-item>
+		<ion-item no-lines *ngIf="(denunciaForm.get('preco').hasError('maxlength') || denunciaForm.get('preco').hasError('required')) && denunciaForm.get('preco').touched">
+			<div class="form-erro" *ngIf="denunciaForm.get('preco').hasError('required') && denunciaForm.get('preco').touched">
+				Preço é obrigatório
+			</div>
+			<div class="form-erro" *ngIf="denunciaForm.get('preco').hasError('maxlength') && denunciaForm.get('preco').touched">
+				Máximo de 10 números
+			</div>
+		</ion-item>
+		<ion-item>
+			<ion-label>Comentário</ion-label>
+			<ion-textarea rows="3" [(ngModel)]="denuncia.texto" formControlName="texto" [class.error1]="!denunciaForm.controls.texto.valid && denunciaForm.controls.texto.dirty"></ion-textarea>
+		</ion-item>
+		<ion-item no-lines *ngIf="(denunciaForm.get('texto').hasError('maxlength') || denunciaForm.get('texto').hasError('required')) && denunciaForm.get('texto').touched">
+			<div class="form-erro" *ngIf="denunciaForm.get('texto').hasError('required') && denunciaForm.get('texto').touched">
+				Texto é obrigatório
+			</div>
+			<div class="form-erro" *ngIf="denunciaForm.get('texto').hasError('maxlength') && denunciaForm.get('texto').touched">
+				Máximo de 100 caracteres
+			</div>
+		</ion-item>
+		<button ion-button type="submit" [disabled]="denunciaForm.invalid" block>Salvar</button>
+	</form>
+</ion-content>

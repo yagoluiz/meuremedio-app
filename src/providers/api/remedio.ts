@@ -5,14 +5,18 @@ import { Injectable } from '@angular/core';
 
 import { Remedio } from '../../models/remedio'
 
+import { Constantes } from '../../providers/constantes'
+
 @Injectable()
 export class RemedioApi {
-    API_URL: string = 'https://meuremedio-backend.herokuapp.com/api/';
+    path: string;
 
-    constructor(public http: HttpClient) { }
+    constructor(public http: HttpClient, public constantes: Constantes) {
+        this.path = `${this.constantes.getBaseUrl()}consulta`;
+    }
 
     async getByNome(remedio: string) {
-        const response = <Array<Remedio>>await this.http.get(`${this.API_URL}consulta?value=${remedio}`).toPromise();
-        return response;
+        const result = <Array<Remedio>>await this.http.get(`${this.path}?value=${remedio}`).toPromise();
+        return result;
     }
 }
