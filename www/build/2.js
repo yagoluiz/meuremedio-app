@@ -126,7 +126,7 @@ var TutorialPage = /** @class */ (function () {
             {
                 titulo: 'Denuncie preços ilegais!',
                 descricao: 'Após selecionar um <strong>remédio</strong>, você encontra informações e o preço de acordo com o <strong>ICMS (Imposto Sobre Circulação de Mercadorias)</strong> de cada <strong>estado</strong>.',
-                imagem: 'assets/img/pagina-informacoes.png',
+                imagem: 'assets/img/pagina-informacoes-denuncia.png',
             }
         ];
     }
