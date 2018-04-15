@@ -9,7 +9,7 @@
 
 <ion-content>
 	<ion-searchbar (ionInput)="buscarRemedio($event)" (ionCancel)="cancelarPesquisa($event)" [showCancelButton]="true" cancelButtonText="Cancelar"
-	 placeholder="Qual o nome do seu remédio?"></ion-searchbar>
+	 placeholder="Mínimo 3 caracteres" text-wrap></ion-searchbar>
 	<ion-list>
 		<button ion-item (click)="abrirRemedio(remedio)" *ngFor="let remedio of remedios">
 			<ion-icon name="information-circle" [ngClass]="{
@@ -17,9 +17,9 @@
 				'tarja-vermelha': remedio.tarja === 'Tarja Vermelha',
 				'tarja-preta': remedio.tarja === 'Tarja Preta'}" item-start>
 			</ion-icon>
-			<h2>{{remedio.nome}}</h2>
-			<p>{{remedio.principioAtivo}}</p>
-			<p>{{remedio.apresentacao}}</p>
+			<h2 text-wrap>{{remedio.nome}}</h2>
+			<p text-wrap>{{remedio.principioAtivo}}</p>
+			<p text-wrap>{{remedio.apresentacao}}</p>
 		</button>
 	</ion-list>
 	<ion-infinite-scroll (ionInfinite)="carregarRemedio($event)">

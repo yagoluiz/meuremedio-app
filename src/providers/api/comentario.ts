@@ -1,20 +1,21 @@
 import 'rxjs/add/operator/toPromise';
 
-import {HttpClient} from '@angular/common/http';
-import {Injectable} from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 
-import {Comentario} from '../../models/comentario'
+import { Comentario } from '../../models/comentario'
 
-import {Constantes} from '../../providers/constantes'
+import { Constantes } from '../../providers/constantes'
 
 @Injectable()
 export class ComentarioApi {
+  path: string;
 
-  constructor(public http: HttpClient, public constantes: Constantes) {}
+  constructor(public http: HttpClient, public constantes: Constantes) {
+    this.path = `${this.constantes.getBaseUrl()}comentarios`;
+  }
 
-  create(comentario: Comentario) {
-    console.log('salvar: ' + comentario);
-
+  async create(comentario: Comentario) {
     var data = {
       "nome": comentario.nome,
       "email": comentario.email,
@@ -23,18 +24,7 @@ export class ComentarioApi {
       "comentario": comentario.comentario
     };
 
-    return new Promise((resolve, reject) => {
-      this.http.post(this.constantes.getBaseUrl() + 'comentarios', data)
-        .subscribe((result: any) => {
-          //resolve(result.json());
-          resolve(result);
-        },
-        (error) => {
-          reject(error.json());
-        });
-    });
-
-
+    const result = await this.http.post(this.path, data).toPromise();
+    return result;
   }
-
 }

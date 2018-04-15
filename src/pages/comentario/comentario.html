@@ -8,40 +8,79 @@
 </ion-header>
 
 <ion-content>
-	<form name="comentarioForm" (ngSubmit)="salvar()" #form="ngForm">
-		<ion-item> 
-			<ion-label>Nome</ion-label> 
-			<ion-input type="text" [(ngModel)]="comentario.nome" name="nome"></ion-input> 
+	<form [formGroup]="comentarioForm" (ngSubmit)="salvarComentario()" padding novalidate>
+		<ion-item>
+			<ion-label>Nome</ion-label>
+			<ion-input type="text" [(ngModel)]="comentario.nome" formControlName="nome" [class.error1]="!comentarioForm.controls.nome.valid && comentarioForm.controls.nome.dirty"></ion-input>
 		</ion-item>
-		<ion-item> 
-			<ion-label>E-mail</ion-label> 
-			<ion-input type="email" [(ngModel)]="comentario.email" name="email"></ion-input> 
+		<ion-item no-lines *ngIf="(comentarioForm.get('nome').hasError('minlength') || comentarioForm.get('nome').hasError('maxlength') || comentarioForm.get('nome').hasError('pattern') || comentarioForm.get('nome').hasError('required') ) && comentarioForm.get('nome').touched">
+			<div class="form-erro" *ngIf="comentarioForm.get('nome').hasError('required') && comentarioForm.get('nome').touched">
+				Nome é obrigatório
+			</div>
+			<div class="form-erro" *ngIf="comentarioForm.get('nome').hasError('maxlength') && comentarioForm.get('nome').touched">
+				Máximo de 50 caracteres
+			</div>
+			<div class="form-erro" *ngIf="comentarioForm.get('nome').hasError('pattern') && comentarioForm.get('nome').touched">
+				Utlize apenas letras do alfabeto
+			</div>
 		</ion-item>
 		<ion-item>
-	  		<ion-label>Faixa Etária</ion-label>
-	  		<ion-select [(ngModel)]="comentario.faixaEtaria" name="faixaEtaria">
-	    		<ion-option value="QUINZE_VINTE">15-19</ion-option>
-	    		<ion-option value="VINTE_TRINTA">20-29</ion-option>
-	    		<ion-option value="TRINTA_QUARENTA">30-39</ion-option>
-	    		<ion-option value="QUARENTA_CINQUENTA">40-49</ion-option>
-	    		<ion-option value="CINQUENTA_SETENTA">50-69</ion-option>
-	    		<ion-option value="MAIOR_QUE_SETENTA">70+</ion-option>    		
-	  		</ion-select>
+			<ion-label>E-mail</ion-label>
+			<ion-input type="email" [(ngModel)]="comentario.email" formControlName="email" [class.error1]="!comentarioForm.controls.email.valid && comentarioForm.controls.email.dirty"></ion-input>
+		</ion-item>
+		<ion-item no-lines *ngIf="(comentarioForm.get('email').hasError('pattern') || comentarioForm.get('email').hasError('required')) && comentarioForm.get('email').touched">
+			<div class="form-erro" *ngIf="comentarioForm.get('email').hasError('required') && comentarioForm.get('email').touched">
+				Email é obrigatório
+			</div>
+			<div class="form-erro" *ngIf="comentarioForm.get('email').hasError('maxlength') && comentarioForm.get('email').touched">
+				Máximo de 50 caracteres
+			</div>
+			<div class="form-erro" *ngIf="comentarioForm.get('email').hasError('pattern') && comentarioForm.get('email').touched">
+				Email inválido
+			</div>
 		</ion-item>
 		<ion-item>
-	  		<ion-label>Sexo</ion-label>
-	  		<ion-select [(ngModel)]="comentario.sexo" name="sexo">
-	    		<ion-option value="FEMININO">Feminino</ion-option>
-	    		<ion-option value="MASCULINO">Masculino</ion-option>
-	  		</ion-select>
+			<ion-label>Faixa etária</ion-label>
+			<ion-select [(ngModel)]="comentario.faixaEtaria" formControlName="faixaEtaria" cancelText="Cancelar" [class.error1]="!comentarioForm.controls.faixaEtaria.valid && comentarioForm.controls.faixaEtaria.dirty">
+				<ion-option value="" selected disabled>Selecione</ion-option>
+				<ion-option value="QUINZE_VINTE">15-19</ion-option>
+				<ion-option value="VINTE_TRINTA">20-29</ion-option>
+				<ion-option value="TRINTA_QUARENTA">30-39</ion-option>
+				<ion-option value="QUARENTA_CINQUENTA">40-49</ion-option>
+				<ion-option value="CINQUENTA_SETENTA">50-69</ion-option>
+				<ion-option value="MAIOR_QUE_SETENTA">70+</ion-option>
+			</ion-select>
 		</ion-item>
-		
-		<ion-item> 
-			<ion-label>Comentário</ion-label> 
-			<ion-textarea rows="5" [(ngModel)]="comentario.comentario" name="comentario" ></ion-textarea> 
+		<ion-item no-lines *ngIf="comentarioForm.get('faixaEtaria').hasError('required') && comentarioForm.get('faixaEtaria').touched">
+			<div class="form-erro" *ngIf="comentarioForm.get('faixaEtaria').hasError('required') && comentarioForm.get('faixaEtaria').touched">
+				Faixa etária é obrigatória
+			</div>
 		</ion-item>
-		
-		<button ion-button type="submit" block>Salvar Comentário</button>
+		<ion-item>
+			<ion-label>Sexo</ion-label>
+			<ion-select [(ngModel)]="comentario.sexo" formControlName="sexo" cancelText="Cancelar" [class.error1]="!comentarioForm.controls.sexo.valid && comentarioForm.controls.sexo.dirty">
+				<ion-option value="" selected disabled>Selecione</ion-option>
+				<ion-option value="FEMININO">Feminino</ion-option>
+				<ion-option value="MASCULINO">Masculino</ion-option>
+			</ion-select>
+		</ion-item>
+		<ion-item no-lines *ngIf="comentarioForm.get('sexo').hasError('required') && comentarioForm.get('sexo').touched">
+			<div class="form-erro" *ngIf="comentarioForm.get('sexo').hasError('required') && comentarioForm.get('sexo').touched">
+				Sexo é obrigatório
+			</div>
+		</ion-item>
+		<ion-item>
+			<ion-label>Comentário</ion-label>
+			<ion-textarea rows="5" [(ngModel)]="comentario.comentario" formControlName="comentario" [class.error1]="!comentarioForm.controls.comentario.valid && comentarioForm.controls.comentario.dirty"></ion-textarea>
+		</ion-item>
+		<ion-item no-lines *ngIf="(comentarioForm.get('comentario').hasError('maxlength') || comentarioForm.get('comentario').hasError('required')) && comentarioForm.get('comentario').touched">
+			<div class="form-erro" *ngIf="comentarioForm.get('comentario').hasError('required') && comentarioForm.get('comentario').touched">
+				Comentário é obrigatório
+			</div>
+			<div class="form-erro" *ngIf="comentarioForm.get('comentario').hasError('maxlength') && comentarioForm.get('comentario').touched">
+				Máximo de 100 caracteres
+			</div>
+		</ion-item>
+		<button ion-button type="submit" [disabled]="comentarioForm.invalid" block>Salvar</button>
 	</form>
 </ion-content>
-

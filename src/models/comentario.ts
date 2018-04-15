@@ -21,7 +21,8 @@ export class Comentario {
     public email?: string,
     public comentario?: any,
     public faixaEtaria?: FaixaEtaria,
-    public sexo?: Sexo,
+    public sexo?: Sexo
   ) {
+
   }
 }

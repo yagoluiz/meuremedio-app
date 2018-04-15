@@ -9,6 +9,8 @@ import { RemedioApi } from '../providers/providers';
 import { ComentarioApi } from '../providers/providers';
 import { DenunciaApi } from '../providers/providers';
 import { Constantes } from '../providers/providers';
+import { Alerta } from '../providers/alerta';
+import { Regex } from '../providers/regex';
 import { RemediosMock } from '../mocks/providers/remedios-mock';
 import { MyApp } from './app.component';
 
@@ -32,6 +34,8 @@ import { MyApp } from './app.component';
     ComentarioApi,
     DenunciaApi,
     Constantes,
+    Alerta,
+    Regex,
     RemediosMock,    
     SplashScreen,
     StatusBar,

@@ -13,6 +13,6 @@ export class SobrePage {
 
   constructor(public navCtrl: NavController, navParams: NavParams) {
     GoogleAnalytics.sendPageViewForPage('/sobre');
-    this.descricao = 'O app utiliza dados públicos disponibilizados pela ANVISA (Agência Nacional de Vigilância Sanitária). Todas as informações disponibilizadas, estão disponíveis no site abaixo:';
+    this.descricao = 'O aplicativo utiliza dados públicos disponibilizados pela ANVISA (Agência Nacional de Vigilância Sanitária). Todas as informações disponibilizadas, estão disponíveis no site abaixo:';
   }
 }

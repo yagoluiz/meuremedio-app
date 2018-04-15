@@ -1,10 +1,11 @@
 import 'rxjs/add/operator/toPromise';
 
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
 import { Remedio } from '../../models/remedio'
 import { RemedioApi } from '../../providers/api/remedio'
+import { Alerta } from '../../providers/alerta'
 
 import { GoogleAnalytics } from "../../app/google-analytics";
 
@@ -21,8 +22,8 @@ export class PesquisaPage {
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public loadingCtrl: LoadingController,
-    public toastCtrl: ToastController,
-    public remedioApi: RemedioApi) {
+    public remedioApi: RemedioApi,
+    public alerta: Alerta) {
     GoogleAnalytics.sendPageViewForPage('/pesquisa');
   }
 
@@ -30,7 +31,7 @@ export class PesquisaPage {
     GoogleAnalytics.sendEvent('click', "Pesquisa:Buscar:Remedio");
     this.remedioQtd = 0;
     this.remedio = ev.target.value;
-    if (!this.remedio || !this.remedio.trim()) {
+    if (!this.remedio || !this.remedio.trim() || this.remedio.length < 3) {
       this.remedios = [];
       return;
     }
@@ -39,11 +40,16 @@ export class PesquisaPage {
     });
     loading.present();
     await this.remedioApi.getByNome(this.remedio).then((result: Array<Remedio>) => {
-      this.remedios = result.slice(0, 10);
-      loading.dismiss();
+      if (result.length > 0) {
+        this.remedios = result.slice(0, 10);
+        loading.dismiss();
+      } else {
+        loading.dismiss();
+        this.alerta.create('Ooops! Nenhum remédio encontrado!');
+      }
     }).catch((error: any) => {
       loading.dismiss();
-      this.inserirMensagem('Ooops! Erro ao listar remédios.');
+      this.alerta.create('Ooops! Erro ao listar remédios!');
     });
   }
 
@@ -52,7 +58,7 @@ export class PesquisaPage {
     await this.remedioApi.getByNome(this.remedio).then((result: Array<Remedio>) => {
       this.remedios = result.slice(0, 20 * this.remedioQtd);
     }).catch((error: any) => {
-      this.inserirMensagem('Ooops! Erro ao listar remédios.');
+      this.alerta.create('Ooops! Erro ao listar remédios!');
     });
     ev.complete();
   }
@@ -66,14 +72,6 @@ export class PesquisaPage {
     GoogleAnalytics.sendEvent('click', "Pesquisa:Abrir:Remedio");
     this.navCtrl.push('RemedioDetalhesPage', {
       remedio: remedio
-    });
-  }
-
-  inserirMensagem(mensagem: string) {
-    return this.toastCtrl.create({
-      message: mensagem,
-      position: 'top',
-      duration: 3000
     });
   }
 }

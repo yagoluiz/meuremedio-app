@@ -11,5 +11,6 @@ export class Denuncia {
     public medicamentoId?: number,
     public medicamentoNome?: string
   ) {
+  
   }
 }
