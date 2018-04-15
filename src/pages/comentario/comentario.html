@@ -13,7 +13,7 @@
 			<ion-label>Nome</ion-label>
 			<ion-input type="text" [(ngModel)]="comentario.nome" formControlName="nome" [class.error1]="!comentarioForm.controls.nome.valid && comentarioForm.controls.nome.dirty"></ion-input>
 		</ion-item>
-		<ion-item no-lines *ngIf="(comentarioForm.get('nome').hasError('minlength') || comentarioForm.get('nome').hasError('maxlength') || comentarioForm.get('nome').hasError('pattern') || comentarioForm.get('nome').hasError('required') ) && comentarioForm.get('nome').touched">
+		<ion-item no-lines *ngIf="(comentarioForm.get('nome').hasError('maxlength') || comentarioForm.get('nome').hasError('pattern') || comentarioForm.get('nome').hasError('required') ) && comentarioForm.get('nome').touched">
 			<div class="form-erro" *ngIf="comentarioForm.get('nome').hasError('required') && comentarioForm.get('nome').touched">
 				Nome é obrigatório
 			</div>
