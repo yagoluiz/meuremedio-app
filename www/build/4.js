@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 288:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemedioDetalhesPageModule", function() { return RemedioDetalhesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remedio_detalhes__ = __webpack_require__(298);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -79,7 +79,7 @@ var GoogleAnalytics = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 297:
+/***/ 298:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -165,10 +165,10 @@ var RemedioDetalhesPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-remedio-detalhes',template:/*ion-inline-start:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\remedio-detalhes\remedio-detalhes.html"*/'<ion-header>\n\n	<ion-navbar color="primary">\n\n		<ion-title>Informações</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<ion-card>\n\n		<ion-list>\n\n			<ion-item [ngClass]="{\n\n					\'tarja-verde\': remedio.tarja === \'Venda Livre\',\n\n					\'tarja-vermelha\': remedio.tarja === \'Tarja Vermelha\',\n\n					\'tarja-preta\': remedio.tarja === \'Tarja Preta\'}">\n\n				<h2 class="texto-branco">\n\n					{{remedio.nome}}\n\n				</h2>\n\n				<p class="texto-branco" text-wrap>{{remedio.apresentacao}}</p>\n\n			</ion-item>\n\n		</ion-list>\n\n	</ion-card>\n\n	<ion-card>\n\n		<ion-list>\n\n			<ion-item class="preco-farmacia">\n\n				<h2 class="texto-branco">Preço farmácia</h2>\n\n				<p class="texto-branco">{{precoFabrica}}</p>\n\n			</ion-item>\n\n		</ion-list>\n\n	</ion-card>\n\n	<ion-card>\n\n		<ion-list>\n\n			<ion-item class="preco-consumidor">\n\n				<ion-label class="texto-branco">Seu estado?</ion-label>\n\n				<ion-select [(ngModel)]="estado" (ionChange)="selecionarEstado(estado)" cancelText="Cancelar" class="texto-branco" text-wrap>\n\n					<ion-option value="" selected disabled>Selecione</ion-option>\n\n					<ion-option value="AC">Acre</ion-option>\n\n					<ion-option value="AL">Alagoas</ion-option>\n\n					<ion-option value="AP">Amapá</ion-option>\n\n					<ion-option value="AM">Amazonas</ion-option>\n\n					<ion-option value="BA">Bahia</ion-option>\n\n					<ion-option value="CE">Ceará</ion-option>\n\n					<ion-option value="DF">Distrito Federal</ion-option>\n\n					<ion-option value="ES">Espírito Santo</ion-option>\n\n					<ion-option value="GO">Goiás</ion-option>\n\n					<ion-option value="MA">Maranhão</ion-option>\n\n					<ion-option value="MT">Mato Grosso</ion-option>\n\n					<ion-option value="MS">Mato Grosso do Sul</ion-option>\n\n					<ion-option value="MG">Minas Gerais</ion-option>\n\n					<ion-option value="PA">Pará</ion-option>\n\n					<ion-option value="PB">Paraíba</ion-option>\n\n					<ion-option value="PR">Paraná</ion-option>\n\n					<ion-option value="PE">Pernambuco</ion-option>\n\n					<ion-option value="PI">Piauí</ion-option>\n\n					<ion-option value="RJ">Rio de Janeiro</ion-option>\n\n					<ion-option value="RN">Rio Grande do Norte</ion-option>\n\n					<ion-option value="RS">Rio Grande do Sul</ion-option>\n\n					<ion-option value="RO">Rondônia</ion-option>\n\n					<ion-option value="RR">Roraima</ion-option>\n\n					<ion-option value="SC">Santa Catarina</ion-option>\n\n					<ion-option value="SP">São Paulo</ion-option>\n\n					<ion-option value="SE">Sergipe</ion-option>\n\n					<ion-option value="TO">Tocantins</ion-option>\n\n				</ion-select>\n\n			</ion-item>\n\n			<ion-item class="preco-consumidor">\n\n				<h2 class="texto-branco">Preço consumidor</h2>\n\n				<p class="texto-branco">{{precoConsumidor}}</p>\n\n			</ion-item>\n\n		</ion-list>\n\n	</ion-card>\n\n	<ion-card>\n\n		<ion-list>\n\n			<ion-item class="informacoes-cinza">\n\n				<h2 class="texto-preto">Princípio ativo</h2>\n\n				<p class="texto-cinza" text-wrap>{{remedio.principioAtivo}}</p>\n\n			</ion-item>\n\n			<ion-item class="informacoes-branco">\n\n				<h2 class="texto-preto">Classe terapêutica</h2>\n\n				<p class="texto-cinza" text-wrap>{{remedio.classeTerapeutica}}</p>\n\n			</ion-item>\n\n			<ion-item class="informacoes-cinza">\n\n				<h2 class="texto-preto">Laboratório</h2>\n\n				<p class="texto-cinza" text-wrap>{{remedio.laboratorioNome}}</p>\n\n			</ion-item>\n\n			<ion-item class="informacoes-branco">\n\n				<h2 class="texto-preto">CNPJ</h2>\n\n				<p class="texto-cinza" text-wrap>{{remedio.laboratorioCnpj}}</p>\n\n			</ion-item>\n\n			<ion-item class="informacoes-cinza">\n\n				<h2 class="texto-preto">Registro</h2>\n\n				<p class="texto-cinza" text-wrap>{{remedio.laboratorioRegistro}}</p>\n\n			</ion-item>\n\n			<ion-item class="informacoes-branco">\n\n				<h2 class="texto-preto">Tipo</h2>\n\n				<p class="texto-cinza" text-wrap>{{remedio.tipo}}</p>\n\n			</ion-item>\n\n			<ion-item class="informacoes-cinza">\n\n				<h2 class="texto-preto">Registro hospitalar</h2>\n\n				<p class="texto-cinza" text-wrap>{{remedio.restricaoHospitalarStr}}</p>\n\n			</ion-item>\n\n		</ion-list>\n\n	</ion-card>\n\n	<ion-card>\n\n		<button ion-button (click)="iniciarDenuncia(remedio)" block>Denunciar</button>\n\n	</ion-card>\n\n</ion-content>'/*ion-inline-end:"C:\Dev\Ionic\UnB\meuremedio-app\src\pages\remedio-detalhes\remedio-detalhes.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], RemedioDetalhesPage);
     return RemedioDetalhesPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=remedio-detalhes.js.map
