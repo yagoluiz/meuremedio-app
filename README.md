@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/yagoluiz/meuremedio-app.svg?style=svg)](https://circleci.com/gh/yagoluiz/meuremedio-app) 
 
-* Site do projeto (deploy Heroku) => https://meuremedioweb.herokuapp.com
+* Site do projeto (deploy via **Heroku**) => http://meuremedio.net.br
 
 * Informações disponibilizados no site da [ANVISA](http://portal.anvisa.gov.br/listas-de-precos);
 * Informações disponibilizados no site [dados.gov.br](http://dados.gov.br/dataset/anvisa-precos-de-medicamentos).
@@ -19,5 +19,9 @@ Os dados disponibilizados pela site da [ANVISA](http://portal.anvisa.gov.br/list
 
 **Node 8+**, **NPM 5+** e **Ionic Framework 3** 
 
-**Executar o app**:
+**Executar o app via Ionic**:
  - `ionic serve`
+
+ **Executar o app via Node.js**:
+ - `node server`
+ - `Acessar localhost:5000`
