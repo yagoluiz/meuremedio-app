@@ -32,8 +32,7 @@ export class ComentarioPage {
 
   private validarComentario() {
     this.comentarioForm = this.formBuilder.group({
-      nome: ['', Validators.compose([Validators.minLength(5),
-      Validators.maxLength(50),
+      nome: ['', ([Validators.maxLength(50),
       Validators.pattern(this.regex.ALFABETO),
       Validators.required])],
       email: ['', Validators.compose([Validators.pattern(this.regex.EMAIL),
