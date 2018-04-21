@@ -3,9 +3,8 @@
 [![CircleCI](https://circleci.com/gh/yagoluiz/meuremedio-app.svg?style=svg)](https://circleci.com/gh/yagoluiz/meuremedio-app) 
 
 * Site do projeto (deploy via **Heroku**) => http://meuremedio.net.br
-
-* Informações disponibilizados no site da [ANVISA](http://portal.anvisa.gov.br/listas-de-precos);
-* Informações disponibilizados no site [dados.gov.br](http://dados.gov.br/dataset/anvisa-precos-de-medicamentos).
+* Informações disponibilizados no site da [ANVISA](http://portal.anvisa.gov.br/listas-de-precos)
+* Informações disponibilizados no site [dados.gov.br](http://dados.gov.br/dataset/anvisa-precos-de-medicamentos)
 
 ### Atualização dos dados
 
