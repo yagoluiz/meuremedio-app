@@ -35,8 +35,7 @@ export class DenunciaPage {
 
   private validarDenuncia() {
     this.denunciaForm = this.formBuilder.group({
-      nome: ['', Validators.compose([Validators.minLength(10),
-      Validators.maxLength(50),
+      nome: ['', Validators.compose([Validators.maxLength(50),
       Validators.pattern(this.regex.ALFABETO),
       Validators.required])],
       email: ['', Validators.compose([Validators.pattern(this.regex.EMAIL),
