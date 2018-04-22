@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
+import { MainPage } from '../pages';
+
 import { Comentario } from '../../models/comentario'
 import { ComentarioApi } from '../../providers/api/comentario'
 import { Alerta } from '../../providers/alerta'
@@ -55,6 +57,10 @@ export class ComentarioPage {
       loading.dismiss();
       this.limparComentario();
       this.alerta.create('Comentário inserido com sucesso!');
+      this.navCtrl.setRoot(MainPage, {}, {
+        animate: true,
+        direction: 'forward'
+      });
     }).catch((error: any) => {
       loading.dismiss();
       this.alerta.create('Ooops! Erro ao cadastrar comentário!');

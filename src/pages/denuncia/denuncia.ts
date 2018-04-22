@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
+import { MainPage } from '../pages';
+
 import { Denuncia } from '../../models/denuncia'
 import { DenunciaApi } from '../../providers/api/denuncia'
 import { Alerta } from '../../providers/alerta'
@@ -60,6 +62,10 @@ export class DenunciaPage {
       this.limparComentario();
       loading.dismiss();
       this.alerta.create('Denúncia inserida com sucesso!');
+      this.navCtrl.setRoot(MainPage, {}, {
+        animate: true,
+        direction: 'forward'
+      });
     }).catch((error: any) => {
       loading.dismiss();
       this.alerta.create('Ooops! Erro ao cadastrar Denúncia!');
