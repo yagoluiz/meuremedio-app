@@ -1,4 +1,4 @@
-# APP Meu Remédio
+# Meu Remédio - APP
 
 [![CircleCI](https://circleci.com/gh/yagoluiz/meuremedio-app.svg?style=svg)](https://circleci.com/gh/yagoluiz/meuremedio-app) 
 
